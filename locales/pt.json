@@ -4,7 +4,8 @@
         "about": "Sobre",
         "experience": "Experiência",
         "skills": "Habilidades",
-        "interests": "Interesses"
+        "interests": "Interesses",
+        "test": "teste para checkar se irá ser traduzido automaticamente"
     },
     "hero": {
         "subtitle": "Olá, eu sou",
