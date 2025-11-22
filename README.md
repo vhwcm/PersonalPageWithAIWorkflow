@@ -7,7 +7,7 @@
 
 This repository contains the source code for my personal webpage hosted at the Department of Informatics (DInf), Federal University of Paraná (UFPR).
 
-## 🚀 Features
+## Features
 
 - **Automatic Deployment:**
 
@@ -21,7 +21,7 @@ This repository contains the source code for my personal webpage hosted at the D
   - When you add or change a translation key in `locales/pt.json`, a GitHub Action automatically uses Google Gemini AI to translate new/changed keys into English and updates `locales/en.json`.
   - No manual translation needed for new content!
 
-## 🛠️ How it works
+## How it works
 
 - **Deploy:**
 
@@ -31,29 +31,29 @@ This repository contains the source code for my personal webpage hosted at the D
   - Uses [Google Gemini API](https://aistudio.google.com/app/apikey) via a Python script in `.github/scripts/auto_translate.py`.
   - Only translates missing or changed keys, preserving existing translations.
 
-## 🔒 Secrets & Configuration
+## Secrets & Configuration
 
 - All sensitive data (server credentials, Gemini API key) are stored as GitHub repository secrets and **never** committed to the repository.
 - See `.env.example` for required variables.
 
-## 📁 Structure
+## Structure
 
 - `index.html`, `styles.css`, `script.js` – Main site files
 - `locales/` – Translation files
 - `.github/workflows/` – GitHub Actions workflows for deploy and translation
 - `.github/scripts/auto_translate.py` – AI translation script
 
-## ✨ Live Demo
+## Live Demo
 
 Visit: [https://www.inf.ufpr.br/vhwcm](https://www.inf.ufpr.br/vhwcm)
 
 ---
 
-# 🌎 Versão em Português
+# Versão em Português
 
 Este repositório contém o código-fonte da minha página pessoal hospedada no Departamento de Informática (DInf) da UFPR.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - **Deploy Automático:**
 
@@ -67,7 +67,7 @@ Este repositório contém o código-fonte da minha página pessoal hospedada no 
   - Sempre que você adiciona ou altera uma chave em `locales/pt.json`, uma Action usa a IA Gemini do Google para traduzir automaticamente para o inglês e atualizar o `locales/en.json`.
   - Não é necessário traduzir manualmente!
 
-## 🛠️ Como funciona
+## Como funciona
 
 - **Deploy:**
 
@@ -77,18 +77,18 @@ Este repositório contém o código-fonte da minha página pessoal hospedada no 
   - Usa a [API Gemini do Google](https://aistudio.google.com/app/apikey) via um script Python em `.github/scripts/auto_translate.py`.
   - Só traduz chaves novas ou alteradas, preservando traduções já existentes.
 
-## 🔒 Segredos & Configuração
+## Segredos & Configuração
 
 - Todas as informações sensíveis (credenciais do servidor, chave da Gemini) ficam em secrets do GitHub e **nunca** são commitadas no repositório.
 - Veja `.env.example` para as variáveis necessárias.
 
-## 📁 Estrutura
+## Estrutura
 
 - `index.html`, `styles.css`, `script.js` – Arquivos principais do site
 - `locales/` – Arquivos de tradução
 - `.github/workflows/` – Workflows do GitHub Actions para deploy e tradução
 - `.github/scripts/auto_translate.py` – Script de tradução automática
 
-## ✨ Site Online
+## Site Online
 
 Acesse: [https://www.inf.ufpr.br/vhwcm](https://www.inf.ufpr.br/vhwcm)
