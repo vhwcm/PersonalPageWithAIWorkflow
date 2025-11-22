@@ -3,7 +3,7 @@
 Script de tradução automática PT → EN usando Google Gemini AI
 """
 import json
-import os
+import os 
 import google.generativeai as genai
 
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
