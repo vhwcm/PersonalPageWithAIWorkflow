@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
-Script de tradução automática PT → EN usando Google Gemini AI
+Script de tradução automática PT -> EN usando Google Gemini AI (SDK Oficial)
 """
 import json
-import os 
-import requests
+import os
+import google.generativeai as genai
+import time
 
+# Configuração da API
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY não encontrada nas variáveis de ambiente")
 
-# Carregar arquivos JSON
-with open('locales/pt.json', 'r', encoding='utf-8') as f:
-    pt_data = json.load(f)
+genai.configure(api_key=GEMINI_API_KEY)
 
-with open('locales/en.json', 'r', encoding='utf-8') as f:
-    en_data = json.load(f)
+# Usando o modelo Flash, que é ideal para tarefas de alta velocidade/volume como tradução
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 def get_nested_keys(data, parent_key=''):
     """Extrai todas as chaves aninhadas de um dicionário"""
@@ -48,7 +48,44 @@ def set_value_by_path(data, path, value):
         current = current[key]
     current[keys[-1]] = value
 
-# Encontrar chaves que existem em PT mas não em EN
+def traduzir_texto(texto_origem):
+    """Traduz usando o SDK oficial do Gemini"""
+    try:
+        # Prompt direto e objetivo para evitar conversa
+        prompt = f"""You are a professional translator for software interfaces. 
+        Translate the following text from Portuguese (Brazil) to English. 
+        Output ONLY the translation, no explanations or quotes.
+        
+        Text: "{texto_origem}"
+        """
+        
+        response = model.generate_content(prompt)
+        
+        # Limpeza básica caso o modelo coloque espaços extras ou quotes
+        return response.text.strip().replace('"', '').replace("'", "")
+        
+    except Exception as e:
+        print(f"Erro ao traduzir '{texto_origem}': {e}")
+        return None
+
+# --- Fluxo Principal ---
+
+# Carregar arquivos
+try:
+    with open('locales/pt.json', 'r', encoding='utf-8') as f:
+        pt_data = json.load(f)
+except FileNotFoundError:
+    print("Arquivo locales/pt.json não encontrado.")
+    exit(1)
+
+# Tenta abrir en.json, se não existir cria um dict vazio
+try:
+    with open('locales/en.json', 'r', encoding='utf-8') as f:
+        en_data = json.load(f)
+except FileNotFoundError:
+    en_data = {}
+
+# Encontrar chaves faltantes
 pt_keys = set(get_nested_keys(pt_data))
 en_keys = set(get_nested_keys(en_data))
 missing_keys = pt_keys - en_keys
@@ -61,47 +98,25 @@ print(f"🔍 Encontradas {len(missing_keys)} chaves novas para traduzir:")
 for key in missing_keys:
     print(f"  - {key}")
 
-# Configurações da API
-API_URL = "https://api.generativeai.google.com/v1beta2/models/text-bison:generate"
-API_KEY = GEMINI_API_KEY  # Usar a chave de API da variável de ambiente
-
-# Função para traduzir texto usando requisição HTTP
-def traduzir_texto(texto_origem, idioma_destino="en"):
-    headers = {
-        "Authorization": f"Bearer {API_KEY}",
-        "Content-Type": "application/json"
-    }
-
-    payload = {
-        "prompt": {
-            "text": f"Traduza o seguinte texto para {idioma_destino}: {texto_origem}"
-        }
-    }
-
-    response = requests.post(API_URL, headers=headers, data=json.dumps(payload))
-
-    if response.status_code == 200:
-        dados = response.json()
-        return dados.get("candidates", [{}])[0].get("output", "")
-    else:
-        print(f"Erro na tradução: {response.status_code} - {response.text}")
-        return None
-
-# Traduzir as chaves faltantes
+# Traduzir
 translations = {}
 for key in missing_keys:
     pt_text = get_value_by_path(pt_data, key)
     
+    # Delay curto para evitar rate limit se tiver muitas chaves
+    time.sleep(1) 
+    
     en_text = traduzir_texto(pt_text)
-    translations[key] = en_text
-    print(f"{key}: '{pt_text}' → '{en_text}'")
+    
+    if en_text:
+        translations[key] = en_text
+        print(f"✅ {key}: '{pt_text}' -> '{en_text}'")
+        set_value_by_path(en_data, key, en_text)
+    else:
+        print(f"❌ Falha na chave {key}")
 
-# Atualizar en.json com as novas traduções
-for key, value in translations.items():
-    set_value_by_path(en_data, key, value)
-
-# Salvar o arquivo atualizado
+# Salvar
 with open('locales/en.json', 'w', encoding='utf-8') as f:
     json.dump(en_data, f, ensure_ascii=False, indent=2)
 
-print(f"\nArquivo 'locales/en.json' atualizado com {len(translations)} novas traduções!")
+print(f"\nArquivo 'locales/en.json' atualizado com sucesso!")
