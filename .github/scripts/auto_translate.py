@@ -11,7 +11,13 @@ if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY não encontrada nas variáveis de ambiente")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('text-bison')  # Substituir o modelo para um mais amplamente suportado
+
+# Listar os modelos disponíveis para verificar compatibilidade
+models = genai.list_models()
+print("Modelos disponíveis:")
+for model in models:
+    print(f"- {model['name']}: {model['description']}")
 
 # Carregar arquivos JSON
 with open('locales/pt.json', 'r', encoding='utf-8') as f:
