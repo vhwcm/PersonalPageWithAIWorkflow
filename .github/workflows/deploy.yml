@@ -45,5 +45,7 @@ jobs:
           script: |
             # Move arquivos para a pasta pública
             mv ~/temp_deploy/* /home/html/inf/$USER/
+            # Ajusta permissões para acesso web
+            chmod -R g=rX,o=rX /home/html/inf/$USER
             # Limpa temporários
             rm -rf ~/temp_deploy
