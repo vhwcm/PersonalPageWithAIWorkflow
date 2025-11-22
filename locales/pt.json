@@ -1,0 +1,84 @@
+{
+    "nav": {
+        "home": "Início",
+        "about": "Sobre",
+        "experience": "Experiência",
+        "skills": "Habilidades",
+        "interests": "Interesses"
+    },
+    "hero": {
+        "subtitle": "Olá, eu sou",
+        "description": "Desenvolvedor Full-Stack | Graduando em Ciência da Computação na UFPR",
+        "cta": {
+            "about": "Sobre Mim",
+            "blog": "Blog"
+        }
+    },
+    "about": {
+        "title": "Sobre Mim",
+        "p1": "Olá! Sou Victor Hugo, um desenvolvedor apaixonado por tecnologia e inovação. Atualmente cursando Ciência da Computação na UFPR, combino rigor acadêmico com experiência prática no desenvolvimento de software.",
+        "p2": "Minha jornada na programação começou com a curiosidade de entender como as coisas funcionam. Hoje, dedico-me a criar sistemas que não apenas funcionam, mas que proporcionam uma experiência excepcional aos usuários.",
+        "p3": "Além do código, interesso-me profundamente por Inteligência Artificial e como ela pode ser aplicada para resolver problemas do mundo real. Estou sempre em busca de novos desafios e aprendizados."
+    },
+    "experience": {
+        "title": "Experiência Profissional",
+        "exati": {
+            "role": "Estagiário em Desenvolvimento Full Stack",
+            "period": "Agosto 2025 - Presente",
+            "desc1": "Desenvolvimento de interfaces modernas e responsivas utilizando <strong>Vue.js</strong>.",
+            "desc2": "Implementação e manutenção de serviços backend robustos em <strong>Java</strong>.",
+            "desc3": "Integração eficiente entre frontend e backend via APIs REST.",
+            "desc4": "Atuação em equipe ágil utilizando metodologia <strong>Scrum</strong>."
+        },
+        "ecomp_director": {
+            "role": "Diretor",
+            "period": "Janeiro 2025 - Julho 2025",
+            "desc1": "Liderança estratégica e definição de <strong>OKRs</strong> para alinhamento de metas da organização.",
+            "desc2": "Implantação de metodologias ágeis (Scrum) para otimização de processos internos.",
+            "desc3": "Reformulação completa da gamificação interna para aumentar o engajamento dos membros.",
+            "desc4": "Gestão financeira estratégica para proteção do capital contra inflação.",
+            "desc5": "Liderança no processo de transformação da Ecomp em projeto de extensão universitária."
+        },
+        "ecomp_developer": {
+            "role": "Desenvolvedor Web",
+            "period": "Outubro 2024 - Julho 2025",
+            "desc1": "Desenvolvimento de soluções web completas para clientes reais.",
+            "desc2": "Aplicação prática de stack moderna: <strong>Vue.js, Nuxt.js, Node.js</strong>.",
+            "desc3": "Gerenciamento de ambiente e deploy utilizando <strong>Docker</strong> e servidores <strong>Linux</strong>."
+        },
+        "pet": {
+            "role": "Membro Extensionista e Pesquisador",
+            "period": "Agosto 2024 - Novembro 2024",
+            "intro": "Atuação em projetos de alto impacto social e acadêmico:",
+            "desc1": "<strong>Informática para Imigrantes:</strong> Ensino de inclusão digital.",
+            "desc2": "<strong>Maratona Competitiva:</strong> Organização e incentivo à programação.",
+            "desc3": "<strong>SACI:</strong> Organização da Semana Acadêmica de Computação.",
+            "desc4": "<strong>PET nas Escolas:</strong> Divulgação da computação no ensino básico."
+        },
+        "monitor": {
+            "role": "Monitor de Circuitos Digitais",
+            "period": "Agosto 2024 - Novembro 2024",
+            "desc1": "Suporte acadêmico aos alunos da disciplina de Circuitos Digitais.",
+            "desc2": "Desenvolvimento de material didático de apoio.",
+            "desc3": "Migração e modernização de exercícios para nova plataforma digital."
+        }
+    },
+    "skills": {
+        "title": "Habilidades Técnicas",
+        "data_structures": "Estrutura de Dados",
+        "algorithms": "Algoritmos",
+        "web_dev": "Desenvolvimento Web"
+    },
+    "interests": {
+        "title": "Interesses Pessoais",
+        "investments": "Investimentos",
+        "chess": "Xadrez",
+        "reading": "Leitura",
+        "gym": "Academia",
+        "business": "Negócios",
+        "cybersecurity": "Cibersegurança"
+    },
+    "footer": {
+        "rights": "&copy; 2025 Victor Hugo Weigmann Chequer Maia. Todos os direitos reservados."
+    }
+}

@@ -19,119 +19,75 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Floating Particles -->
-    <div class="particles">
-      <div
-        class="particle"
-        style="left: 10%; width: 3px; height: 3px; animation-delay: 0s"
-      ></div>
-      <div
-        class="particle"
-        style="left: 20%; width: 2px; height: 2px; animation-delay: 2s"
-      ></div>
-      <div
-        class="particle"
-        style="left: 30%; width: 4px; height: 4px; animation-delay: 4s"
-      ></div>
-      <div
-        class="particle"
-        style="left: 40%; width: 2px; height: 2px; animation-delay: 6s"
-      ></div>
-      <div
-        class="particle"
-        style="left: 50%; width: 3px; height: 3px; animation-delay: 8s"
-      ></div>
-      <div
-        class="particle"
-        style="left: 60%; width: 2px; height: 2px; animation-delay: 10s"
-      ></div>
-      <div
-        class="particle"
-        style="left: 70%; width: 4px; height: 4px; animation-delay: 12s"
-      ></div>
-      <div
-        class="particle"
-        style="left: 80%; width: 3px; height: 3px; animation-delay: 14s"
-      ></div>
-      <div
-        class="particle"
-        style="left: 90%; width: 2px; height: 2px; animation-delay: 16s"
-      ></div>
-    </div>
-
-    <!-- Header -->
-    <header class="header" id="header">
-      <nav class="navbar container">
-        <a href="#" class="logo">Victor Hugo W.C.M</a>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#hero">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="logo">Victor Hugo W.C.M</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" data-i18n="nav.home">Início</a></li>
+        <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
+        <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#interesses" data-i18n="nav.interests">Interesses</a></li>
+      </ul>
+      
+      <div class="nav-controls">
+        <button id="lang-switch" class="lang-switch" aria-label="Switch Language">
+          <span class="lang-option active" data-lang="pt">PT</span>
+          <span class="separator">|</span>
+          <span class="lang-option" data-lang="en">EN</span>
+        </button>
         <div class="hamburger" id="hamburger">
           <i class="fas fa-bars"></i>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <main>
       <!-- Hero Section -->
-      <section id="hero" class="container">
-        <div class="hero-text">
-          <div class="hero-greeting">Olá, eu sou</div>
-          <h1 class="hero-title">
-            <span class="accent">Victor Hugo</span><br />
-          </h1>
-          <p class="hero-description">
+      <section id="hero">
+        <div class="hero-content">
+          <span class="hero-subtitle" data-i18n="hero.subtitle">Olá, eu sou</span>
+          <h1>Victor Hugo</h1>
+          <p data-i18n="hero.description">
             Desenvolvedor Full-Stack | Graduando em Ciência da Computação na
             UFPR
           </p>
 
-          <!-- Blog Button -->
-          <a href="https://pale-bread-28d.notion.site/Blog-2a53c65686d480fe8ce8ddb10f77fff7?source=copy_link" target="_blank" class="blog-button">
-            <i class="fas fa-pen"></i>
-            Confira meu Blog
-          </a>
-
-          <!-- Contact Cards -->
-          <div class="contact-cards">
-            <a href="mailto:vichwcm@gmail.com" class="contact-card" title="Enviar E-mail">
-              <div class="contact-card-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-card-content">
-                <h4>E-mail</h4>
-                <p>Contato</p>
-              </div>
+          <div class="hero-cta">
+            <a href="#sobre" class="btn btn-primary" data-i18n="hero.cta.about">Sobre Mim</a>
+            <a
+              href="https://pale-bread-28d.notion.site/Blog-2a53c65686d480fe8ce8ddb10f77fff7?source=copy_link"
+              target="_blank"
+              class="btn btn-accent"
+            >
+              <i class="fas fa-pen"></i> <span data-i18n="hero.cta.blog">Blog</span>
             </a>
-
-            <a href="https://www.linkedin.com/in/victor-hugo-wcm/" target="_blank" class="contact-card" title="LinkedIn">
-              <div class="contact-card-icon">
-                <i class="fab fa-linkedin"></i>
-              </div>
-              <div class="contact-card-content">
-                <h4>LinkedIn</h4>
-                <p>Perfil</p>
-              </div>
-            </a>
-
-            <a href="https://github.com/vhwcm" target="_blank" class="contact-card" title="GitHub">
-              <div class="contact-card-icon">
-                <i class="fab fa-github"></i>
-              </div>
-              <div class="contact-card-content">
-                <h4>GitHub</h4>
-                <p>Projetos</p>
-              </div>
-            </a>
-
-
           </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-image-container">
-            <img src="https://i.postimg.cc/05wwN16J/Gemini-Generated-Image-g2ehnsg2ehnsg2eh.png" alt="Victor Hugo" class="hero-image" />
+
+          <div class="social-links">
+            <a
+              href="mailto:vichwcm@gmail.com"
+              class="social-link"
+              title="Enviar E-mail"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/victor-hugo-wcm/"
+              target="_blank"
+              class="social-link"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/vhwcm"
+              target="_blank"
+              class="social-link"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -139,26 +95,32 @@
       <!-- About Section -->
       <section id="sobre" class="section">
         <div class="container">
-          <h2 class="section-title fade-in">Sobre Mim</h2>
-          <div class="about-container fade-in">
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-                  Estudante de Ciência da Computação na UFPR com experiência prática
-                  em desenvolvimento web. Atualmente estagiário na Exati e ex-diretor
-                  da Ecomp, empresa júnior de computação da universidade.
-                </p>
-                <p>
-                  Trabalho principalmente com Vue.js, Node.js, Java e bancos de dados.
-                  Tenho experiência com metodologias ágeis, containers Docker e
-                  servidores Linux através de projetos reais com clientes.
-                </p>
-                <p>
-                  Participei ativamente do PET Computação em projetos de extensão
-                  como ensino de informática para imigrantes e programação competitiva.
-                  Foco em soluções práticas e eficientes.
-                </p>
-              </div>
+          <div class="about-grid">
+            <div class="about-image">
+              <img
+                src="https://i.postimg.cc/90FygxqM/foto-pessoal.png"
+                alt="Victor Hugo"
+              />
+            </div>
+            <div class="about-content">
+              <h2 data-i18n="about.title">Sobre Mim</h2>
+              <p data-i18n="about.p1">
+                Estudante de Ciência da Computação na UFPR com experiência
+                prática em desenvolvimento web. Atualmente estagiário na Exati e
+                ex-diretor da Ecomp, empresa júnior de computação da
+                universidade.
+              </p>
+              <p data-i18n="about.p2">
+                Trabalho principalmente com Vue.js, Node.js, Java e bancos de
+                dados. Tenho experiência com metodologias ágeis, containers
+                Docker e servidores Linux através de projetos reais com
+                clientes.
+              </p>
+              <p data-i18n="about.p3">
+                Participei ativamente do PET Computação em projetos de extensão
+                como ensino de informática para imigrantes e programação
+                competitiva. Foco em soluções práticas e eficientes.
+              </p>
             </div>
           </div>
         </div>
@@ -167,134 +129,145 @@
       <!-- Experience Section -->
       <section id="experiencia" class="section">
         <div class="container">
-          <h2 class="section-title fade-in">Experiência Profissional</h2>
-          <div class="timeline">
-
-            <div class="timeline-item right fade-in">
-              <div class="timeline-content">
-                <h3>Estagiário em Desenvolvimento Full Stack na <a href="https://exati.com.br/" target="_blank">Exati</a></h3>
-                <div class="period">Exati | Agosto 2025 - Presente</div>
-                <p>
-                  <ul style="margin-left: 1.2em; color: var(--text-secondary); margin-top: 0.5rem;">
-                    <li>Desenvolvimento de interfaces  com Vue.js.</li>
-                    <li>Implementação do backend em Java.</li>
-                    <li>Integração entre frontend e backend.</li>
-                    <li>Colaboração em equipe e metódo Scrum</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item left fade-in">
-              <div class="timeline-content">
-                <h3>Diretor na <a href="https://ecomp.co/" target="_blank">Ecomp</a></h3>
-                <div class="period">Empresa Junior de computação da UFPR | Janeiro 2025 - Julho 2025</div>
-                <ul style="margin-left: 1.2em; color: var(--text-secondary); margin-top: 0.5rem;">
-                  <li>Liderança estratégica e definição de metas (OKRs) para a empresa júnior.</li>
-                  <li>Implantação de metodologias ágeis (Scrum) para otimizar processos internos.</li>
-                  <li>Reformulação da gamificação interna para engajar e motivar membros.</li>
-                    <li>Gestão financeira: aplicação do caixa parado/emergencial em renda fixa para evitar a desvalorização causada pela inflação.</li>
-                  <li>Transformação da Ecomp em projeto de extensão</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item right fade-in">
-              <div class="timeline-content">
-                <h3>Desenvolvedor na <a href="https://ecomp.co/" target="_blank">Ecomp</a></h3>
-                <div class="period">
-                  Empresa Junior de computação da UFPR | Outubro 2024 - Julho 2025
+          <h2 data-i18n="experience.title">Experiência Profissional</h2>
+          <div class="experience-list">
+            <!-- Exati -->
+            <div class="experience-card">
+              <div class="experience-header">
+                <div class="experience-title-group">
+                  <h3 data-i18n="experience.exati.role">Estagiário em Desenvolvimento Full Stack</h3>
+                  <div class="experience-company">
+                    <i class="fas fa-building"></i>
+                    <a href="https://exati.com.br/" target="_blank">Exati</a>
+                  </div>
                 </div>
-                <p>
+                <span class="experience-period" data-i18n="experience.exati.period">Agosto 2025 - Presente</span>
+              </div>
+              <div class="experience-content">
                 <ul>
-                  <li>
-                    Desenvolvimento de projetos Web.
-                  </li>
-                  <li>
-                    Capacitações técnicas: Vue.js, Nuxt.js, Vuetify, JavaScript, PHP (Laravel), Node.js (Express), SQL, containers (Docker) e servidores Linux aplicados em projetos reais de clientes.
-                  </li>
+                  <li data-i18n="experience.exati.desc1">Desenvolvimento de interfaces modernas e responsivas utilizando <strong>Vue.js</strong>.</li>
+                  <li data-i18n="experience.exati.desc2">Implementação e manutenção de serviços backend robustos em <strong>Java</strong>.</li>
+                  <li data-i18n="experience.exati.desc3">Integração eficiente entre frontend e backend via APIs REST.</li>
+                  <li data-i18n="experience.exati.desc4">Atuação em equipe ágil utilizando metodologia <strong>Scrum</strong>.</li>
                 </ul>
-                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">REST APIs</span>
+                  <span class="tech-tag">Scrum</span>
+                </div>
               </div>
             </div>
 
-            <div class="timeline-item left fade-in">
-              <div class="timeline-content">
-                <h3>Membro do <a href="https://web.inf.ufpr.br/pet/" target="_blank">PET Computação da UFPR</a></h3>
-                <div class="period">Agosto 2024 - Novembro 2024</div>
-                <p>Participação ativa em projetos de extensão e pesquisa:</p>
-                <ul
-                  style="
-                    margin-left: 1.2em;
-                    color: var(--text-secondary);
-                    margin-top: 0.5rem;
-                  "
-                >
-                  <li>
-                    <a
-                      href="https://web.inf.ufpr.br/pet/projetos/imigrantes/"
-                      target="_blank"
-                      style="
-                        color: var(--accent-primary);
-                        font-weight: 500;
-                        text-decoration: none;
-                      "
-                    >
-                      Informática para Imigrantes
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://web.inf.ufpr.br/pet/projetos/incentivo-a-programacao-competitiva/"
-                      target="_blank"
-                      style="
-                        color: var(--accent-primary);
-                        font-weight: 500;
-                        text-decoration: none;
-                      "
-                    >
-                      Maratona Competitiva
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://web.inf.ufpr.br/pet/semana-acacemica-de-computacao-e-informatica/"
-                      target="_blank"
-                      style="
-                        color: var(--accent-primary);
-                        font-weight: 500;
-                        text-decoration: none;
-                      "
-                    >
-                      SACI - Semana Acadêmica
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://web.inf.ufpr.br/pet/projetos/pet-nas-escolas/"
-                      target="_blank"
-                      style="
-                        color: var(--accent-primary);
-                        font-weight: 500;
-                        text-decoration: none;
-                      "
-                    >
-                      PET nas Escolas
-                    </a>
-                  </li>
+            <!-- Ecomp Diretor -->
+            <div class="experience-card">
+              <div class="experience-header">
+                <div class="experience-title-group">
+                  <h3 data-i18n="experience.ecomp_director.role">Diretor</h3>
+                  <div class="experience-company">
+                    <i class="fas fa-users"></i>
+                    <a href="https://ecomp.co/" target="_blank">Ecomp - Empresa Júnior de Computação UFPR</a>
+                  </div>
+                </div>
+                <span class="experience-period" data-i18n="experience.ecomp_director.period">Janeiro 2025 - Julho 2025</span>
+              </div>
+              <div class="experience-content">
+                <ul>
+                  <li data-i18n="experience.ecomp_director.desc1">Liderança estratégica e definição de <strong>OKRs</strong> para alinhamento de metas da organização.</li>
+                  <li data-i18n="experience.ecomp_director.desc2">Implantação de metodologias ágeis (Scrum) para otimização de processos internos.</li>
+                  <li data-i18n="experience.ecomp_director.desc3">Reformulação completa da gamificação interna para aumentar o engajamento dos membros.</li>
+                  <li data-i18n="experience.ecomp_director.desc4">Gestão financeira estratégica para proteção do capital contra inflação.</li>
+                  <li data-i18n="experience.ecomp_director.desc5">Liderança no processo de transformação da Ecomp em projeto de extensão universitária.</li>
                 </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Liderança</span>
+                  <span class="tech-tag">Gestão Estratégica</span>
+                  <span class="tech-tag">Scrum</span>
+                  <span class="tech-tag">Gestão Financeira</span>
+                </div>
               </div>
             </div>
 
-            <div class="timeline-item right fade-in">
-              <div class="timeline-content">
-                <h3>Monitor de Circuitos Digitais</h3>
-                <div class="period">UFPR | Agosto 2024 - Novembro 2024</div>
-                <p>
-                  Auxílio a estudantes na disciplina de Circuitos Digitais,
-                  desenvolvimento de material didático e migração de exercícios
-                  para nova plataforma.
-                </p>
+            <!-- Ecomp Desenvolvedor -->
+            <div class="experience-card">
+              <div class="experience-header">
+                <div class="experience-title-group">
+                  <h3 data-i18n="experience.ecomp_developer.role">Desenvolvedor Web</h3>
+                  <div class="experience-company">
+                    <i class="fas fa-code"></i>
+                    <a href="https://ecomp.co/" target="_blank">Ecomp - Empresa Júnior de Computação UFPR</a>
+                  </div>
+                </div>
+                <span class="experience-period" data-i18n="experience.ecomp_developer.period">Outubro 2024 - Julho 2025</span>
+              </div>
+              <div class="experience-content">
+                <ul>
+                  <li data-i18n="experience.ecomp_developer.desc1">Desenvolvimento de soluções web completas para clientes reais.</li>
+                  <li data-i18n="experience.ecomp_developer.desc2">Aplicação prática de stack moderna: <strong>Vue.js, Nuxt.js, Node.js</strong>.</li>
+                  <li data-i18n="experience.ecomp_developer.desc3">Gerenciamento de ambiente e deploy utilizando <strong>Docker</strong> e servidores <strong>Linux</strong>.</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">Nuxt.js</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">PHP/Laravel</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Linux</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PET -->
+            <div class="experience-card">
+              <div class="experience-header">
+                <div class="experience-title-group">
+                  <h3 data-i18n="experience.pet.role">Membro Extensionista e Pesquisador</h3>
+                  <div class="experience-company">
+                    <i class="fas fa-university"></i>
+                    <a href="https://web.inf.ufpr.br/pet/" target="_blank">PET Computação UFPR</a>
+                  </div>
+                </div>
+                <span class="experience-period" data-i18n="experience.pet.period">Agosto 2024 - Novembro 2024</span>
+              </div>
+              <div class="experience-content">
+                <p data-i18n="experience.pet.intro">Atuação em projetos de alto impacto social e acadêmico:</p>
+                <ul>
+                  <li data-i18n="experience.pet.desc1"><strong>Informática para Imigrantes:</strong> Ensino de inclusão digital.</li>
+                  <li data-i18n="experience.pet.desc2"><strong>Maratona Competitiva:</strong> Organização e incentivo à programação.</li>
+                  <li data-i18n="experience.pet.desc3"><strong>SACI:</strong> Organização da Semana Acadêmica de Computação.</li>
+                  <li data-i18n="experience.pet.desc4"><strong>PET nas Escolas:</strong> Divulgação da computação no ensino básico.</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Ensino</span>
+                  <span class="tech-tag">Extensão Universitária</span>
+                  <span class="tech-tag">Organização de Eventos</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Monitoria -->
+            <div class="experience-card">
+              <div class="experience-header">
+                <div class="experience-title-group">
+                  <h3 data-i18n="experience.monitor.role">Monitor de Circuitos Digitais</h3>
+                  <div class="experience-company">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Universidade Federal do Paraná (UFPR)</span>
+                  </div>
+                </div>
+                <span class="experience-period" data-i18n="experience.monitor.period">Agosto 2024 - Novembro 2024</span>
+              </div>
+              <div class="experience-content">
+                <ul>
+                  <li data-i18n="experience.monitor.desc1">Suporte acadêmico aos alunos da disciplina de Circuitos Digitais.</li>
+                  <li data-i18n="experience.monitor.desc2">Desenvolvimento de material didático de apoio.</li>
+                  <li data-i18n="experience.monitor.desc3">Migração e modernização de exercícios para nova plataforma digital.</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="tech-tag">Circuitos Digitais</span>
+                  <span class="tech-tag">Didática</span>
+                  <span class="tech-tag">Mentoria</span>
+                </div>
               </div>
             </div>
           </div>
@@ -304,8 +277,8 @@
       <!-- Skills Section -->
       <section id="habilidades" class="section">
         <div class="container">
-          <h2 class="section-title fade-in">Habilidades Técnicas</h2>
-          <div class="skills-grid fade-in">
+          <h2 data-i18n="skills.title">Habilidades Técnicas</h2>
+          <div class="skills-grid">
             <div class="skill-card">
               <div class="skill-icon">
                 <i class="fas fa-database"></i>
@@ -358,19 +331,19 @@
               <div class="skill-icon">
                 <i class="fas fa-project-diagram"></i>
               </div>
-              <div class="skill-name">Estrutura de Dados</div>
+              <div class="skill-name" data-i18n="skills.data_structures">Estrutura de Dados</div>
             </div>
             <div class="skill-card">
               <div class="skill-icon">
                 <i class="fas fa-brain"></i>
               </div>
-              <div class="skill-name">Algoritmos</div>
+              <div class="skill-name" data-i18n="skills.algorithms">Algoritmos</div>
             </div>
             <div class="skill-card">
               <div class="skill-icon">
                 <i class="fas fa-globe"></i>
               </div>
-              <div class="skill-name">Desenvolvimento Web</div>
+              <div class="skill-name" data-i18n="skills.web_dev">Desenvolvimento Web</div>
             </div>
             <div class="skill-card">
               <div class="skill-icon">
@@ -388,138 +361,26 @@
         </div>
       </section>
 
-      <!-- Projects Section -->
-    <!--
-      <section id="projetos" class="section">
-        <div class="container">
-          <h2 class="section-title fade-in">Projetos em Destaque</h2>
-          <div class="projects-grid fade-in">
-            <div class="project-card">
-              <img
-                src="https://placehold.co/600x400/1e293b/00d4ff?text=E-Commerce+Platform"
-                alt="Projeto E-Commerce"
-                class="project-image"
-              />
-              <div class="project-info">
-                <h3 class="project-title">E-Commerce Platform</h3>
-                <p class="project-description">
-                  Plataforma completa de e-commerce desenvolvida com Vue.js,
-                  Node.js e MySQL. Inclui sistema de pagamento, gerenciamento de
-                  estoque e painel administrativo.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="project-link"
-                    title="Ver no GitHub"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="project-link"
-                    title="Ver Demo"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <img
-                src="https://placehold.co/600x400/1e293b/7c3aed?text=Task+Manager+App"
-                alt="Projeto Task Manager"
-                class="project-image"
-              />
-              <div class="project-info">
-                <h3 class="project-title">Task Manager App</h3>
-                <p class="project-description">
-                  Aplicativo de gerenciamento de tarefas com interface moderna,
-                  drag & drop, notificações e sincronização em tempo real usando
-                  WebSockets.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="project-link"
-                    title="Ver no GitHub"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="project-link"
-                    title="Ver Demo"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-card">
-              <img
-                src="https://placehold.co/600x400/1e293b/00d4ff?text=Data+Visualization"
-                alt="Projeto Data Visualization"
-                class="project-image"
-              />
-              <div class="project-info">
-                <h3 class="project-title">Data Visualization Dashboard</h3>
-                <p class="project-description">
-                  Dashboard interativo para visualização de dados complexos com
-                  gráficos dinâmicos, filtros avançados e relatórios
-                  automatizados.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="project-link"
-                    title="Ver no GitHub"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="project-link"
-                    title="Ver Demo"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    -->
-
       <!-- Interests Section -->
       <section id="interesses" class="section">
         <div class="container">
-          <h2 class="section-title fade-in">Interesses Pessoais</h2>
-          <div class="interests-grid fade-in">
+          <h2 data-i18n="interests.title">Interesses Pessoais</h2>
+          <div class="interests-grid">
             <div class="interest-tag">
               <i class="fas fa-chart-line"></i>
-              <span>Investimentos</span>
+              <span data-i18n="interests.investments">Investimentos</span>
             </div>
             <div class="interest-tag">
               <i class="fas fa-chess"></i>
-              <span>Xadrez</span>
+              <span data-i18n="interests.chess">Xadrez</span>
             </div>
             <div class="interest-tag">
               <i class="fas fa-book-reader"></i>
-              <span>Leitura</span>
+              <span data-i18n="interests.reading">Leitura</span>
             </div>
             <div class="interest-tag">
               <i class="fas fa-dumbbell"></i>
-              <span>Academia</span>
+              <span data-i18n="interests.gym">Academia</span>
             </div>
             <div class="interest-tag">
               <i class="fas fa-cloud"></i>
@@ -527,22 +388,25 @@
             </div>
             <div class="interest-tag">
               <i class="fas fa-shield-alt"></i>
-              <span>Cibersegurança</span>
+              <span data-i18n="interests.cybersecurity">Cibersegurança</span>
             </div>
             <div class="interest-tag">
               <i class="fas fa-business-time"></i>
-              <span>Negócios</span>
+              <span data-i18n="interests.business">Negócios</span>
             </div>
+            <div class="interest-tag">
+              <i class="fas fa-robot"></i>
+              <span>LLMOps</span>
+            </div>
+          </div>
         </div>
       </section>
-
-
     </main>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>
+        <p data-i18n="footer.rights">
           &copy; 2025 Victor Hugo Weigmann Chequer Maia. Todos os direitos
           reservados.
         </p>

@@ -1,165 +1,187 @@
-      // Hamburger Menu
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("nav-links");
+document.addEventListener('DOMContentLoaded', () => {
+    // Internationalization (i18n)
+    const translationsCache = {};
 
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        const icon = hamburger.querySelector("i");
-        if (icon.classList.contains("fa-bars")) {
-          icon.classList.remove("fa-bars");
-          icon.classList.add("fa-times");
-        } else {
-          icon.classList.remove("fa-times");
-          icon.classList.add("fa-bars");
+    const langSwitch = document.getElementById('lang-switch');
+    const langText = langSwitch.querySelector('span');
+    
+    // Function to get nested object value by string path
+    const getNestedValue = (obj, path) => {
+        return path.split('.').reduce((prev, curr) => {
+            return prev ? prev[curr] : null;
+        }, obj);
+    };
+
+    const loadTranslations = async (lang) => {
+        if (translationsCache[lang]) {
+            return translationsCache[lang];
         }
-      });
-
-      // Close menu when clicking on a link
-      document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          if (navLinks.classList.contains("active")) {
-            navLinks.classList.remove("active");
-            hamburger.querySelector("i").classList.remove("fa-times");
-            hamburger.querySelector("i").classList.add("fa-bars");
-          }
-        });
-      });
-
-      // Enhanced Header scroll effect (fixed)
-      const header = document.getElementById("header");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
+        try {
+            const response = await fetch(`./locales/${lang}.json`);
+            if (!response.ok) {
+                throw new Error(`Could not load translations for ${lang}`);
+            }
+            const translations = await response.json();
+            translationsCache[lang] = translations;
+            return translations;
+        } catch (error) {
+            console.error('Error loading translations:', error);
+            return null;
         }
-      });
+    };
 
-      // Advanced Navigation Active State
-      const sections = document.querySelectorAll("section[id]");
-      const navLinksElements = document.querySelectorAll(".nav-links a");
+    const updateLanguage = async (lang) => {
+        const translations = await loadTranslations(lang);
+        if (!translations) return;
 
-      window.addEventListener("scroll", () => {
-        let current = "";
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (window.scrollY >= sectionTop - 200) {
-            current = section.getAttribute("id");
-          }
+        // Update switcher UI
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            if (opt.dataset.lang === lang) {
+                opt.classList.add('active');
+                opt.style.color = 'var(--text-primary)';
+                opt.style.fontWeight = '700';
+            } else {
+                opt.classList.remove('active');
+                opt.style.color = 'var(--text-secondary)';
+                opt.style.fontWeight = '400';
+            }
+        });
+        
+        // Update all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const translation = getNestedValue(translations, key);
+            
+            if (translation) {
+                // Check if the element contains HTML tags in the translation
+                if (translation.includes('<')) {
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
+            }
         });
 
-        navLinksElements.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
-          }
-        });
-      });
+        // Save preference
+        localStorage.setItem('language', lang);
+    };
 
-      // Enhanced smooth scroll (fixed)
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
+    // Initialize language
+    const savedLang = localStorage.getItem('language') || 'pt';
+    updateLanguage(savedLang);
+
+    // Event Listener
+    langSwitch.addEventListener('click', () => {
+        const currentLang = localStorage.getItem('language') || 'pt';
+        const newLang = currentLang === 'pt' ? 'en' : 'pt';
+        updateLanguage(newLang);
+    });
+
+    // Hamburger Menu
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            const icon = hamburger.querySelector("i");
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+            link.addEventListener("click", () => {
+                if (navLinks.classList.contains("active")) {
+                    navLinks.classList.remove("active");
+                    const icon = hamburger.querySelector("i");
+                    icon.classList.remove("fa-times");
+                    icon.classList.add("fa-bars");
+                }
             });
-          }
         });
-      });
+    }
 
-      // Intersection Observer for fade-in animations
-      const observerOptions = {
+    // Navbar Scroll Effect
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar.style.background = "rgba(5, 5, 5, 0.95)";
+            navbar.style.boxShadow = "0 10px 30px -10px rgba(0, 0, 0, 0.5)";
+        } else {
+            navbar.style.background = "rgba(5, 5, 5, 0.8)";
+            navbar.style.boxShadow = "none";
+        }
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+            
+            const target = document.querySelector(targetId);
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // Intersection Observer for Animations
+    const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
-      };
+    };
 
-      const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
         });
-      }, observerOptions);
+    }, observerOptions);
 
-      // Observe all fade-in elements
-      document.querySelectorAll(".fade-in").forEach((el) => {
+    // Add fade-in class to elements we want to animate
+    const animatedElements = document.querySelectorAll(
+        ".section h2, .about-grid, .timeline-item, .skill-card, .project-card, .interest-tag"
+    );
+    
+    animatedElements.forEach((el) => {
+        el.classList.add("fade-in");
         observer.observe(el);
-      });
+    });
 
-      // Add floating particles animation
-      function createParticles() {
-        const particles = document.querySelector(".particles");
-
-        setInterval(() => {
-          const particle = document.createElement("div");
-          particle.className = "particle";
-
-          // Random properties
-          const size = Math.random() * 4 + 1;
-          const left = Math.random() * 100;
-          const animationDuration = Math.random() * 10 + 10;
-
-          particle.style.width = size + "px";
-          particle.style.height = size + "px";
-          particle.style.left = left + "%";
-          particle.style.animationDuration = animationDuration + "s";
-
-          particles.appendChild(particle);
-
-          // Remove particle after animation
-          setTimeout(() => {
-            particle.remove();
-          }, animationDuration * 1000);
-        }, 2000);
-      }
-
-      // Initialize particles
-      createParticles();
-
-      // Professional fade-in for hero title (removed typing effect)
-      setTimeout(() => {
-        const heroTitle = document.querySelector(".hero-title");
-        if (heroTitle) {
-          heroTitle.style.opacity = "1";
-          heroTitle.style.transform = "translateX(0)";
-        }
-      }, 800);
-
-      // Add hover effects to skill cards (more subtle)
-      document.querySelectorAll(".skill-card").forEach((card) => {
-        card.addEventListener("mouseenter", () => {
-          card.style.transform = "translateY(-6px) rotateY(2deg)";
+    // Active Navigation Link
+    const sections = document.querySelectorAll("section[id]");
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop - 150) {
+                current = section.getAttribute("id");
+            }
         });
 
-        card.addEventListener("mouseleave", () => {
-          card.style.transform = "translateY(0) rotateY(0)";
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+                link.classList.add("active");
+            }
         });
-      });
-
-      // Add glitch effect to logo on hover
-      const logo = document.querySelector(".logo");
-      if (logo) {
-        logo.addEventListener("mouseenter", () => {
-          logo.style.animation = "glitch 0.3s ease-in-out";
-        });
-
-        logo.addEventListener("animationend", () => {
-          logo.style.animation = "";
-        });
-      }
-
-      // Add CSS for glitch effect
-      const style = document.createElement("style");
-      style.textContent = `
-        @keyframes subtleShimmer {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.8; }
-        }
-      `;
-      document.head.appendChild(style);
+    });
+});

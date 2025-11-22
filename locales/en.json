@@ -1,0 +1,84 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "skills": "Skills",
+        "interests": "Interests"
+    },
+    "hero": {
+        "subtitle": "Hello, I am",
+        "description": "Full-Stack Developer | Computer Science Student at UFPR",
+        "cta": {
+            "about": "About Me",
+            "blog": "Blog"
+        }
+    },
+    "about": {
+        "title": "About Me",
+        "p1": "Hello! I'm Victor Hugo, a developer passionate about technology and innovation. Currently studying Computer Science at UFPR, I combine academic rigor with practical experience in software development.",
+        "p2": "My journey in programming began with the curiosity to understand how things work. Today, I dedicate myself to creating systems that not only work but provide an exceptional experience for users.",
+        "p3": "Beyond code, I am deeply interested in Artificial Intelligence and how it can be applied to solve real-world problems. I am always looking for new challenges and learning opportunities."
+    },
+    "experience": {
+        "title": "Professional Experience",
+        "exati": {
+            "role": "Full Stack Development Intern",
+            "period": "August 2025 - Present",
+            "desc1": "Development of modern and responsive interfaces using <strong>Vue.js</strong>.",
+            "desc2": "Implementation and maintenance of robust backend services in <strong>Java</strong>.",
+            "desc3": "Efficient integration between frontend and backend via REST APIs.",
+            "desc4": "Working in an agile team using <strong>Scrum</strong> methodology."
+        },
+        "ecomp_director": {
+            "role": "Director",
+            "period": "January 2025 - July 2025",
+            "desc1": "Strategic leadership and definition of <strong>OKRs</strong> for organizational goal alignment.",
+            "desc2": "Implementation of agile methodologies (Scrum) to optimize internal processes.",
+            "desc3": "Complete reformulation of internal gamification to increase member engagement.",
+            "desc4": "Strategic financial management to protect capital against inflation.",
+            "desc5": "Leadership in the process of transforming Ecomp into a university extension project."
+        },
+        "ecomp_developer": {
+            "role": "Web Developer",
+            "period": "October 2024 - July 2025",
+            "desc1": "Development of complete web solutions for real clients.",
+            "desc2": "Practical application of modern stack: <strong>Vue.js, Nuxt.js, Node.js</strong>.",
+            "desc3": "Environment management and deployment using <strong>Docker</strong> and <strong>Linux</strong> servers."
+        },
+        "pet": {
+            "role": "Extension Member and Researcher",
+            "period": "August 2024 - November 2024",
+            "intro": "Working on projects with high social and academic impact:",
+            "desc1": "<strong>Informatics for Immigrants:</strong> Teaching digital inclusion.",
+            "desc2": "<strong>Competitive Marathon:</strong> Organization and encouragement of programming.",
+            "desc3": "<strong>SACI:</strong> Organization of the Computer Science Academic Week.",
+            "desc4": "<strong>PET in Schools:</strong> Disseminating computing in basic education."
+        },
+        "monitor": {
+            "role": "Digital Circuits Monitor",
+            "period": "August 2024 - November 2024",
+            "desc1": "Academic support to students of the Digital Circuits discipline.",
+            "desc2": "Development of supporting didactic material.",
+            "desc3": "Migration and modernization of exercises to a new digital platform."
+        }
+    },
+    "skills": {
+        "title": "Technical Skills",
+        "data_structures": "Data Structures",
+        "algorithms": "Algorithms",
+        "web_dev": "Web Development"
+    },
+    "interests": {
+        "title": "Personal Interests",
+        "investments": "Investments",
+        "chess": "Chess",
+        "reading": "Reading",
+        "gym": "Gym",
+        "business": "Business",
+        "cybersecurity": "Cybersecurity"
+    },
+    "footer": {
+        "rights": "&copy; 2025 Victor Hugo Weigmann Chequer Maia. All rights reserved."
+    }
+}
