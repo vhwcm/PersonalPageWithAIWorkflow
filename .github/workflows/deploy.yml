@@ -19,11 +19,10 @@ jobs:
           username: ${{ secrets.DINF_USERNAME }}
           password: ${{ secrets.DINF_PASSWORD }}
           port: ${{ secrets.DINF_PORT }}
-          source: "."
+          source: "index.html,styles.css,script.js,locales"
           target: ${{ secrets.DINF_TARGET_DIR }}
           rm: false
           strip_components: 0
-          exclude: ".git,.github,.env,.env.example,README.md"
 
       - name: Fix Permissions via SSH
         uses: appleboy/ssh-action@master
