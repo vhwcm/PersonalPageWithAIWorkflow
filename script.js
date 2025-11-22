@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Initialize language
-    const savedLang = localStorage.getItem('language') || 'pt';
+    const savedLang = localStorage.getItem('language') || 'en';
     updateLanguage(savedLang);
 
     // Event Listener

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victor Hugo W.C.M | Desenvolvedor Full-Stack</title>
+    <link rel="icon" href="https://i.postimg.cc/90FygxqM/foto-pessoal.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,9 +33,9 @@
       
       <div class="nav-controls">
         <button id="lang-switch" class="lang-switch" aria-label="Switch Language">
-          <span class="lang-option active" data-lang="pt">PT</span>
+          <span class="lang-option" data-lang="pt">PT</span>
           <span class="separator">|</span>
-          <span class="lang-option" data-lang="en">EN</span>
+          <span class="lang-option active" data-lang="en">EN</span>
         </button>
         <div class="hamburger" id="hamburger">
           <i class="fas fa-bars"></i>
@@ -45,82 +46,83 @@
     <main>
       <!-- Hero Section -->
       <section id="hero">
-        <div class="hero-content">
-          <span class="hero-subtitle" data-i18n="hero.subtitle">Olá, eu sou</span>
-          <h1>Victor Hugo</h1>
-          <p data-i18n="hero.description">
-            Desenvolvedor Full-Stack | Graduando em Ciência da Computação na
-            UFPR
-          </p>
-
-          <div class="hero-cta">
-            <a href="#sobre" class="btn btn-primary" data-i18n="hero.cta.about">Sobre Mim</a>
-            <a
-              href="https://pale-bread-28d.notion.site/Blog-2a53c65686d480fe8ce8ddb10f77fff7?source=copy_link"
-              target="_blank"
-              class="btn btn-accent"
-            >
-              <i class="fas fa-pen"></i> <span data-i18n="hero.cta.blog">Blog</span>
-            </a>
-          </div>
-
-          <div class="social-links">
-            <a
-              href="mailto:vichwcm@gmail.com"
-              class="social-link"
-              title="Enviar E-mail"
-            >
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/victor-hugo-wcm/"
-              target="_blank"
-              class="social-link"
-              title="LinkedIn"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a
-              href="https://github.com/vhwcm"
-              target="_blank"
-              class="social-link"
-              title="GitHub"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="sobre" class="section">
         <div class="container">
-          <div class="about-grid">
-            <div class="about-image">
-              <img
-                src="https://i.postimg.cc/90FygxqM/foto-pessoal.png"
-                alt="Victor Hugo"
-              />
+          <div class="hero-wrapper">
+            <div class="hero-left">
+              <span class="hero-subtitle" data-i18n="hero.subtitle">Olá, eu sou</span>
+              <h1>Victor Hugo</h1>
+              <p data-i18n="hero.description">
+                Desenvolvedor Full-Stack | Graduando em Ciência da Computação na
+                UFPR
+              </p>
+
+              <div class="hero-cta">
+                <a href="#experiencia" class="btn btn-primary" data-i18n="nav.experience">Experiência</a>
+                <a
+                  href="https://pale-bread-28d.notion.site/Blog-2a53c65686d480fe8ce8ddb10f77fff7?source=copy_link"
+                  target="_blank"
+                  class="btn btn-accent"
+                >
+                  <i class="fas fa-pen"></i> <span data-i18n="hero.cta.blog"> Blog</span>
+                </a>
+              </div>
+
+              <div class="social-links">
+                <a
+                  href="mailto:vichwcm@gmail.com"
+                  class="social-link"
+                  title="Enviar E-mail"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/victor-hugo-wcm/"
+                  target="_blank"
+                  class="social-link"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/vhwcm"
+                  target="_blank"
+                  class="social-link"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
-            <div class="about-content">
-              <h2 data-i18n="about.title">Sobre Mim</h2>
-              <p data-i18n="about.p1">
-                Estudante de Ciência da Computação na UFPR com experiência
-                prática em desenvolvimento web. Atualmente estagiário na Exati e
-                ex-diretor da Ecomp, empresa júnior de computação da
-                universidade.
-              </p>
-              <p data-i18n="about.p2">
-                Trabalho principalmente com Vue.js, Node.js, Java e bancos de
-                dados. Tenho experiência com metodologias ágeis, containers
-                Docker e servidores Linux através de projetos reais com
-                clientes.
-              </p>
-              <p data-i18n="about.p3">
-                Participei ativamente do PET Computação em projetos de extensão
-                como ensino de informática para imigrantes e programação
-                competitiva. Foco em soluções práticas e eficientes.
-              </p>
+
+            <div class="hero-right" id="sobre">
+              <div class="about-card-integrated">
+                <div class="about-image-small">
+                  <img
+                    src="https://i.postimg.cc/90FygxqM/foto-pessoal.png"
+                    alt="Victor Hugo"
+                  />
+                </div>
+                <div class="about-text-content">
+                  <h2 data-i18n="about.title">Sobre Mim</h2>
+                  <p data-i18n="about.p1">
+                    Estudante de Ciência da Computação na UFPR com experiência
+                    prática em desenvolvimento web. Atualmente estagiário na Exati e
+                    ex-diretor da Ecomp, empresa júnior de computação da
+                    universidade.
+                  </p>
+                  <p data-i18n="about.p2">
+                    Trabalho principalmente com Vue.js, Node.js, Java e bancos de
+                    dados. Tenho experiência com metodologias ágeis, containers
+                    Docker e servidores Linux através de projetos reais com
+                    clientes.
+                  </p>
+                  <p data-i18n="about.p3">
+                    Participei ativamente do PET Computação em projetos de extensão
+                    como ensino de informática para imigrantes e programação
+                    competitiva. Foco em soluções práticas e eficientes.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

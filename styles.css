@@ -253,11 +253,17 @@ a {
     z-index: -1;
 }
 
-.hero-content {
-    text-align: center;
-    max-width: 800px;
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
     z-index: 1;
-    padding: 0 1rem;
+    width: 100%;
+}
+
+.hero-left {
+    text-align: left;
 }
 
 .hero-subtitle {
@@ -274,7 +280,7 @@ a {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.5rem;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .btn {
@@ -330,7 +336,7 @@ a {
 .social-links {
     display: flex;
     gap: 1.5rem;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 2.5rem;
 }
 
@@ -356,31 +362,57 @@ a {
     border-color: transparent;
 }
 
-/* About Section */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.about-image {
-    position: relative;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    aspect-ratio: 1/1;
+/* Integrated About Section */
+.about-card-integrated {
+    background: var(--glass-bg);
     border: var(--glass-border);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--glass-shadow);
+    transition: transform 0.3s ease;
 }
 
-.about-image img {
+.about-card-integrated:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-image-small {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--accent-primary);
+    box-shadow: 0 0 20px rgba(109, 40, 217, 0.3);
+}
+
+.about-image-small img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
 }
 
-.about-image:hover img {
-    transform: scale(1.05);
+.about-text-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    background: linear-gradient(to right, #fff, #a1a1aa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.about-text-content p:last-child {
+    margin-bottom: 0;
 }
 
 /* Skills Cards */
@@ -778,14 +810,26 @@ a {
 
 /* Mobile Responsive */
 @media (max-width: 992px) {
-    .about-grid {
+    .hero-wrapper {
         grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-left {
+        text-align: center;
+    }
+
+    .hero-cta, .social-links {
+        justify-content: center;
+    }
+
+    .about-text-content h2 {
         text-align: center;
     }
     
-    .about-image {
-        max-width: 400px;
-        margin: 0 auto;
+    .about-image-small {
+        margin: 0 auto 1.5rem;
     }
 }
 
