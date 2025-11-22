@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-generativeai
+          pip install -U google-generativeai
 
       - name: Auto-translate with Gemini
         env:
