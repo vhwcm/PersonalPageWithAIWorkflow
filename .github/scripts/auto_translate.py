@@ -15,10 +15,8 @@ if not GEMINI_API_KEY:
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Usando o modelo Flash, que é ideal para tarefas de alta velocidade/volume como tradução
-try:
-    model = genai.GenerativeModel('gemini-1.5-flash-latest')
-except:
-    model = genai.GenerativeModel('gemini-pro')
+
+model = genai.GenerativeModel('gemini-pro')
 
 def get_nested_keys(data, parent_key=''):
     """Extrai todas as chaves aninhadas de um dicionário"""
