@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Prepare Target Directory
+      - name: Deploy via SSH
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DINF_HOST }}
@@ -20,23 +20,22 @@ jobs:
           password: ${{ secrets.DINF_PASSWORD }}
           port: ${{ secrets.DINF_PORT }}
           script: |
-            mkdir -p ${{ secrets.DINF_TARGET_DIR }}
-            chmod -R u+rwX ${{ secrets.DINF_TARGET_DIR }}
+            # Cria ou limpa a pasta temporária
+            mkdir -p ~/temp_deploy
+            rm -rf ~/temp_deploy/*
 
-      - name: Deploy to DINF via SCP
+      - name: Copy files to server
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.DINF_HOST }}
           username: ${{ secrets.DINF_USERNAME }}
           password: ${{ secrets.DINF_PASSWORD }}
           port: ${{ secrets.DINF_PORT }}
-          source: "index.html,styles.css,script.js,locales"
-          target: ${{ secrets.DINF_TARGET_DIR }}
-          rm: false
+          source: "index.html,styles.css,script.js,locales/*"
+          target: "~/temp_deploy"
           strip_components: 0
-          debug: true
 
-      - name: Fix Permissions for Public Access
+      - name: Move files and fix permissions
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DINF_HOST }}
@@ -44,4 +43,7 @@ jobs:
           password: ${{ secrets.DINF_PASSWORD }}
           port: ${{ secrets.DINF_PORT }}
           script: |
-            chmod -R g=rX,o=rX ${{ secrets.DINF_TARGET_DIR }}
+            # Move arquivos para a pasta pública
+            mv ~/temp_deploy/* /home/html/inf/$USER/
+            # Limpa temporários
+            rm -rf ~/temp_deploy
