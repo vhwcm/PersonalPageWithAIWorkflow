@@ -4,20 +4,11 @@ Script de tradução automática PT → EN usando Google Gemini AI
 """
 import json
 import os 
-import google.generativeai as genai
+import requests
 
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY não encontrada nas variáveis de ambiente")
-
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('text-bison')  # Substituir o modelo para um mais amplamente suportado
-
-# Listar os modelos disponíveis para verificar compatibilidade
-models = genai.list_models()
-print("Modelos disponíveis:")
-for model in models:
-    print(f"- {model['name']}: {model['description']}")
 
 # Carregar arquivos JSON
 with open('locales/pt.json', 'r', encoding='utf-8') as f:
@@ -70,25 +61,40 @@ print(f"🔍 Encontradas {len(missing_keys)} chaves novas para traduzir:")
 for key in missing_keys:
     print(f"  - {key}")
 
+# Configurações da API
+API_URL = "https://api.generativeai.google.com/v1beta2/models/text-bison:generate"
+API_KEY = GEMINI_API_KEY  # Usar a chave de API da variável de ambiente
+
+# Função para traduzir texto usando requisição HTTP
+def traduzir_texto(texto_origem, idioma_destino="en"):
+    headers = {
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "prompt": {
+            "text": f"Traduza o seguinte texto para {idioma_destino}: {texto_origem}"
+        }
+    }
+
+    response = requests.post(API_URL, headers=headers, data=json.dumps(payload))
+
+    if response.status_code == 200:
+        dados = response.json()
+        return dados.get("candidates", [{}])[0].get("output", "")
+    else:
+        print(f"Erro na tradução: {response.status_code} - {response.text}")
+        return None
+
 # Traduzir as chaves faltantes
 translations = {}
 for key in missing_keys:
     pt_text = get_value_by_path(pt_data, key)
     
-    prompt = f"""Traduza o seguinte texto de Português Brasileiro para Inglês (contexto: website profissional).
-Mantenha tags HTML se existirem.
-Retorne APENAS a tradução, sem explicações ou aspas.
-
-Texto PT: {pt_text}"""
-    
-    try:
-        response = model.generate_content(prompt)
-        en_text = response.text.strip()
-        translations[key] = en_text
-        print(f"{key}: '{pt_text}' → '{en_text}'")
-    except Exception as e:
-        print(f"Erro ao traduzir '{key}': {e}")
-        translations[key] = pt_text  # Fallback: usa o texto em PT
+    en_text = traduzir_texto(pt_text)
+    translations[key] = en_text
+    print(f"{key}: '{pt_text}' → '{en_text}'")
 
 # Atualizar en.json com as novas traduções
 for key, value in translations.items():
