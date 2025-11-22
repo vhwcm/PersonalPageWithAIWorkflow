@@ -1,0 +1,36 @@
+name: Deploy to DINF
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to DINF via SCP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DINF_HOST }}
+          username: ${{ secrets.DINF_USERNAME }}
+          password: ${{ secrets.DINF_PASSWORD }}
+          port: ${{ secrets.DINF_PORT }}
+          source: "."
+          target: ${{ secrets.DINF_TARGET_DIR }}
+          rm: false
+          strip_components: 0
+          exclude: ".git,.github,.env,.env.example,README.md"
+
+      - name: Fix Permissions via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DINF_HOST }}
+          username: ${{ secrets.DINF_USERNAME }}
+          password: ${{ secrets.DINF_PASSWORD }}
+          port: ${{ secrets.DINF_PORT }}
+          script: |
+            chmod -R g=rX,o=rX ${{ secrets.DINF_TARGET_DIR }}
