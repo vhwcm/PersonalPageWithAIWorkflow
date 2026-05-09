@@ -5,6 +5,7 @@
         "experience": "Experiência",
         "skills": "Habilidades",
         "interests": "Interesses",
+        "research": "Pesquisa",
         "test": "teste para checkar se irá ser traduzido automaticamente"
     },
     "hero": {
@@ -12,7 +13,8 @@
         "description": "Desenvolvedor Full-Stack | Graduando em Ciência da Computação na UFPR",
         "cta": {
             "about": "Sobre Mim",
-            "blog": "Blog"
+            "blog": "Blog",
+            "research": "Pesquisa"
         }
     },
     "about": {
@@ -68,7 +70,11 @@
         "title": "Habilidades Técnicas",
         "data_structures": "Estrutura de Dados",
         "algorithms": "Algoritmos",
-        "web_dev": "Desenvolvimento Web"
+        "web_dev": "Desenvolvimento Web",
+        "cloud_computing": "Computação em Nuvem",
+        "kubernetes": "Kubernetes",
+        "cryptography": "Criptografia",
+        "forensics": "Computação Forense"
     },
     "interests": {
         "title": "Interesses Pessoais",
@@ -78,6 +84,17 @@
         "gym": "Academia",
         "business": "Negócios",
         "cybersecurity": "Cibersegurança"
+    },
+    "tech_tags": {
+        "leadership": "Liderança",
+        "agile_methods": "Metodologias Ágeis",
+        "financial_management": "Gestão Financeira",
+        "teaching": "Ensino",
+        "university_extension": "Extensão Universitária",
+        "event_organization": "Organização de Eventos",
+        "digital_circuits": "Circuitos Digitais",
+        "didactics": "Didática",
+        "mentorship": "Mentoria"
     },
     "footer": {
         "rights": "&copy; 2025 Victor Hugo Weigmann Chequer Maia. Todos os direitos reservados."

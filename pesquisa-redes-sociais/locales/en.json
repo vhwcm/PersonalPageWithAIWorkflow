@@ -1,0 +1,250 @@
+{
+  "nav": {
+    "back": "Back",
+    "title": "UFPR Research 2026"
+  },
+  "menu": {
+    "title": "Index",
+    "intro": "Introduction",
+    "problems": "The Four Major Problems",
+    "stats": "Numbers That Make You Think",
+    "impact": "Impact on Grades",
+    "brain": "What Happens in Your Brain",
+    "mental": "Mental Health",
+    "benefits": "Benefits of Focus",
+    "solutions": "Solutions That Work",
+    "tips": "Practical Actions",
+    "conclusion": "Conclusion"
+  },
+  "meta": {
+    "date": "May 2026",
+    "reading_time": "10 min read"
+  },
+  "title": "How Social Media Affects Your Studies (and What You Can Do About It)",
+  "subtitle": "An honest conversation about the real impact of Instagram, TikTok and other networks on university students' academic performance - and how to reduce this impact",
+  "authors": {
+    "label": "By:",
+    "institution": "Federal University of Paraná (UFPR)"
+  },
+  "images": {
+    "featured": {
+      "caption": "The scene is familiar: phone next to the book, notifications popping up, divided focus. But what's the real impact of this?"
+    },
+    "social": {
+      "caption": "The scale of social media use is global and impactful"
+    }
+  },
+  "intro": {
+    "lead": "Let's be honest for a moment. How many times have you picked up your phone for \"just a quick look\" at social media and suddenly realized two hours have passed? How many times were you studying for an important exam, but an Instagram notification pulled you back into infinite scrolling?",
+    "p1": "Don't blame yourself. You're not alone. As UFPR students, we observed this behavior in our daily lives and decided to investigate further. What we discovered was both alarming and enlightening - and, fortunately, there are practical solutions that really work.",
+    "p2": "In this article, I'll share with you what we learned about how social media affects your studies, what science says about it, and, most importantly, what you can do to regain control of your time and attention."
+  },
+  "problems": {
+    "title": "The Four Major Problems",
+    "intro": "When we started our research, we identified four main ways social media sabotages your studies. You probably identify with at least one of them - maybe all.",
+    "sleep": {
+      "title": "Sleep Disruption",
+      "content": "You know that feeling of scrolling the feed late into the night? It's not just about losing hours of sleep. Blue light from screens suppresses melatonin production, the hormone that regulates your circadian rhythm. Result: you sleep worse, wake up more tired, and worse yet, your brain can't properly consolidate what you studied during the day. 58% of teens report difficulty limiting use before bedtime."
+    },
+    "time": {
+      "title": "Time Loss",
+      "content": "Let's get to the numbers: the average student loses about 2.5 hours per day to social media distractions. That's almost 18 hours per week - more than a full day! Imagine what you could do with that extra time. It's not just procrastination; it's time literally stolen from your day."
+    },
+    "context": {
+      "title": "Constant Context Switching",
+      "content": "Your brain wasn't designed for multitasking. When you switch between studying and social media, you're forcing your brain to constantly change focus. This not only diminishes your engagement but also makes learning more superficial. It's like trying to read a book while someone interrupts you every 30 seconds."
+    },
+    "attention": {
+      "title": "Decreased Attention",
+      "content": "Continuous exposure to rapid stimuli - 15-second videos, 24-hour stories, constant notifications - is literally shrinking your attention span. Research shows this creates brain patterns similar to people with ADHD. The average student checks their phone 150 times a day and switches tasks every 19 seconds."
+    }
+  },
+  "stats": {
+    "title": "Numbers That Make You Think",
+    "intro": "Sometimes we need to see the data to understand the scale of the problem. Here are some statistics that concerned us:",
+    "users": "active social media users globally (January 2024)",
+    "teens": "of US teens report being online \"almost constantly\"",
+    "checks": "per day: that's how many times the average student checks their phone",
+    "time_lost": "daily lost to social media distractions",
+    "switch_time": "is the average time between task switches"
+  },
+  "impact": {
+    "title": "Does This Really Affect My Studies?",
+    "intro": "The short answer is: yes, and significantly. The long answer is more complex and fascinating.",
+    "grades": {
+      "title": "-20% in Grades",
+      "content": "Studies show that students who frequently check social media while studying get grades 20% lower on exams compared to those who maintain focus. This is no coincidence."
+    },
+    "cognitive": {
+      "title": "-10% Cognitive Performance",
+      "content": "Here's something that will surprise you: the mere presence of your phone, even on silent and face down, can reduce your cognitive performance by up to 10%. This is what researchers call \"brain drain\" - your brain expends mental energy just resisting the urge to check the device."
+    },
+    "completion": {
+      "title": "+50% Completion Time",
+      "content": "When you multitask (study and check social media), the time to complete your activities increases by 50% and work quality decreases. What would take 2 hours takes 3 - and the result is worse."
+    },
+    "residue": {
+      "title": "The \"Attention Residue\"",
+      "content": "Any interruption to check a social network, even for just 30 seconds, generates an \"attention residue\" that persists. This means that even after returning to study, you can't reach the cognitive intensity necessary for deep learning for a considerable period."
+    }
+  },
+  "brain": {
+    "title": "What Happens in Your Brain",
+    "intro": "The impact of social media goes far beyond visible behavior. Real neurobiological changes are happening.",
+    "addiction": {
+      "title": "Real Chemical Addiction",
+      "content": "Using social media for more than three hours daily results in compulsive behaviors comparable to chemical substance addiction. This affects impulse control and can generate withdrawal symptoms when you try to stop."
+    },
+    "attention": {
+      "title": "Attention Span Shrinking",
+      "content": "Continuous exposure to rapid stimuli creates brain patterns similar to people with Attention Deficit Hyperactivity Disorder (ADHD). Your brain gets used to instant gratification and loses the ability for prolonged focus."
+    },
+    "structural": {
+      "title": "Structural Changes",
+      "content": "There are structural changes in the brain with hyperactivation of the Default Mode Network (associated with excessive self-referential thoughts) and dysfunctions in the Pre-Frontal Cortex and Executive Control Network, which are crucial for inhibiting impulses."
+    },
+    "gender": {
+      "title": "Gender Differences",
+      "content": "Neural impacts differ between men and women. Boys tend to have changes in motor and impulse control circuits (gaming addiction), while girls show abnormalities in socioemotional regulation regions (social media and self-image validation)."
+    }
+  },
+  "mental": {
+    "title": "Mental Health: The Invisible Aspect",
+    "intro": "We can't talk about social media without addressing mental health. The psychological impact is profound and, often, silent.",
+    "passive": {
+      "title": "Passive vs. Active Scrolling",
+      "content": "\"Passive scrolling\" - consuming content without actively interacting - is more strongly correlated with developing depressive symptoms than active use. Why? Because it generates constant social comparison and feelings of inadequacy. You're always seeing the \"best\" of others' lives and comparing it to the \"real\" of yours."
+    },
+    "teens": {
+      "title": "Female Vulnerability",
+      "content": "Teenage girls are particularly vulnerable. Use exceeding 2 hours daily has been associated with feelings of depression and suicidal thoughts. This is serious and deserves attention."
+    },
+    "depression": {
+      "title": "Anxiety and Depression",
+      "content": "According to Jonathan Haidt (2024), intensive social media use has negatively impacted young people's mental health, leading to problems ranging from addiction and fragmented attention to anxiety, depression, and self-harm. It's no exaggeration to say we're living a mental health crisis linked to digital use."
+    }
+  },
+  "benefits": {
+    "title": "Why Focused Work and a Clean Mind Matter",
+    "intro": "So far we've focused on problems. But let's talk about the positive side: what you gain by reducing social media use and cultivating a more focused and clean mind. The benefits go far beyond better grades.",
+    "mental_clarity": {
+      "title": "Mental Clarity",
+      "content": "When you're not constantly interrupted by notifications and social comparisons, your mind becomes clearer. You can think more deeply, make better decisions, and have insights that were previously hidden in digital noise."
+    },
+    "time": {
+      "title": "Recovered Time",
+      "content": "Imagine having 2.5 extra hours per day. That's almost 18 hours per week - enough time to learn a new skill, practice a hobby, or simply truly rest. Recovered time is the most valuable resource you gain."
+    },
+    "relationships": {
+      "title": "Better Relationships",
+      "content": "Paradoxically, when you reduce social media use, your real relationships improve. You have more time and energy for face-to-face conversations, phone calls, and quality moments with people who really matter. Digital connection doesn't replace human connection."
+    },
+    "productivity": {
+      "title": "Real Productivity",
+      "content": "Focused work isn't just about studying better. It's about being more efficient in everything you do. Projects that took days can be completed in hours. The quality of your work improves dramatically, and you feel less stress with deadlines."
+    },
+    "wellbeing": {
+      "title": "Emotional Well-being",
+      "content": "Constant comparison on social media generates anxiety and inadequacy. When you disconnect from this, your self-esteem improves. You start feeling good about yourself without external validation from likes and comments."
+    },
+    "sleep": {
+      "title": "Sleep and Energy",
+      "content": "Without blue light from screens before bed and constant stimulation during the day, your circadian rhythm normalizes. You sleep better, wake up more rested, and have consistent energy throughout the day - without needing excessive caffeine."
+    },
+    "deep_work": {
+      "title": "The Transformer: Deep Work",
+      "content": "Cal Newport, author of \"Deep Work\", defines deep work as \"professional activities performed in a state of distraction-free that push your cognitive capabilities to their limit\". When you practice this consistently, something extraordinary happens:",
+      "myelin": "Myelin Strengthening",
+      "myelin_content": "Focused work strengthens myelin around neurons, making your brain physically faster and more efficient. It's like training a muscle.",
+      "skills": "Skill Development",
+      "skills_content": "You learn faster and retain more information. What took months to learn can take weeks.",
+      "satisfaction": "Deep Satisfaction",
+      "satisfaction_content": "There's a unique satisfaction in producing high-quality work. You feel fulfilled in a way that infinite scrolling never provides.",
+      "competitive": "Market Competitiveness",
+      "competitive_content": "In a world where few people can focus, the ability to do deep work becomes an enormous competitive advantage.",
+      "conclusion": "It's not just about studying better. It's about living a more intentional, satisfying, and meaningful life. Social media has its place, but when you control the use instead of being controlled by it, you open space for what really matters."
+    }
+  },
+  "solutions": {
+    "title": "The Good News: Solutions That Work",
+    "intro": "Now that we've painted a concerning picture, let's move to the positive side: there are scientifically proven strategies that really work to reduce the impact of social media on your studies. And no, we're not talking about \"delete everything and live like a monk\". These are practical and realistic solutions.",
+    "phone_zones": {
+      "title": "Create Phone-Free Study Zones",
+      "content": "This is simple and powerful: create \"phone-free study zones\" with physical separation. Leave your phone in another room, in a drawer, out of reach during study. Studies show this results in a 40% focus improvement in the first week. Physical distance helps create mental distance.",
+      "tip": "Use a traditional alarm clock instead of your phone. Leave your phone charging in another room during sleep."
+    },
+    "social": {
+      "title": "Use Social Accountability to Your Advantage",
+      "content": "Studying with social accountability tools, like shared Pomodoro study rooms, makes students 300% more likely to meet their focus goals. When you know others are counting on you or that you're being \"monitored\" in some way, the tendency is to stay more disciplined.",
+      "tip": "Use group study apps, go to the library, or arrange with friends to study together without phones."
+    },
+    "habits": {
+      "title": "Build New Habits (Patience is Key)",
+      "content": "Breaking the automatic addiction to social media requires building new habits. Research shows this typically takes 21 to 66 days of consistent practice. Don't expect overnight changes. Be patient with yourself.",
+      "tip": "Start small. Try going 30 minutes without checking your phone. Then 1 hour. Then 2. Increase gradually."
+    },
+    "deep_work": {
+      "title": "Practice \"Deep Work\"",
+      "content": "This concept, popularized by Cal Newport, is transformative. Practicing \"Deep Work\" - periods of total focus without distractions - strengthens myelin around neurons, making your brain physically faster and more efficient for complex tasks. It's like training a muscle.",
+      "tip": "Dedicate 2-4 hour blocks without interruptions for complex tasks. No phone, no email, no notifications. Just you and the task."
+    },
+    "digital": {
+      "title": "Adopt Digital Detox Habits",
+      "content": "Students who consistently adopt digital detox habits report a 50% increase in attention span within a month, accompanied by improved grades and drastic reduction in anxiety. The benefits are cumulative and significant.",
+      "tip": "Establish specific times to check social media. For example: only check at 9am, 12pm, and 6pm. Otherwise, keep your phone away."
+    }
+  },
+  "tips": {
+    "title": "Actions You Can Implement Today",
+    "intro": "Here's a quick list of things you can do immediately to start changing your habits:",
+    "dnd": {
+      "title": "Activate do not disturb mode",
+      "content": "during study sessions. Configure exceptions only for real emergencies."
+    },
+    "notifications": {
+      "title": "Turn off notifications",
+      "content": "of social media or leave only essential ones on silent."
+    },
+    "pomodoro": {
+      "title": "Use the Pomodoro technique",
+      "content": "25 minutes of total focus, 5 minutes of break. Check your phone only during breaks."
+    },
+    "screens": {
+      "title": "Avoid screens 1 hour before bed",
+      "content": "This improves sleep quality and, consequently, next-day performance."
+    },
+    "apps": {
+      "title": "Use blocking apps",
+      "content": "like Forest, Freedom, or your phone's built-in Screen Time to limit usage."
+    },
+    "replace": {
+      "title": "Replace the habit",
+      "content": "when you feel the urge to check social media, replace it with something healthier - read a book, do quick exercises, meditate, or simply stay silent for a few minutes."
+    }
+  },
+  "cta": {
+    "title": "Help Us Understand Better",
+    "intro": "Our research continues to evolve. We want to better understand how social media specifically affects UFPR students. Your insights are valuable for developing more effective strategies.",
+    "time": "It takes only 5 minutes to fill out and your answers are anonymous.",
+    "button": "Fill Initial Research Form",
+    "after_title": "After Applying the Practices",
+    "after_intro": "If you've already applied the techniques from this article, share your results with us!",
+    "after_button": "Fill Results Form"
+  },
+  "conclusion": {
+    "title": "Conclusion: You Have Control",
+    "p1": "Social media isn't inherently bad - it's a powerful tool that, when used consciously, can enrich our lives. The problem is the rampant and unconscious use that has become the norm.",
+    "p2": "The science is clear: excessive use affects your sleep, attention, academic performance, and even your mental health. But the good news is you have the power to change this. Small habit changes, applied consistently, can have enormous impact.",
+    "p3": "Don't blame yourself for the past. Focus on what you can do from now on. Start small, be patient with yourself, and remember: every moment of focus you recover is an investment in your future.",
+    "good_luck": "Good luck with your studies!"
+  },
+  "footer": {
+    "text": "© 2026 UFPR Research Team | Leonardo Mendes, Marcelo Marques, Sofia Scherer, Victor Hugo W.C.M",
+    "subtitle": "University extension project focused on raising awareness among students about the impact of social media on studies",
+    "back": "Back to main site"
+  },
+  "references": {
+    "title": "Bibliographical References",
+    "intro": "This article was based on peer-reviewed scientific research. Here are the sources:"
+  }
+}

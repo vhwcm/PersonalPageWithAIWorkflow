@@ -1,0 +1,250 @@
+{
+  "nav": {
+    "back": "Voltar",
+    "title": "Pesquisa UFPR 2026"
+  },
+  "menu": {
+    "title": "Índice",
+    "intro": "Introdução",
+    "problems": "Os Quatro Grandes Problemas",
+    "stats": "Números que Fazem Pensar",
+    "impact": "Impacto nas Notas",
+    "brain": "O Que Acontece no Cérebro",
+    "mental": "Saúde Mental",
+    "benefits": "Benefícios do Foco",
+    "solutions": "Soluções Que Funcionam",
+    "tips": "Ações Práticas",
+    "conclusion": "Conclusão"
+  },
+  "meta": {
+    "date": "Maio 2026",
+    "reading_time": "10 min de leitura"
+  },
+  "title": "Como as Redes Sociais Estão Afetando Seus Estudos (e o Que Você Pode Fazer Sobre Isso)",
+  "subtitle": "Uma conversa honesta sobre o impacto real do Instagram, TikTok e outras redes no desempenho acadêmico dos estudantes universitários - e como reduzir esse impacto",
+  "authors": {
+    "label": "Por:",
+    "institution": "Universidade Federal do Paraná (UFPR)"
+  },
+  "images": {
+    "featured": {
+      "caption": "A cena é familiar: celular ao lado do livro, notificações pipocando, foco dividido. Mas qual o real impacto disso?"
+    },
+    "social": {
+      "caption": "A escala do uso de redes sociais é global e impactante"
+    }
+  },
+  "intro": {
+    "lead": "Vamos ser sinceros por um momento. Quantas vezes você pegou o celular para \"só dar uma olhada rápida\" nas redes sociais e, de repente, se deu conta de que passaram duas horas? Quantas vezes você estava estudando para uma prova importante, mas uma notificação do Instagram te puxou de volta para o scroll infinito?",
+    "p1": "Não se culpe. Você não é sozinho. Nós, como estudantes da UFPR, observamos esse comportamento no nosso dia a dia e decidimos investigar mais a fundo. O que descobrimos foi tanto alarmante quanto esclarecedor - e, felizmente, existem soluções práticas que realmente funcionam.",
+    "p2": "Neste artigo, vou compartilhar com você o que aprendemos sobre como as redes sociais afetam seus estudos, o que a ciência diz sobre isso e, mais importante, o que você pode fazer para recuperar o controle do seu tempo e da sua atenção."
+  },
+  "problems": {
+    "title": "Os Quatro Grandes Problemas",
+    "intro": "Quando começamos nossa pesquisa, identificamos quatro maneiras principais pelas quais as redes sociais sabotam seus estudos. Você provavelmente se identifica com pelo menos uma delas - talvez todas.",
+    "sleep": {
+      "title": "O Prejuízo ao Sono",
+      "content": "Sabe aquela sensação de ficar rolando o feed até tarde da noite? Não é apenas uma questão de perder horas de sono. A luz azul das telas suprime a produção de melatonina, o hormônio que regula seu ciclo circadiano. Resultado: você dorme pior, acorda mais cansado e, pior ainda, seu cérebro não consegue consolidar adequadamente o que você estudou durante o dia. 58% dos adolescentes relatam dificuldade em limitar o uso antes de dormir."
+    },
+    "time": {
+      "title": "A Perda de Tempo",
+      "content": "Vamos aos números: o estudante médio perde cerca de 2,5 horas por dia para distrações em redes sociais. Isso é quase 18 horas por semana - mais de um dia inteiro! Imagine o que você poderia fazer com esse tempo extra. Não é apenas procrastinação; é tempo literalmente roubado do seu dia."
+    },
+    "context": {
+      "title": "A Troca Constante de Contexto",
+      "content": "Seu cérebro não foi feito para multitarefas. Quando você alterna entre estudo e redes sociais, você está forçando seu cérebro a constantemente mudar de foco. Isso não só diminui seu empenho, como também torna o aprendizado mais superficial. É como tentar ler um livro enquanto alguém te interrompe a cada 30 segundos."
+    },
+    "attention": {
+      "title": "A Diminuição da Atenção",
+      "content": "A exposição contínua a estímulos rápidos - vídeos de 15 segundos, stories que somem em 24h, notificações constantes - está literalmente encolhendo seu tempo de atenção. Pesquisas mostram que isso cria padrões cerebrais semelhantes aos de pessoas com TDAH. O estudante médio verifica o celular 150 vezes por dia e alterna entre tarefas a cada 19 segundos."
+    }
+  },
+  "stats": {
+    "title": "Números que Fazem Pensar",
+    "intro": "Às vezes, precisamos ver os dados para entender a escala do problema. Aqui estão algumas estatísticas que nos deixaram preocupados:",
+    "users": "de usuários ativos de redes socials globalmente (janeiro de 2024)",
+    "teens": "dos adolescentes nos EUA relatam estar online \"quase constantemente\"",
+    "checks": "por dia: é quantas vezes o estudante médio verifica o celular",
+    "time_lost": "diárias perdidas para distrações em redes sociais",
+    "switch_time": "é o tempo médio entre troca de tarefas"
+  },
+  "impact": {
+    "title": "Isso Realmente Afeta Meus Estudos?",
+    "intro": "A resposta curta é: sim, e de forma significativa. A resposta longa é mais complexa e fascinante.",
+    "grades": {
+      "title": "-20% nas Notas",
+      "content": "Estudos mostram que estudantes que checam frequentemente as redes sociais durante o estudo obtêm notas 20% mais baixas nos exames comparados àqueles que mantêm o foco. Não é coincidência."
+    },
+    "cognitive": {
+      "title": "-10% de Desempenho Cognitivo",
+      "content": "Aqui está algo que vai te surpreender: a mera presença do seu celular, mesmo no modo silencioso e virado para baixo, pode reduzir seu desempenho cognitivo em até 10%. Isso é o que os pesquisadores chamam de \"dreno de cérebro\" - seu cérebro gasta energia mental apenas resistindo ao impulso de checar o aparelho."
+    },
+    "completion": {
+      "title": "+50% no Tempo de Conclusão",
+      "content": "Quando você faz multitarefa (estudar e checar redes sociais), o tempo para completar suas atividades aumenta em 50% e a qualidade do trabalho diminui. O que levaria 2 horas, leva 3 - e o resultado é pior."
+    },
+    "residue": {
+      "title": "O \"Resíduo de Atenção\"",
+      "content": "Qualquer interrupção para checar uma rede social, mesmo por apenas 30 segundos, gera um \"resíduo de atenção\" que persiste. Isso significa que mesmo depois de voltar ao estudo, você não consegue alcançar a intensidade cognitiva necessária para o aprendizado profundo por um período considerável."
+    }
+  },
+  "brain": {
+    "title": "O Que Acontece no Seu Cérebro",
+    "intro": "O impacto das redes sociais vai muito além do comportamento visível. Existem alterações neurobiológicas reais acontecendo.",
+    "addiction": {
+      "title": "Dependência Química Real",
+      "content": "O uso de redes sociais por mais de três horas diárias resulta em comportamentos compulsivos comparáveis à dependência de substâncias químicas. Isso afeta o controle de impulsos e pode gerar sintomas de abstinência quando você tenta parar."
+    },
+    "attention": {
+      "title": "Encolhimento do Tempo de Atenção",
+      "content": "A exposição contínua a estímulos rápidos cria padrões cerebrais semelhantes aos de pessoas com Transtorno de Déficit de Atenção e Hiperatividade (TDAH). Seu cérebro se acostuma com gratificação instantânea e perde a capacidade de foco prolongado."
+    },
+    "structural": {
+      "title": "Alterações Estruturais",
+      "content": "Existem alterações estruturais no cérebro com a hiperativação da Rede de Modo Padrão (associada a pensamentos autorreferenciais excessivos) e disfunções no Córtex Pré-Frontal e na Rede de Controle Executivo, que são cruciais para inibir impulsos."
+    },
+    "gender": {
+      "title": "Diferenças por Gênero",
+      "content": "Os impactos neurais diferem entre homens e mulheres. Meninos tendem a ter alterações em circuitos motores e de controle de impulsos (vício em jogos), enquanto meninas exibem anomalias em regiões de regulação socioemocional (redes sociais e validação de autoimagem)."
+    }
+  },
+  "mental": {
+    "title": "Saúde Mental: O Aspecto Invisível",
+    "intro": "Não podemos falar sobre redes sociais sem abordar a saúde mental. O impacto psicológico é profundo e, muitas vezes, silencioso.",
+    "passive": {
+      "title": "Scrolling Passivo vs. Ativo",
+      "content": "O \"scrolling passivo\" - consumir conteúdo sem interagir ativamente - está mais fortemente correlacionado com o desenvolvimento de sintomas depressivos do que o uso ativo. Por quê? Porque gera constante comparação social e sentimentos de inadequação. Você está sempre vendo o \"melhor\" da vida de outras pessoas e comparando com o \"real\" da sua."
+    },
+    "teens": {
+      "title": "Vulnerabilidade Feminina",
+      "content": "Meninas adolescentes estão particularmente vulneráveis. O uso superior a 2 horas diárias tem sido associado a sentimentos de depressão e pensamentos suicidas. Isso é sério e merece atenção."
+    },
+    "depression": {
+      "title": "Ansiedade e Depressão",
+      "content": "Segundo Jonathan Haidt (2024), o uso intensivo de redes sociais tem impactado negativamente a saúde mental dos jovens, levando a problemas que vão desde vício e atenção fragmentada até ansiedade, depressão e automutilação. Não é exagero dizer que estamos vivendo uma crise de saúde mental ligada ao uso digital."
+    }
+  },
+  "benefits": {
+    "title": "Por Que Trabalhar Focado e Ter uma Mente Limpa Importa",
+    "intro": "Até agora focamos nos problemas. Mas vamos falar sobre o lado positivo: o que você ganha ao reduzir o uso de redes sociais e cultivar uma mente mais focada e limpa. Os benefícios vão muito além das notas melhores.",
+    "mental_clarity": {
+      "title": "Mais Claro Mental",
+      "content": "Quando você não está constantemente interrompido por notificações e comparações sociais, sua mente fica mais clara. Você consegue pensar com mais profundidade, tomar decisões melhores e ter insights que antes ficariam ocultos no ruído digital."
+    },
+    "time": {
+      "title": "Tempo Recuperado",
+      "content": "Imagine ter 2,5 horas extras por dia. Isso é quase 18 horas por semana - tempo suficiente para aprender uma nova habilidade, praticar um hobby, ou simplesmente descansar de verdade. O tempo recuperado é o recurso mais valioso que você ganha."
+    },
+    "relationships": {
+      "title": "Relações Melhores",
+      "content": "Paradoxalmente, quando você reduz o uso de redes sociais, suas relações reais melhoram. Você tem mais tempo e energia para conversas presenciais, ligações, e momentos de qualidade com pessoas que realmente importam. A conexão digital não substitui a conexão humana."
+    },
+    "productivity": {
+      "title": "Produtividade Real",
+      "content": "Trabalhar focado não é apenas sobre estudar melhor. É sobre ser mais eficiente em tudo que você faz. Projetos que levavam dias podem ser concluídos em horas. A qualidade do seu trabalho melhora drasticamente, e você sente menos estresse com prazos."
+    },
+    "wellbeing": {
+      "title": "Bem-Estar Emocional",
+      "content": "A comparação constante nas redes sociais gera ansiedade e inadequação. Quando você se desconecta disso, sua autoestima melhora. Você começa a se sentir bem consigo mesmo sem a validação externa de likes e comentários."
+    },
+    "sleep": {
+      "title": "Sono e Energia",
+      "content": "Sem a luz azul das telas antes de dormir e sem a estimulação constante durante o dia, seu ciclo circadiano se normaliza. Você dorme melhor, acorda mais descansado, e tem energia consistente durante o dia - sem precisar de cafeína excessiva."
+    },
+    "deep_work": {
+      "title": "O Transformador: O Trabalho Profundo",
+      "content": "Cal Newport, autor de \"Deep Work\", define o trabalho profundo como \"atividades profissionais realizadas em estado de distração zero que empurram suas capacidades cognitivas até o limite\". Quando você pratica isso consistentemente, algo extraordinário acontece:",
+      "myelin": "Fortalecimento da Mielina",
+      "myelin_content": "O trabalho focado fortalece a mielina ao redor dos neurônios, tornando seu cérebro fisicamente mais rápido e eficiente. É como treinar um músculo.",
+      "skills": "Desenvolvimento de Habilidades",
+      "skills_content": "Você aprende mais rápido e retém mais informação. O que levava meses para aprender, pode levar semanas.",
+      "satisfaction": "Satisfação Profunda",
+      "satisfaction_content": "Há uma satisfação única em produzir trabalho de alta qualidade. Você se sente realizado de uma forma que o scroll infinito nunca proporcionará.",
+      "competitive": "Competitividade no Mercado",
+      "competitive_content": "Em um mundo onde poucas pessoas conseguem focar, a capacidade de trabalho profundo se torna uma vantagem competitiva enorme.",
+      "conclusion": "Não se trata apenas de estudar melhor. Trata-se de viver uma vida mais intencional, satisfatória e significativa. As redes sociais têm seu lugar, mas quando você controla o uso em vez de ser controlado por elas, você abre espaço para o que realmente importa."
+    }
+  },
+  "solutions": {
+    "title": "A Boa Notícia: Soluções Que Funcionam",
+    "intro": "Agora que pintamos um quadro preocupante, vamos para a parte positiva: existem estratégias comprovadas pela ciência que realmente funcionam para reduzir o impacto das redes sociais nos seus estudos. E não, não estamos falando de \"apague tudo e viva como um monge\". São soluções práticas e realistas.",
+    "phone_zones": {
+      "title": "Crie Zonas de Estudo Sem Telefone",
+      "content": "Esta é simples e poderosa: crie \"zonas de estudo sem telefone\" com separação física. Deixe o celular em outro cômodo, numa gaveta, longe do seu alcance durante o estudo. Estudos mostram que isso resulta em uma melhora de 40% no foco já na primeira semana. A distância física ajuda a criar distância mental.",
+      "tip": "Use um despertador tradicional em vez do celular. Deixe o celular carregando em outro quarto durante o sono."
+    },
+    "social": {
+      "title": "Use Responsabilidade Social a Seu Favor",
+      "content": "Estudar com ferramentas de responsabilidade social, como salas de estudo Pomodoro compartilhadas, torna os estudantes 300% mais propensos a cumprir suas metas de foco. Quando você sabe que outros estão contando com você ou que você está sendo \"monitorado\" de alguma forma, a tendência é se manter mais disciplinado.",
+      "tip": "Use aplicativos de estudo em grupo, vá para a biblioteca, ou combine com amigos para estudarem juntos sem celulares."
+    },
+    "habits": {
+      "title": "Construa Novos Hábitos (Paciência é Chave)",
+      "content": "Quebrar o vício automático em redes sociais requer a construção de novos hábitos. Pesquisas mostram que isso geralmente leva de 21 a 66 dias de prática consistente. Não espere mudanças overnight. Seja paciente consigo mesmo.",
+      "tip": "Comece pequeno. Tente ficar 30 minutos sem checar o celular. Depois 1 hora. Depois 2. Aumente gradualmente."
+    },
+    "deep_work": {
+      "title": "Pratique o \"Trabalho Profundo\" (Deep Work)",
+      "content": "Este conceito, popularizado por Cal Newport, é transformador. Praticar o \"Trabalho Profundo\" - períodos de foco total sem distrações - fortalece a mielina ao redor dos neurônios, tornando seu cérebro fisicamente mais rápido e eficiente para tarefas complexas. É como treinar um músculo.",
+      "tip": "Dedique blocos de 2-4 horas sem interrupções para tarefas complexas. Sem celular, sem email, sem notificações. Apenas você e a tarefa."
+    },
+    "digital": {
+      "title": "Adote Hábitos de Distanciamento Digital",
+      "content": "Estudantes que adotam de forma consistente hábitos de distanciamento digital relatam aumento de 50% na capacidade de atenção no prazo de um mês, acompanhado de melhora nas notas e redução drástica da ansiedade. Os benefícios são cumulativos e significativos.",
+      "tip": "Estabeleça horários específicos para verificar redes sociais. Por exemplo: só checa às 9h, 12h e 18h. Fora isso, celular longe."
+    }
+  },
+  "tips": {
+    "title": "Ações Que Você Pode Implementar Hoje",
+    "intro": "Aqui está uma lista rápida de coisas que você pode fazer imediatamente para começar a mudar seus hábitos:",
+    "dnd": {
+      "title": "Ative o modo não perturbe",
+      "content": "durante sessões de estudo. Configure exceções apenas para emergências reais."
+    },
+    "notifications": {
+      "title": "Desative notificações",
+      "content": "de redes sociais ou deixe apenas as essenciais em silencioso."
+    },
+    "pomodoro": {
+      "title": "Use a técnica Pomodoro",
+      "content": "25 minutos de foco total, 5 minutos de pausa. Cheque o celular só nas pausas."
+    },
+    "screens": {
+      "title": "Evite telas 1 hora antes de dormir",
+      "content": "Isso melhora a qualidade do sono e, consequentemente, o desempenho no dia seguinte."
+    },
+    "apps": {
+      "title": "Use apps de bloqueio",
+      "content": "como Forest, Freedom ou o próprio Screen Time do seu celular para limitar o uso."
+    },
+    "replace": {
+      "title": "Substitua o hábito",
+      "content": "quando sentir vontade de checar redes sociais, substitua por algo mais saudável - ler um livro, fazer exercícios rápidos, meditar, ou simplesmente ficar em silêncio por alguns minutos."
+    }
+  },
+  "cta": {
+    "title": "Ajude-Nos a Entender Melhor",
+    "intro": "Nossa pesquisa continua evoluindo. Queremos entender melhor como as redes sociais afetam especificamente os estudantes da UFPR. Seus insights são valiosos para desenvolvermos estratégias mais eficazes.",
+    "time": "Leva apenas 5 minutos para preencher e suas respostas são anônimas.",
+    "button": "Preencher Formulário de Pesquisa Inicial",
+    "after_title": "Após Aplicar as Práticas",
+    "after_intro": "Se você já aplicou as técnicas deste artigo, compartilhe seus resultados conosco!",
+    "after_button": "Preencher Formulário de Resultados"
+  },
+  "conclusion": {
+    "title": "Conclusão: Você Tem o Controle",
+    "p1": "As redes sociais não são inerentemente ruins - são ferramentas poderosas que, quando usadas de forma consciente, podem enriquecer nossa vida. O problema é o uso desenfreado e inconsciente que se tornou padrão.",
+    "p2": "A ciência é clara: o uso excessivo afeta seu sono, sua atenção, seu desempenho acadêmico e até sua saúde mental. Mas a boa notícia é que você tem o poder de mudar isso. Pequenas mudanças de hábito, aplicadas consistentemente, podem ter um impacto enorme.",
+    "p3": "Não se culpe pelo passado. Foque no que você pode fazer a partir de agora. Comece pequeno, seja paciente consigo mesmo, e lembre-se: cada momento de foco que você recupera é um investimento no seu futuro.",
+    "good_luck": "Boa sorte nos estudos!"
+  },
+  "footer": {
+    "text": "© 2026 Equipe de Pesquisa UFPR | Leonardo Mendes, Marcelo Marques, Sofia Scherer, Victor Hugo W.C.M",
+    "subtitle": "Projeto de extensão universitária focado em conscientizar estudantes sobre o impacto das redes sociais nos estudos",
+    "back": "Voltar ao site principal"
+  },
+  "references": {
+    "title": "Referências Bibliográficas",
+    "intro": "Este artigo foi baseado em pesquisas científicas revisadas por pares. Aqui estão as fontes:"
+  }
+}

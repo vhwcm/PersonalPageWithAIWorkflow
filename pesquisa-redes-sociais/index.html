@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais e Estudos | Pesquisa UFPR 2026</title>
+    <link rel="icon" href="https://i.postimg.cc/90FygxqM/foto-pessoal.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="../index.html" class="back-link" data-i18n="nav.back">
+            <i class="fas fa-arrow-left"></i> Voltar
+        </a>
+        <div class="nav-title" data-i18n="nav.title">
+            Pesquisa UFPR 2026
+        </div>
+        <div class="nav-controls">
+            <button id="lang-switch" class="lang-switch" aria-label="Switch Language">
+                <span class="lang-option active" data-lang="pt" onclick="switchLanguage('pt')">PT</span>
+                <span class="separator">|</span>
+                <span class="lang-option" data-lang="en" onclick="switchLanguage('en')">EN</span>
+            </button>
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-title" data-i18n="menu.title">Índice</span>
+            <button class="mobile-menu-close" id="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-menu-list">
+            <li><a href="#intro" class="mobile-menu-link" data-i18n="menu.intro">Introdução</a></li>
+            <li><a href="#problems" class="mobile-menu-link" data-i18n="menu.problems">Os Quatro Grandes Problemas</a></li>
+            <li><a href="#stats" class="mobile-menu-link" data-i18n="menu.stats">Números que Fazem Pensar</a></li>
+            <li><a href="#impact" class="mobile-menu-link" data-i18n="menu.impact">Impacto nas Notas</a></li>
+            <li><a href="#brain" class="mobile-menu-link" data-i18n="menu.brain">O Que Acontece no Cérebro</a></li>
+            <li><a href="#mental" class="mobile-menu-link" data-i18n="menu.mental">Saúde Mental</a></li>
+            <li><a href="#benefits" class="mobile-menu-link" data-i18n="menu.benefits">Benefícios do Foco</a></li>
+            <li><a href="#solutions" class="mobile-menu-link" data-i18n="menu.solutions">Soluções Que Funcionam</a></li>
+            <li><a href="#tips" class="mobile-menu-link" data-i18n="menu.tips">Ações Práticas</a></li>
+            <li><a href="#conclusion" class="mobile-menu-link" data-i18n="menu.conclusion">Conclusão</a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Table of Contents -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-title" data-i18n="menu.title">Índice</div>
+        <nav class="toc">
+            <ul class="toc-list">
+                <li><a href="#intro" class="toc-link" data-i18n="menu.intro">Introdução</a></li>
+                <li><a href="#problems" class="toc-link" data-i18n="menu.problems">Os Quatro Grandes Problemas</a></li>
+                <li><a href="#stats" class="toc-link" data-i18n="menu.stats">Números que Fazem Pensar</a></li>
+                <li><a href="#impact" class="toc-link" data-i18n="menu.impact">Impacto nas Notas</a></li>
+                <li><a href="#brain" class="toc-link" data-i18n="menu.brain">O Que Acontece no Cérebro</a></li>
+                <li><a href="#mental" class="toc-link" data-i18n="menu.mental">Saúde Mental</a></li>
+                <li><a href="#benefits" class="toc-link" data-i18n="menu.benefits">Benefícios do Foco</a></li>
+                <li><a href="#solutions" class="toc-link" data-i18n="menu.solutions">Soluções Que Funcionam</a></li>
+                <li><a href="#tips" class="toc-link" data-i18n="menu.tips">Ações Práticas</a></li>
+                <li><a href="#conclusion" class="toc-link" data-i18n="menu.conclusion">Conclusão</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="article">
+        <!-- Header -->
+        <header class="article-header">
+            <div class="container">
+                <div class="meta-info">
+                    <span class="date" data-i18n="meta.date">Maio 2026</span>
+                    <span class="separator">•</span>
+                    <span class="reading-time" data-i18n="meta.reading_time">10 min de leitura</span>
+                </div>
+                <h1 data-i18n="title">Como as Redes Sociais Estão Afetando Seus Estudos (e o Que Você Pode Fazer Sobre Isso)</h1>
+                <p class="subtitle" data-i18n="subtitle">Uma conversa honesta sobre o impacto real do Instagram, TikTok e outras redes no desempenho acadêmico dos estudantes universitários - e como reduzir esse impacto</p>
+                
+                <div class="author-box">
+                    <div class="authors">
+                        <span class="author-label" data-i18n="authors.label">Por:</span>
+                        <span class="author">Leonardo Mendes</span>,
+                        <span class="author">Marcelo Marques</span>,
+                        <span class="author">Sofia Scherer</span>,
+                        <span class="author">Victor Hugo W.C.M</span>
+                    </div>
+                    <div class="institution" data-i18n="authors.institution">Universidade Federal do Paraná (UFPR)</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="featured-image">
+            <img src="../PessoaEstudandoVendoRedesSociais.png" alt="Estudante usando redes sociais enquanto estuda">
+            <p class="caption" data-i18n="images.featured.caption">A cena é familiar: celular ao lado do livro, notificações pipocando, foco dividido. Mas qual o real impacto disso?</p>
+        </div>
+
+        <!-- Introduction -->
+        <section class="intro-section" id="intro">
+            <div class="container">
+                <p class="lead" data-i18n="intro.lead">Vamos ser sinceros por um momento. Quantas vezes você pegou o celular para "só dar uma olhada rápida" nas redes sociais e, de repente, se deu conta de que passaram duas horas? Quantas vezes você estava estudando para uma prova importante, mas uma notificação do Instagram te puxou de volta para o scroll infinito?</p>
+
+                <p data-i18n="intro.p1">Não se culpe. Você não é sozinho. Nós, como estudantes da UFPR, observamos esse comportamento no nosso dia a dia e decidimos investigar mais a fundo. O que descobrimos foi tanto alarmante quanto esclarecedor - e, felizmente, existem soluções práticas que realmente funcionam.</p>
+
+                <p data-i18n="intro.p2">Neste artigo, vou compartilhar com você o que aprendemos sobre como as redes sociais afetam seus estudos, o que a ciência diz sobre isso e, mais importante, o que você pode fazer para recuperar o controle do seu tempo e da sua atenção.</p>
+            </div>
+        </section>
+
+        <!-- The Problem -->
+        <section class="problem-section" id="problems">
+            <div class="container">
+                <h2 data-i18n="problems.title">Os Quatro Grandes Problemas</h2>
+                
+                <p data-i18n="problems.intro">Quando começamos nossa pesquisa, identificamos quatro maneiras principais pelas quais as redes sociais sabotam seus estudos. Você provavelmente se identifica com pelo menos uma delas - talvez todas.</p>
+                
+                <div class="problem-list">
+                    <div class="problem-item">
+                        <div class="problem-number">1</div>
+                        <div class="problem-content">
+                            <h3 data-i18n="problems.sleep.title">O Prejuízo ao Sono</h3>
+                            <p data-i18n="problems.sleep.content">Sabe aquela sensação de ficar rolando o feed até tarde da noite? Não é apenas uma questão de perder horas de sono. A luz azul das telas suprime a produção de melatonina, o hormônio que regula seu ciclo circadiano. Resultado: você dorme pior, acorda mais cansado e, pior ainda, seu cérebro não consegue consolidar adequadamente o que você estudou durante o dia. 58% dos adolescentes relatam dificuldade em limitar o uso antes de dormir.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-number">2</div>
+                        <div class="problem-content">
+                            <h3 data-i18n="problems.time.title">A Perda de Tempo</h3>
+                            <p data-i18n="problems.time.content">Vamos aos números: o estudante médio perde cerca de 2,5 horas por dia para distrações em redes sociais. Isso é quase 18 horas por semana - mais de um dia inteiro! Imagine o que você poderia fazer com esse tempo extra. Não é apenas procrastinação; é tempo literalmente roubado do seu dia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-number">3</div>
+                        <div class="problem-content">
+                            <h3 data-i18n="problems.context.title">A Troca Constante de Contexto</h3>
+                            <p data-i18n="problems.context.content">Seu cérebro não foi feito para multitarefas. Quando você alterna entre estudo e redes sociais, você está forçando seu cérebro a constantemente mudar de foco. Isso não só diminui seu empenho, como também torna o aprendizado mais superficial. É como tentar ler um livro enquanto alguém te interrompe a cada 30 segundos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-number">4</div>
+                        <div class="problem-content">
+                            <h3 data-i18n="problems.attention.title">A Diminuição da Atenção</h3>
+                            <p data-i18n="problems.attention.content">A exposição contínua a estímulos rápidos - vídeos de 15 segundos, stories que somem em 24h, notificações constantes - está literalmente encolhendo seu tempo de atenção. Pesquisas mostram que isso cria padrões cerebrais semelhantes aos de pessoas com TDAH. O estudante médio verifica o celular 150 vezes por dia e alterna entre tarefas a cada 19 segundos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats-section" id="stats">
+            <div class="container">
+                <h2>Números que Fazem Pensar</h2>
+                
+                <p>Às vezes, precisamos ver os dados para entender a escala do problema. Aqui estão algumas estatísticas que nos deixaram preocupados:</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">5.04 bilhões</div>
+                        <p>de usuários ativos de redes socials globalmente (janeiro de 2024)</p>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <p>dos adolescentes têm acesso a smartphones (aumento de 73% desde 2014-2015)</p>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number">46%</div>
+                        <p>dos adolescentes nos EUA relatam estar online "quase constantemente"</p>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number">150 vezes</div>
+                        <p>por dia: é quantas vezes o estudante médio verifica o celular</p>
+                    </div>
+                    
+                    <div class="stat-item highlight">
+                        <div class="stat-number">2.5 horas</div>
+                        <p>diárias perdidas para distrações em redes sociais</p>
+                    </div>
+                    
+                    <div class="stat-item highlight">
+                        <div class="stat-number">19 segundos</div>
+                        <p>é o tempo médio entre troca de tarefas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Break -->
+        <div class="image-break">
+            <img src="../redeSciais.png" alt="Ilustração de redes sociais">
+            <p class="caption">A escala do uso de redes sociais é global e impactante</p>
+        </div>
+
+        <!-- Academic Impact -->
+        <section class="impact-section" id="impact">
+            <div class="container">
+                <h2 data-i18n="impact.title">Isso Realmente Afeta Meus Estudos?</h2>
+                
+                <p data-i18n="impact.intro">A resposta curta é: sim, e de forma significativa. A resposta longa é mais complexa e fascinante.</p>
+                
+                <div class="impact-box">
+                    <h3 data-i18n="impact.grades.title">-20% nas Notas</h3>
+                    <p data-i18n="impact.grades.content">Estudos mostram que estudantes que checam frequentemente as redes sociais durante o estudo obtêm notas 20% mais baixas nos exames comparados àqueles que mantêm o foco. Não é coincidência.</p>
+                </div>
+                
+                <div class="impact-box">
+                    <h3 data-i18n="impact.cognitive.title">-10% de Desempenho Cognitivo</h3>
+                    <p data-i18n="impact.cognitive.content">Aqui está algo que vai te surpreender: a mera presença do seu celular, mesmo no modo silencioso e virado para baixo, pode reduzir seu desempenho cognitivo em até 10%. Isso é o que os pesquisadores chamam de "dreno de cérebro" - seu cérebro gasta energia mental apenas resistindo ao impulso de checar o aparelho.</p>
+                </div>
+                
+                <div class="impact-box">
+                    <h3 data-i18n="impact.completion.title">+50% no Tempo de Conclusão</h3>
+                    <p data-i18n="impact.completion.content">Quando você faz multitarefa (estudar e checar redes sociais), o tempo para completar suas atividades aumenta em 50% e a qualidade do trabalho diminui. O que levaria 2 horas, leva 3 - e o resultado é pior.</p>
+                </div>
+                
+                <div class="impact-box warning">
+                    <h3 data-i18n="impact.residue.title">O "Resíduo de Atenção"</h3>
+                    <p data-i18n="impact.residue.content">Qualquer interrupção para checar uma rede social, mesmo por apenas 30 segundos, gera um "resíduo de atenção" que persiste. Isso significa que mesmo depois de voltar ao estudo, você não consegue alcançar a intensidade cognitiva necessária para o aprendizado profundo por um período considerável.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Happens in Your Brain -->
+        <section class="brain-section" id="brain">
+            <div class="container">
+                <h2 data-i18n="brain.title">O Que Acontece no Seu Cérebro</h2>
+                
+                <p data-i18n="brain.intro">O impacto das redes sociais vai muito além do comportamento visível. Existem alterações neurobiológicas reais acontecendo.</p>
+                
+                <div class="brain-points">
+                    <div class="brain-point">
+                        <h3 data-i18n="brain.addiction.title">Dependência Química Real</h3>
+                        <p data-i18n="brain.addiction.content">O uso de redes sociais por mais de três horas diárias resulta em comportamentos compulsivos comparáveis à dependência de substâncias químicas. Isso afeta o controle de impulsos e pode gerar sintomas de abstinência quando você tenta parar.</p>
+                    </div>
+                    
+                    <div class="brain-point">
+                        <h3 data-i18n="brain.attention.title">Encolhimento do Tempo de Atenção</h3>
+                        <p data-i18n="brain.attention.content">A exposição contínua a estímulos rápidos cria padrões cerebrais semelhantes aos de pessoas com Transtorno de Déficit de Atenção e Hiperatividade (TDAH). Seu cérebro se acostuma com gratificação instantânea e perde a capacidade de foco prolongado.</p>
+                    </div>
+                    
+                    <div class="brain-point">
+                        <h3 data-i18n="brain.structural.title">Alterações Estruturais</h3>
+                        <p data-i18n="brain.structural.content">Existem alterações estruturais no cérebro com a hiperativação da Rede de Modo Padrão (associada a pensamentos autorreferenciais excessivos) e disfunções no Córtex Pré-Frontal e na Rede de Controle Executivo, que são cruciais para inibir impulsos.</p>
+                    </div>
+                    
+                    <div class="brain-point">
+                        <h3 data-i18n="brain.gender.title">Diferenças por Gênero</h3>
+                        <p data-i18n="brain.gender.content">Os impactos neurais diferem entre homens e mulheres. Meninos tendem a ter alterações em circuitos motores e de controle de impulsos (vício em jogos), enquanto meninas exibem anomalias em regiões de regulação socioemocional (redes sociais e validação de autoimagem).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mental Health -->
+        <section class="mental-section" id="mental">
+            <div class="container">
+                <h2 data-i18n="mental.title">Saúde Mental: O Aspecto Invisível</h2>
+                
+                <p data-i18n="mental.intro">Não podemos falar sobre redes sociais sem abordar a saúde mental. O impacto psicológico é profundo e, muitas vezes, silencioso.</p>
+                
+                <div class="mental-box">
+                    <h3 data-i18n="mental.passive.title">Scrolling Passivo vs. Ativo</h3>
+                    <p data-i18n="mental.passive.content">O "scrolling passivo" - consumir conteúdo sem interagir ativamente - está mais fortemente correlacionado com o desenvolvimento de sintomas depressivos do que o uso ativo. Por quê? Porque gera constante comparação social e sentimentos de inadequação. Você está sempre vendo o "melhor" da vida de outras pessoas e comparando com o "real" da sua.</p>
+                </div>
+                
+                <div class="mental-box warning">
+                    <h3 data-i18n="mental.teens.title">Vulnerabilidade Feminina</h3>
+                    <p data-i18n="mental.teens.content">Meninas adolescentes estão particularmente vulneráveis. O uso superior a 2 horas diárias tem sido associado a sentimentos de depressão e pensamentos suicidas. Isso é sério e merece atenção.</p>
+                </div>
+                
+                <div class="mental-box">
+                    <h3 data-i18n="mental.depression.title">Ansiedade e Depressão</h3>
+                    <p data-i18n="mental.depression.content">Segundo Jonathan Haidt (2024), o uso intensivo de redes sociais tem impactado negativamente a saúde mental dos jovens, levando a problemas que vão desde vício e atenção fragmentada até ansiedade, depressão e automutilação. Não é exagero dizer que estamos vivendo uma crise de saúde mental ligada ao uso digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Break -->
+        <div class="image-break">
+            <img src="../redeSciais.png" alt="Ilustração de redes sociais">
+            <p class="caption">A escala do uso de redes sociais é global e impactante</p>
+        </div>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section" id="benefits">
+            <div class="container">
+                <h2 data-i18n="benefits.title">Por Que Trabalhar Focado e Ter uma Mente Limpa Importa</h2>
+                
+                <p data-i18n="benefits.intro">Até agora focamos nos problemas. Mas vamos falar sobre o lado positivo: o que você ganha ao reduzir o uso de redes sociais e cultivar uma mente mais focada e limpa. Os benefícios vão muito além das notas melhores.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 data-i18n="benefits.mental_clarity.title">Mais Claro Mental</h3>
+                        <p data-i18n="benefits.mental_clarity.content">Quando você não está constantemente interrompido por notificações e comparações sociais, sua mente fica mais clara. Você consegue pensar com mais profundidade, tomar decisões melhores e ter insights que antes ficariam ocultos no ruído digital.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 data-i18n="benefits.time.title">Tempo Recuperado</h3>
+                        <p data-i18n="benefits.time.content">Imagine ter 2,5 horas extras por dia. Isso é quase 18 horas por semana - tempo suficiente para aprender uma nova habilidade, praticar um hobby, ou simplesmente descansar de verdade. O tempo recuperado é o recurso mais valioso que você ganha.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 data-i18n="benefits.relationships.title">Relações Melhores</h3>
+                        <p data-i18n="benefits.relationships.content">Paradoxalmente, quando você reduz o uso de redes sociais, suas relações reais melhoram. Você tem mais tempo e energia para conversas presenciais, ligações, e momentos de qualidade com pessoas que realmente importam. A conexão digital não substitui a conexão humana.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 data-i18n="benefits.productivity.title">Produtividade Real</h3>
+                        <p data-i18n="benefits.productivity.content">Trabalhar focado não é apenas sobre estudar melhor. É sobre ser mais eficiente em tudo que você faz. Projetos que levavam dias podem ser concluídos em horas. A qualidade do seu trabalho melhora drasticamente, e você sente menos estresse com prazos.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h3 data-i18n="benefits.wellbeing.title">Bem-Estar Emocional</h3>
+                        <p data-i18n="benefits.wellbeing.content">A comparação constante nas redes sociais gera ansiedade e inadequação. Quando você se desconecta disso, sua autoestima melhora. Você começa a se sentir bem consigo mesmo sem a validação externa de likes e comentários.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h3 data-i18n="benefits.sleep.title">Sono e Energia</h3>
+                        <p data-i18n="benefits.sleep.content">Sem a luz azul das telas antes de dormir e sem a estimulação constante durante o dia, seu ciclo circadiano se normaliza. Você dorme melhor, acorda mais descansado, e tem energia consistente durante o dia - sem precisar de cafeína excessiva.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-summary">
+                    <h3 data-i18n="benefits.deep_work.title">O Transformador: O Trabalho Profundo</h3>
+                    <p data-i18n="benefits.deep_work.content">Cal Newport, autor de "Deep Work", define o trabalho profundo como "atividades profissionais realizadas em estado de distração zero que empurram suas capacidades cognitivas até o limite". Quando você pratica isso consistentemente, algo extraordinário acontece:</p>
+                    
+                    <ul class="benefit-list">
+                        <li><strong data-i18n="benefits.deep_work.myelin">Fortalecimento da Mielina:</strong> <span data-i18n="benefits.deep_work.myelin_content">O trabalho focado fortalece a mielina ao redor dos neurônios, tornando seu cérebro fisicamente mais rápido e eficiente. É como treinar um músculo.</span></li>
+                        <li><strong data-i18n="benefits.deep_work.skills">Desenvolvimento de Habilidades:</strong> <span data-i18n="benefits.deep_work.skills_content">Você aprende mais rápido e retém mais informação. O que levava meses para aprender, pode levar semanas.</span></li>
+                        <li><strong data-i18n="benefits.deep_work.satisfaction">Satisfação Profunda:</strong> <span data-i18n="benefits.deep_work.satisfaction_content">Há uma satisfação única em produzir trabalho de alta qualidade. Você se sente realizado de uma forma que o scroll infinito nunca proporcionará.</span></li>
+                        <li><strong data-i18n="benefits.deep_work.competitive">Competitividade no Mercado:</strong> <span data-i18n="benefits.deep_work.competitive_content">Em um mundo onde poucas pessoas conseguem focar, a capacidade de trabalho profundo se torna uma vantagem competitiva enorme.</span></li>
+                    </ul>
+                    
+                    <p class="benefit-conclusion" data-i18n="benefits.deep_work.conclusion">Não se trata apenas de estudar melhor. Trata-se de viver uma vida mais intencional, satisfatória e significativa. As redes sociais têm seu lugar, mas quando você controla o uso em vez de ser controlado por elas, você abre espaço para o que realmente importa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions -->
+        <section class="solutions-section" id="solutions">
+            <div class="container">
+                <h2 data-i18n="solutions.title">A Boa Notícia: Soluções Que Funcionam</h2>
+                
+                <p data-i18n="solutions.intro">Agora que pintamos um quadro preocupante, vamos para a parte positiva: existem estratégias comprovadas pela ciência que realmente funcionam para reduzir o impacto das redes sociais nos seus estudos. E não, não estamos falando de "apague tudo e viva como um monge". São soluções práticas e realistas.</p>
+                
+                <div class="solution-item">
+                    <div class="solution-number">1</div>
+                    <div class="solution-content">
+                        <h3 data-i18n="solutions.phone_zones.title">Crie Zonas de Estudo Sem Telefone</h3>
+                        <p data-i18n="solutions.phone_zones.content">Esta é simples e poderosa: crie "zonas de estudo sem telefone" com separação física. Deixe o celular em outro cômodo, numa gaveta, longe do seu alcance durante o estudo. Estudos mostram que isso resulta em uma melhora de 40% no foco já na primeira semana. A distância física ajuda a criar distância mental.</p>
+                        <div class="tip-box">
+                            <strong>Dica prática:</strong> <span data-i18n="solutions.phone_zones.tip">Use um despertador tradicional em vez do celular. Deixe o celular carregando em outro quarto durante o sono.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-item">
+                    <div class="solution-number">2</div>
+                    <div class="solution-content">
+                        <h3 data-i18n="solutions.social.title">Use Responsabilidade Social a Seu Favor</h3>
+                        <p data-i18n="solutions.social.content">Estudar com ferramentas de responsabilidade social, como salas de estudo Pomodoro compartilhadas, torna os estudantes 300% mais propensos a cumprir suas metas de foco. Quando você sabe que outros estão contando com você ou que você está sendo "monitorado" de alguma forma, a tendência é se manter mais disciplinado.</p>
+                        <div class="tip-box">
+                            <strong>Dica prática:</strong> <span data-i18n="solutions.social.tip">Use aplicativos de estudo em grupo, vá para a biblioteca, ou combine com amigos para estudarem juntos sem celulares.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-item">
+                    <div class="solution-number">3</div>
+                    <div class="solution-content">
+                        <h3 data-i18n="solutions.habits.title">Construa Novos Hábitos (Paciência é Chave)</h3>
+                        <p data-i18n="solutions.habits.content">Quebrar o vício automático em redes sociais requer a construção de novos hábitos. Pesquisas mostram que isso geralmente leva de 21 a 66 dias de prática consistente. Não espere mudanças overnight. Seja paciente consigo mesmo.</p>
+                        <div class="tip-box">
+                            <strong>Dica prática:</strong> <span data-i18n="solutions.habits.tip">Comece pequeno. Tente ficar 30 minutos sem checar o celular. Depois 1 hora. Depois 2. Aumente gradualmente.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-item highlight">
+                    <div class="solution-number">4</div>
+                    <div class="solution-content">
+                        <h3 data-i18n="solutions.deep_work.title">Pratique o "Trabalho Profundo" (Deep Work)</h3>
+                        <p data-i18n="solutions.deep_work.content">Este conceito, popularizado por Cal Newport, é transformador. Praticar o "Trabalho Profundo" - períodos de foco total sem distrações - fortalece a mielina ao redor dos neurônios, tornando seu cérebro fisicamente mais rápido e eficiente para tarefas complexas. É como treinar um músculo.</p>
+                        <div class="tip-box">
+                            <strong>Dica prática:</strong> <span data-i18n="solutions.deep_work.tip">Dedique blocos de 2-4 horas sem interrupções para tarefas complexas. Sem celular, sem email, sem notificações. Apenas você e a tarefa.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-item">
+                    <div class="solution-number">5</div>
+                    <div class="solution-content">
+                        <h3 data-i18n="solutions.digital.title">Adote Hábitos de Distanciamento Digital</h3>
+                        <p data-i18n="solutions.digital.content">Estudantes que adotam de forma consistente hábitos de distanciamento digital relatam aumento de 50% na capacidade de atenção no prazo de um mês, acompanhado de melhora nas notas e redução drástica da ansiedade. Os benefícios são cumulativos e significativos.</p>
+                        <div class="tip-box">
+                            <strong>Dica prática:</strong> <span data-i18n="solutions.digital.tip">Estabeleça horários específicos para verificar redes sociais. Por exemplo: só checa às 9h, 12h e 18h. Fora isso, celular longe.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Tips -->
+        <section class="tips-section" id="tips">
+            <div class="container">
+                <h2 data-i18n="tips.title">Ações Que Você Pode Implementar Hoje</h2>
+                
+                <p data-i18n="tips.intro">Aqui está uma lista rápida de coisas que você pode fazer imediatamente para começar a mudar seus hábitos:</p>
+                
+                <ul class="tips-list">
+                    <li><strong data-i18n="tips.dnd.title">Ative o modo não perturbe</strong> <span data-i18n="tips.dnd.content">durante sessões de estudo. Configure exceções apenas para emergências reais.</span></li>
+                    <li><strong data-i18n="tips.notifications.title">Desative notificações</strong> <span data-i18n="tips.notifications.content">de redes sociais ou deixe apenas as essenciais em silencioso.</span></li>
+                    <li><strong data-i18n="tips.pomodoro.title">Use a técnica Pomodoro</strong>: <span data-i18n="tips.pomodoro.content">25 minutos de foco total, 5 minutos de pausa. Cheque o celular só nas pausas.</span></li>
+                    <li><strong data-i18n="tips.screens.title">Evite telas 1 hora antes de dormir</strong>. <span data-i18n="tips.screens.content">Isso melhora a qualidade do sono e, consequentemente, o desempenho no dia seguinte.</span></li>
+                    <li><strong data-i18n="tips.apps.title">Use apps de bloqueio</strong> <span data-i18n="tips.apps.content">como Forest, Freedom ou o próprio Screen Time do seu celular para limitar o uso.</span></li>
+                    <li><strong data-i18n="tips.replace.title">Substitua o hábito</strong>: <span data-i18n="tips.replace.content">quando sentir vontade de checar redes sociais, substitua por algo mais saudável - ler um livro, fazer exercícios rápidos, meditar, ou simplesmente ficar em silêncio por alguns minutos.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 data-i18n="cta.title">Ajude-Nos a Entender Melhor</h2>
+                    <p data-i18n="cta.intro">Nossa pesquisa continua evoluindo. Queremos entender melhor como as redes sociais afetam especificamente os estudantes da UFPR. Seus insights são valiosos para desenvolvermos estratégias mais eficazes.</p>
+                    <p data-i18n="cta.time">Leva apenas 5 minutos para preencher e suas respostas são anônimas.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfs6TiLs3lTjn935k9tjB9A6UmboKparKl-sbjB-AvcQXHvRg/viewform?usp=publish-editor" target="_blank" class="cta-button">
+                        <i class="fas fa-external-link-alt"></i> <span data-i18n="cta.button">Preencher Formulário de Pesquisa Inicial</span>
+                    </a>
+                    
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--bg-tertiary);">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 1rem;" data-i18n="cta.after_title">Após Aplicar as Práticas</h3>
+                        <p style="font-size: 0.95rem; margin-bottom: 1rem;" data-i18n="cta.after_intro">Se você já aplicou as técnicas deste artigo, compartilhe seus resultados conosco!</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9yJAuDitRMykXozqPUm65z6dBHzoWpeG1s3a_UYBJeo4Iow/viewform?usp=publish-editor" target="_blank" class="cta-button">
+                            <i class="fas fa-external-link-alt"></i> <span data-i18n="cta.after_button">Preencher Formulário de Resultados</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="conclusion-section" id="conclusion">
+            <div class="container">
+                <h2 data-i18n="conclusion.title">Conclusão: Você Tem o Controle</h2>
+                
+                <p data-i18n="conclusion.p1">As redes sociais não são inerentemente ruins - são ferramentas poderosas que, quando usadas de forma consciente, podem enriquecer nossa vida. O problema é o uso desenfreado e inconsciente que se tornou padrão.</p>
+                
+                <p data-i18n="conclusion.p2">A ciência é clara: o uso excessivo afeta seu sono, sua atenção, seu desempenho acadêmico e até sua saúde mental. Mas a boa notícia é que você tem o poder de mudar isso. Pequenas mudanças de hábito, aplicadas consistentemente, podem ter um impacto enorme.</p>
+                
+                <p data-i18n="conclusion.p3">Não se culpe pelo passado. Foque no que você pode fazer a partir de agora. Comece pequeno, seja paciente consigo mesmo, e lembre-se: cada momento de foco que você recupera é um investimento no seu futuro.</p>
+                
+                <p data-i18n="conclusion.good_luck">Boa sorte nos estudos!</p>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section class="references-section">
+            <div class="container">
+                <h2 data-i18n="references.title">Referências Bibliográficas</h2>
+                
+                <p data-i18n="references.intro">Este artigo foi baseado em pesquisas científicas revisadas por pares. Aqui estão as fontes:</p>
+                
+                <ol class="references-list">
+                    <li>The Impact of Social Media on the Adolescent Brain: Cognitive, Emotional, and Societal Implications</li>
+                    <li>7 Study Habits to Break Social Media Addiction (Students Guide 2025) - Academync</li>
+                    <li>Análise Multidimensional do Impacto das Redes Sociais no Desempenho Acadêmico e Funcionamento Neurocognitivo de Estudantes de Graduação da UFPR</li>
+                    <li>Deep Work for Students: How to Focus Like a Pro - Smarten Up</li>
+                    <li>Four Rules for Eliminating Distractions and Cultivating Deep Work - DIY MFA</li>
+                    <li>Neurobiological and behavioral correlates of excessive social media use in adolescents</li>
+                    <li>The neurobiology of internet addiction: a scoping review of developmental and gender-specific mechanisms - Frontiers</li>
+                    <li>Unlock Your Focus: A Student's Guide to Deep Work in the Age of Distraction - Jotverse</li>
+                    <li>Brain Drain: The Mere Presence of One's Own Smartphone Reduces Available Cognitive Capacity (2017)</li>
+                    <li>Jonathan Haidt (2024) - The Anxious Generation</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.text">&copy; 2026 Equipe de Pesquisa UFPR | Leonardo Mendes, Marcelo Marques, Sofia Scherer, Victor Hugo W.C.M</p>
+            <p class="footer-subtitle" data-i18n="footer.subtitle">Projeto de extensão universitária focado em conscientizar estudantes sobre o impacto das redes sociais nos estudos</p>
+            <a href="../index.html" class="back-link" data-i18n="footer.back">Voltar ao site principal</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

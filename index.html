@@ -29,6 +29,7 @@
         <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
         <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
         <li><a href="#interesses" data-i18n="nav.interests">Interesses</a></li>
+        <li><a href="pesquisa-redes-sociais/index.html" data-i18n="nav.research">Pesquisa</a></li>
       </ul>
       
       <div class="nav-controls">
@@ -69,6 +70,9 @@
                   class="btn btn-accent"
                 >
                   <i class="fas fa-pen"></i> <span data-i18n="hero.cta.blog"> Blog</span>
+                </a>
+                <a href="pesquisa-redes-sociais/index.html" class="btn btn-accent">
+                  <i class="fas fa-chart-line"></i> <span data-i18n="hero.cta.research"> Pesquisa</span>
                 </a>
               </div>
 
@@ -136,8 +140,10 @@
       <!-- Experience Section -->
       <section id="experiencia" class="section">
         <div class="container">
-          <h2 data-i18n="experience.title">Experiência Profissional</h2>
-          <div class="experience-list">
+          <div class="experience-skills-container">
+            <div class="experience-section">
+              <h2 data-i18n="experience.title">Experiência Profissional</h2>
+              <div class="experience-list">
             <!-- Exati -->
             <div class="experience-card">
               <div class="experience-header">
@@ -187,10 +193,10 @@
                   <li data-i18n="experience.ecomp_director.desc5">Liderança no processo de transformação da Ecomp em projeto de extensão universitária.</li>
                 </ul>
                 <div class="tech-stack">
-                  <span class="tech-tag">Liderança</span>
-                  <span class="tech-tag">Gestão Estratégica</span>
-                  <span class="tech-tag">Scrum</span>
-                  <span class="tech-tag">Gestão Financeira</span>
+                  <span class="tech-tag" data-i18n="tech_tags.leadership">Liderança</span>
+                  <span class="tech-tag">OKRs</span>
+                  <span class="tech-tag" data-i18n="tech_tags.agile_methods">Metodologias Ágeis</span>
+                  <span class="tech-tag" data-i18n="tech_tags.financial_management">Gestão Financeira</span>
                 </div>
               </div>
             </div>
@@ -245,9 +251,9 @@
                   <li data-i18n="experience.pet.desc4"><strong>PET nas Escolas:</strong> Divulgação da computação no ensino básico.</li>
                 </ul>
                 <div class="tech-stack">
-                  <span class="tech-tag">Ensino</span>
-                  <span class="tech-tag">Extensão Universitária</span>
-                  <span class="tech-tag">Organização de Eventos</span>
+                  <span class="tech-tag" data-i18n="tech_tags.teaching">Ensino</span>
+                  <span class="tech-tag" data-i18n="tech_tags.university_extension">Extensão Universitária</span>
+                  <span class="tech-tag" data-i18n="tech_tags.event_organization">Organização de Eventos</span>
                 </div>
               </div>
             </div>
@@ -271,21 +277,19 @@
                   <li data-i18n="experience.monitor.desc3">Migração e modernização de exercícios para nova plataforma digital.</li>
                 </ul>
                 <div class="tech-stack">
-                  <span class="tech-tag">Circuitos Digitais</span>
-                  <span class="tech-tag">Didática</span>
-                  <span class="tech-tag">Mentoria</span>
+                  <span class="tech-tag" data-i18n="tech_tags.digital_circuits">Circuitos Digitais</span>
+                  <span class="tech-tag" data-i18n="tech_tags.didactics">Didática</span>
+                  <span class="tech-tag" data-i18n="tech_tags.mentorship">Mentoria</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section id="habilidades" class="section">
-        <div class="container">
-          <h2 data-i18n="skills.title">Habilidades Técnicas</h2>
-          <div class="skills-grid">
+            </div>
+            
+            <!-- Skills Section -->
+            <div class="skills-section">
+              <h2 data-i18n="skills.title">Habilidades Técnicas</h2>
+              <div class="skills-grid">
             <div class="skill-card">
               <div class="skill-icon">
                 <i class="fas fa-database"></i>
@@ -363,6 +367,32 @@
                 <i class="fas fa-globe"></i>
               </div>
               <div class="skill-name">Containers</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="skill-name" data-i18n="skills.cloud_computing">Computação em Nuvem</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-dharmachakra"></i>
+              </div>
+              <div class="skill-name" data-i18n="skills.kubernetes">Kubernetes</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="skill-name" data-i18n="skills.cryptography">Criptografia</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="skill-name" data-i18n="skills.forensics">Computação Forense</div>
+            </div>
+          </div>
             </div>
           </div>
         </div>

@@ -4,14 +4,16 @@
         "about": "About",
         "experience": "Experience",
         "skills": "Skills",
-        "interests": "Interests"
+        "interests": "Interests",
+        "research": "Research"
     },
     "hero": {
         "subtitle": "Hello, I am",
         "description": "Full-Stack Developer | Computer Science Student at UFPR",
         "cta": {
             "about": "About Me",
-            "blog": "Blog"
+            "blog": "Blog",
+            "research": "Research"
         }
     },
     "about": {
@@ -67,7 +69,11 @@
         "title": "Technical Skills",
         "data_structures": "Data Structures",
         "algorithms": "Algorithms",
-        "web_dev": "Web Development"
+        "web_dev": "Web Development",
+        "cloud_computing": "Cloud Computing",
+        "kubernetes": "Kubernetes",
+        "cryptography": "Cryptography",
+        "forensics": "Forensic Computing"
     },
     "interests": {
         "title": "Personal Interests",
@@ -77,6 +83,17 @@
         "gym": "Gym",
         "business": "Business",
         "cybersecurity": "Cybersecurity"
+    },
+    "tech_tags": {
+        "leadership": "Leadership",
+        "agile_methods": "Agile Methods",
+        "financial_management": "Financial Management",
+        "teaching": "Teaching",
+        "university_extension": "University Extension",
+        "event_organization": "Event Organization",
+        "digital_circuits": "Digital Circuits",
+        "didactics": "Didactics",
+        "mentorship": "Mentorship"
     },
     "footer": {
         "rights": "&copy; 2025 Victor Hugo Weigmann Chequer Maia. All rights reserved."
