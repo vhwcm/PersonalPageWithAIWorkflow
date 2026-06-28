@@ -1,250 +1,250 @@
 {
   "nav": {
-    "back": "Voltar",
+    "back": "Retornar",
     "title": "Pesquisa UFPR 2026"
   },
   "menu": {
-    "title": "Índice",
+    "title": "Sumário",
     "intro": "Introdução",
-    "problems": "Os Quatro Grandes Problemas",
-    "stats": "Números que Fazem Pensar",
-    "impact": "Impacto nas Notas",
-    "brain": "O Que Acontece no Cérebro",
+    "problems": "Os Quatro Desafios Principais",
+    "stats": "Dados Estatísticos",
+    "impact": "Impacto no Desempenho",
+    "brain": "Alterações Neurobiológicas",
     "mental": "Saúde Mental",
-    "benefits": "Benefícios do Foco",
-    "solutions": "Soluções Que Funcionam",
-    "tips": "Ações Práticas",
-    "conclusion": "Conclusão"
+    "benefits": "Benefícios do Foco Sustentado",
+    "solutions": "Intervenções Eficazes",
+    "tips": "Diretrizes Práticas",
+    "conclusion": "Considerações Finais"
   },
   "meta": {
     "date": "Maio 2026",
     "reading_time": "10 min de leitura"
   },
-  "title": "Como as Redes Sociais Estão Afetando Seus Estudos (e o Que Você Pode Fazer Sobre Isso)",
-  "subtitle": "Uma conversa honesta sobre o impacto real do Instagram, TikTok e outras redes no desempenho acadêmico dos estudantes universitários - e como reduzir esse impacto",
+  "title": "O Impacto das Redes Sociais no Desempenho Acadêmico e Intervenções Mitigadoras",
+  "subtitle": "Uma análise rigorosa sobre a influência das plataformas digitais no rendimento de estudantes universitários e metodologias para a redução de danos.",
   "authors": {
     "label": "Por:",
     "institution": "Universidade Federal do Paraná (UFPR)"
   },
   "images": {
     "featured": {
-      "caption": "A cena é familiar: celular ao lado do livro, notificações pipocando, foco dividido. Mas qual o real impacto disso?"
+      "caption": "A ubiquidade dos dispositivos móveis no ambiente de estudo impõe constantes desafios atencionais, cujos impactos requerem análise aprofundada."
     },
     "social": {
-      "caption": "A escala do uso de redes sociais é global e impactante"
+      "caption": "A magnitude do uso de redes sociais apresenta implicações globais significativas no desenvolvimento cognitivo."
     }
   },
   "intro": {
-    "lead": "Vamos ser sinceros por um momento. Quantas vezes você pegou o celular para \"só dar uma olhada rápida\" nas redes sociais e, de repente, se deu conta de que passaram duas horas? Quantas vezes você estava estudando para uma prova importante, mas uma notificação do Instagram te puxou de volta para o scroll infinito?",
-    "p1": "Não se culpe. Você não é sozinho. Nós, como estudantes da UFPR, observamos esse comportamento no nosso dia a dia e decidimos investigar mais a fundo. O que descobrimos foi tanto alarmante quanto esclarecedor - e, felizmente, existem soluções práticas que realmente funcionam.",
-    "p2": "Neste artigo, vou compartilhar com você o que aprendemos sobre como as redes sociais afetam seus estudos, o que a ciência diz sobre isso e, mais importante, o que você pode fazer para recuperar o controle do seu tempo e da sua atenção."
+    "lead": "O uso prolongado de dispositivos móveis e a interrupção constante por notificações de redes sociais tornaram-se fenômenos frequentes no ambiente acadêmico, impactando substancialmente a gestão do tempo e a capacidade de atenção.",
+    "p1": "Este padrão comportamental, frequentemente observado entre os discentes, motivou uma investigação científica detalhada. Os dados evidenciam consequências substanciais no processo de aprendizagem, corroborando a necessidade de adoção de intervenções estruturadas.",
+    "p2": "O presente artigo tem por objetivo expor as evidências científicas acerca da correlação entre o uso de redes sociais e o rendimento acadêmico, bem como propor estratégias validadas para a otimização do foco e do tempo de estudo."
   },
   "problems": {
-    "title": "Os Quatro Grandes Problemas",
-    "intro": "Quando começamos nossa pesquisa, identificamos quatro maneiras principais pelas quais as redes sociais sabotam seus estudos. Você provavelmente se identifica com pelo menos uma delas - talvez todas.",
+    "title": "Os Quatro Desafios Principais",
+    "intro": "A investigação delineou quatro mecanismos centrais através dos quais o uso imoderado de redes sociais interfere negativamente na rotina acadêmica dos estudantes.",
     "sleep": {
-      "title": "O Prejuízo ao Sono",
-      "content": "Sabe aquela sensação de ficar rolando o feed até tarde da noite? Não é apenas uma questão de perder horas de sono. A luz azul das telas suprime a produção de melatonina, o hormônio que regula seu ciclo circadiano. Resultado: você dorme pior, acorda mais cansado e, pior ainda, seu cérebro não consegue consolidar adequadamente o que você estudou durante o dia. 58% dos adolescentes relatam dificuldade em limitar o uso antes de dormir."
+      "title": "Prejuízo ao Ciclo Circadiano",
+      "content": "A utilização noturna de dispositivos expõe os usuários à luz azul, suprimindo a secreção de melatonina e desregulando o ciclo circadiano. Consequentemente, observa-se uma deterioração na qualidade do sono e na consolidação da memória. Dados indicam que 58% dos adolescentes apresentam dificuldades na restrição do uso de telas no período noturno."
     },
     "time": {
-      "title": "A Perda de Tempo",
-      "content": "Vamos aos números: o estudante médio perde cerca de 2,5 horas por dia para distrações em redes sociais. Isso é quase 18 horas por semana - mais de um dia inteiro! Imagine o que você poderia fazer com esse tempo extra. Não é apenas procrastinação; é tempo literalmente roubado do seu dia."
+      "title": "Alocação Ineficiente de Tempo",
+      "content": "Estatisticamente, observa-se que o estudante médio despende aproximadamente 2,5 horas diárias em distrações digitais, perfazendo quase 18 horas semanais. Tal dispêndio configura uma perda significativa de horas úteis que poderiam ser direcionadas ao aprimoramento acadêmico e pessoal."
     },
     "context": {
-      "title": "A Troca Constante de Contexto",
-      "content": "Seu cérebro não foi feito para multitarefas. Quando você alterna entre estudo e redes sociais, você está forçando seu cérebro a constantemente mudar de foco. Isso não só diminui seu empenho, como também torna o aprendizado mais superficial. É como tentar ler um livro enquanto alguém te interrompe a cada 30 segundos."
+      "title": "Fragmentação da Atenção",
+      "content": "O sistema cognitivo humano não é otimizado para a alternância contínua de tarefas (multitasking). A constante transição entre a leitura analítica e a estimulação digital impõe uma sobrecarga cognitiva, resultando em um processamento de informações superficial e na queda da eficiência."
     },
     "attention": {
-      "title": "A Diminuição da Atenção",
-      "content": "A exposição contínua a estímulos rápidos - vídeos de 15 segundos, stories que somem em 24h, notificações constantes - está literalmente encolhendo seu tempo de atenção. Pesquisas mostram que isso cria padrões cerebrais semelhantes aos de pessoas com TDAH. O estudante médio verifica o celular 150 vezes por dia e alterna entre tarefas a cada 19 segundos."
+      "title": "Redução da Atenção Sustentada",
+      "content": "A exposição intermitente a estímulos de rápida absorção tem contribuído para a redução sistêmica do tempo de atenção. Pesquisas neurocientíficas apontam a formação de padrões cerebrais análogos aos observados no Transtorno de Déficit de Atenção e Hiperatividade (TDAH). Em média, o estudante verifica seu dispositivo 150 vezes ao dia."
     }
   },
   "stats": {
-    "title": "Números que Fazem Pensar",
-    "intro": "Às vezes, precisamos ver os dados para entender a escala do problema. Aqui estão algumas estatísticas que nos deixaram preocupados:",
-    "users": "de usuários ativos de redes socials globalmente (janeiro de 2024)",
-    "teens": "dos adolescentes nos EUA relatam estar online \"quase constantemente\"",
-    "checks": "por dia: é quantas vezes o estudante médio verifica o celular",
-    "time_lost": "diárias perdidas para distrações em redes sociais",
-    "switch_time": "é o tempo médio entre troca de tarefas"
+    "title": "Dados Estatísticos Relevantes",
+    "intro": "A dimensão do fenômeno pode ser melhor compreendida através da análise quantitativa. Destacam-se os seguintes indicadores:",
+    "users": "de usuários ativos em redes sociais em escala global (janeiro de 2024)",
+    "teens": "dos adolescentes norte-americanos reportam estar online de forma \"quase constante\"",
+    "checks": "verificações diárias do smartphone realizadas pelo estudante médio",
+    "time_lost": "horas diárias comprometidas por distrações digitais",
+    "switch_time": "é o intervalo médio entre a alternância de tarefas"
   },
   "impact": {
-    "title": "Isso Realmente Afeta Meus Estudos?",
-    "intro": "A resposta curta é: sim, e de forma significativa. A resposta longa é mais complexa e fascinante.",
+    "title": "Impactos Mensuráveis no Rendimento Acadêmico",
+    "intro": "As evidências demonstram que a influência das mídias sociais no desempenho acadêmico é substancial e empiricamente quantificável.",
     "grades": {
-      "title": "-20% nas Notas",
-      "content": "Estudos mostram que estudantes que checam frequentemente as redes sociais durante o estudo obtêm notas 20% mais baixas nos exames comparados àqueles que mantêm o foco. Não é coincidência."
+      "title": "Redução de 20% no Desempenho em Avaliações",
+      "content": "Estudos longitudinais indicam que estudantes submetidos a constantes interrupções digitais durante o estudo apresentam resultados até 20% inferiores em exames de avaliação de conhecimento."
     },
     "cognitive": {
-      "title": "-10% de Desempenho Cognitivo",
-      "content": "Aqui está algo que vai te surpreender: a mera presença do seu celular, mesmo no modo silencioso e virado para baixo, pode reduzir seu desempenho cognitivo em até 10%. Isso é o que os pesquisadores chamam de \"dreno de cérebro\" - seu cérebro gasta energia mental apenas resistindo ao impulso de checar o aparelho."
+      "title": "Declínio de 10% na Capacidade Cognitiva",
+      "content": "Investigações apontam que a mera proximidade do dispositivo móvel pode induzir uma redução de até 10% no desempenho cognitivo, fenômeno designado como \"dreno cerebral\", decorrente do esforço mental despendido na inibição do impulso de verificação."
     },
     "completion": {
-      "title": "+50% no Tempo de Conclusão",
-      "content": "Quando você faz multitarefa (estudar e checar redes sociais), o tempo para completar suas atividades aumenta em 50% e a qualidade do trabalho diminui. O que levaria 2 horas, leva 3 - e o resultado é pior."
+      "title": "Acréscimo de 50% no Tempo de Execução",
+      "content": "A tentativa de conciliar o estudo com o uso de redes sociais acarreta um aumento de 50% no tempo necessário para a conclusão das tarefas, concomitantemente à diminuição da qualidade do trabalho entregue."
     },
     "residue": {
-      "title": "O \"Resíduo de Atenção\"",
-      "content": "Qualquer interrupção para checar uma rede social, mesmo por apenas 30 segundos, gera um \"resíduo de atenção\" que persiste. Isso significa que mesmo depois de voltar ao estudo, você não consegue alcançar a intensidade cognitiva necessária para o aprendizado profundo por um período considerável."
+      "title": "Resíduo de Atenção",
+      "content": "Cada interrupção gera um \"resíduo atencional\" persistente. Consequentemente, o retorno ao estado de imersão cognitiva (necessário para a aprendizagem profunda) sofre um atraso significativo, prejudicando o aproveitamento intelectual."
     }
   },
   "brain": {
-    "title": "O Que Acontece no Seu Cérebro",
-    "intro": "O impacto das redes sociais vai muito além do comportamento visível. Existem alterações neurobiológicas reais acontecendo.",
+    "title": "Alterações Neurobiológicas Subjacentes",
+    "intro": "Os efeitos do uso desregulado de redes sociais transcendem alterações comportamentais, evidenciando adaptações neurobiológicas mensuráveis.",
     "addiction": {
-      "title": "Dependência Química Real",
-      "content": "O uso de redes sociais por mais de três horas diárias resulta em comportamentos compulsivos comparáveis à dependência de substâncias químicas. Isso afeta o controle de impulsos e pode gerar sintomas de abstinência quando você tenta parar."
+      "title": "Comportamento Aditivo",
+      "content": "A utilização que excede três horas diárias associa-se a comportamentos compulsivos análogos aos observados em dependências químicas, comprometendo o córtex pré-frontal e as funções executivas responsáveis pelo controle inibitório."
     },
     "attention": {
-      "title": "Encolhimento do Tempo de Atenção",
-      "content": "A exposição contínua a estímulos rápidos cria padrões cerebrais semelhantes aos de pessoas com Transtorno de Déficit de Atenção e Hiperatividade (TDAH). Seu cérebro se acostuma com gratificação instantânea e perde a capacidade de foco prolongado."
+      "title": "Déficit Atencional Induzido",
+      "content": "O constante reforço intermitente fornecido pelas plataformas modula os circuitos de recompensa, dificultando a sustentação do foco prolongado e induzindo sintomas de hiperatividade mental."
     },
     "structural": {
-      "title": "Alterações Estruturais",
-      "content": "Existem alterações estruturais no cérebro com a hiperativação da Rede de Modo Padrão (associada a pensamentos autorreferenciais excessivos) e disfunções no Córtex Pré-Frontal e na Rede de Controle Executivo, que são cruciais para inibir impulsos."
+      "title": "Modificações Estruturais",
+      "content": "Observa-se hiperativação da Rede de Modo Padrão, vinculada ao processamento autorreferencial excessivo, e disfunção nos mecanismos de controle executivo, prejudicando a autorregulação."
     },
     "gender": {
-      "title": "Diferenças por Gênero",
-      "content": "Os impactos neurais diferem entre homens e mulheres. Meninos tendem a ter alterações em circuitos motores e de controle de impulsos (vício em jogos), enquanto meninas exibem anomalias em regiões de regulação socioemocional (redes sociais e validação de autoimagem)."
+      "title": "Dimorfismo nos Impactos",
+      "content": "Os prejuízos neurológicos apresentam distinções de gênero: indivíduos do sexo masculino exibem maior incidência de alterações nos circuitos motores (dependência de jogos), enquanto o sexo feminino demonstra maior vulnerabilidade nos centros de regulação socioemocional (necessidade de validação)."
     }
   },
   "mental": {
-    "title": "Saúde Mental: O Aspecto Invisível",
-    "intro": "Não podemos falar sobre redes sociais sem abordar a saúde mental. O impacto psicológico é profundo e, muitas vezes, silencioso.",
+    "title": "Implicações na Saúde Mental",
+    "intro": "A intersecção entre o uso de mídias sociais e o bem-estar psicológico revela correlações alarmantes, frequentemente subnotificadas.",
     "passive": {
-      "title": "Scrolling Passivo vs. Ativo",
-      "content": "O \"scrolling passivo\" - consumir conteúdo sem interagir ativamente - está mais fortemente correlacionado com o desenvolvimento de sintomas depressivos do que o uso ativo. Por quê? Porque gera constante comparação social e sentimentos de inadequação. Você está sempre vendo o \"melhor\" da vida de outras pessoas e comparando com o \"real\" da sua."
+      "title": "Consumo Passivo vs. Consumo Ativo",
+      "content": "O \"consumo passivo\" de conteúdo está fortemente associado à manifestação de sintomas depressivos, impulsionados pelo viés de comparação social ascendente, gerando sentimentos generalizados de inadequação."
     },
     "teens": {
-      "title": "Vulnerabilidade Feminina",
-      "content": "Meninas adolescentes estão particularmente vulneráveis. O uso superior a 2 horas diárias tem sido associado a sentimentos de depressão e pensamentos suicidas. Isso é sério e merece atenção."
+      "title": "Vulnerabilidade no Público Feminino Jovem",
+      "content": "Adolescentes do sexo feminino constituem um grupo de risco particular; o uso superior a duas horas diárias correlaciona-se com aumentos nos índices de depressão e ideação suicida."
     },
     "depression": {
-      "title": "Ansiedade e Depressão",
-      "content": "Segundo Jonathan Haidt (2024), o uso intensivo de redes sociais tem impactado negativamente a saúde mental dos jovens, levando a problemas que vão desde vício e atenção fragmentada até ansiedade, depressão e automutilação. Não é exagero dizer que estamos vivendo uma crise de saúde mental ligada ao uso digital."
+      "title": "Transtornos de Ansiedade e Humor",
+      "content": "Segundo as pesquisas de Jonathan Haidt (2024), a imersão digital intensiva deflagrou uma crise na saúde mental infantojuvenil, com escalada nos diagnósticos de transtorno de ansiedade generalizada e episódios depressivos."
     }
   },
   "benefits": {
-    "title": "Por Que Trabalhar Focado e Ter uma Mente Limpa Importa",
-    "intro": "Até agora focamos nos problemas. Mas vamos falar sobre o lado positivo: o que você ganha ao reduzir o uso de redes sociais e cultivar uma mente mais focada e limpa. Os benefícios vão muito além das notas melhores.",
+    "title": "Benefícios do Foco Sustentado e Saúde Cognitiva",
+    "intro": "Em contrapartida, a adoção de estratégias de mitigação proporciona vantagens robustas que transcendem o escopo acadêmico, repercutindo na qualidade de vida.",
     "mental_clarity": {
-      "title": "Mais Claro Mental",
-      "content": "Quando você não está constantemente interrompido por notificações e comparações sociais, sua mente fica mais clara. Você consegue pensar com mais profundidade, tomar decisões melhores e ter insights que antes ficariam ocultos no ruído digital."
+      "title": "Clareza Mental e Deliberação",
+      "content": "A ausência de estímulos exógenos constantes favorece processos de pensamento analítico, permitindo a deliberação aprofundada e a formulação de ideias complexas."
     },
     "time": {
-      "title": "Tempo Recuperado",
-      "content": "Imagine ter 2,5 horas extras por dia. Isso é quase 18 horas por semana - tempo suficiente para aprender uma nova habilidade, praticar um hobby, ou simplesmente descansar de verdade. O tempo recuperado é o recurso mais valioso que você ganha."
+      "title": "Otimização Temporal",
+      "content": "A recuperação das horas previamente desperdiçadas permite um redirecionamento produtivo do tempo, promovendo maior equilíbrio entre as exigências acadêmicas e o descanso."
     },
     "relationships": {
-      "title": "Relações Melhores",
-      "content": "Paradoxalmente, quando você reduz o uso de redes sociais, suas relações reais melhoram. Você tem mais tempo e energia para conversas presenciais, ligações, e momentos de qualidade com pessoas que realmente importam. A conexão digital não substitui a conexão humana."
+      "title": "Qualidade das Relações Interpessoais",
+      "content": "A redução do envolvimento em plataformas virtuais potencializa a atenção plena nas interações presenciais, fortalecendo os vínculos sociais reais."
     },
     "productivity": {
-      "title": "Produtividade Real",
-      "content": "Trabalhar focado não é apenas sobre estudar melhor. É sobre ser mais eficiente em tudo que você faz. Projetos que levavam dias podem ser concluídos em horas. A qualidade do seu trabalho melhora drasticamente, e você sente menos estresse com prazos."
+      "title": "Eficiência Produtiva Elevada",
+      "content": "A capacidade de operar em estado de imersão reduz o tempo de conclusão de tarefas, elevando a qualidade do output acadêmico e atenuando o estresse associado a prazos."
     },
     "wellbeing": {
-      "title": "Bem-Estar Emocional",
-      "content": "A comparação constante nas redes sociais gera ansiedade e inadequação. Quando você se desconecta disso, sua autoestima melhora. Você começa a se sentir bem consigo mesmo sem a validação externa de likes e comentários."
+      "title": "Estabilidade Emocional",
+      "content": "O afastamento das métricas de aprovação social mitiga a ansiedade, propiciando um fortalecimento da autoestima independente de validação externa."
     },
     "sleep": {
-      "title": "Sono e Energia",
-      "content": "Sem a luz azul das telas antes de dormir e sem a estimulação constante durante o dia, seu ciclo circadiano se normaliza. Você dorme melhor, acorda mais descansado, e tem energia consistente durante o dia - sem precisar de cafeína excessiva."
+      "title": "Restauração do Ciclo do Sono",
+      "content": "A higiene do sono — notadamente a restrição de telas luminescentes — restaura a arquitetura do sono, maximizando os níveis de energia e atenção durante o período diurno."
     },
     "deep_work": {
-      "title": "O Transformador: O Trabalho Profundo",
-      "content": "Cal Newport, autor de \"Deep Work\", define o trabalho profundo como \"atividades profissionais realizadas em estado de distração zero que empurram suas capacidades cognitivas até o limite\". Quando você pratica isso consistentemente, algo extraordinário acontece:",
-      "myelin": "Fortalecimento da Mielina",
-      "myelin_content": "O trabalho focado fortalece a mielina ao redor dos neurônios, tornando seu cérebro fisicamente mais rápido e eficiente. É como treinar um músculo.",
-      "skills": "Desenvolvimento de Habilidades",
-      "skills_content": "Você aprende mais rápido e retém mais informação. O que levava meses para aprender, pode levar semanas.",
-      "satisfaction": "Satisfação Profunda",
-      "satisfaction_content": "Há uma satisfação única em produzir trabalho de alta qualidade. Você se sente realizado de uma forma que o scroll infinito nunca proporcionará.",
-      "competitive": "Competitividade no Mercado",
-      "competitive_content": "Em um mundo onde poucas pessoas conseguem focar, a capacidade de trabalho profundo se torna uma vantagem competitiva enorme.",
-      "conclusion": "Não se trata apenas de estudar melhor. Trata-se de viver uma vida mais intencional, satisfatória e significativa. As redes sociais têm seu lugar, mas quando você controla o uso em vez de ser controlado por elas, você abre espaço para o que realmente importa."
+      "title": "A Prática do Trabalho Profundo (Deep Work)",
+      "content": "Conceituado por Cal Newport, o \"Trabalho Profundo\" designa atividades realizadas em estado de foco ininterrupto, maximizando as capacidades cognitivas. Seus efeitos fisiológicos incluem:",
+      "myelin": "Mielinização Otimizada",
+      "myelin_content": "A prática repetitiva e focada estimula o espessamento da bainha de mielina, acelerando a transmissão de impulsos nervosos e conferindo maior agilidade mental.",
+      "skills": "Aceleração da Aprendizagem",
+      "skills_content": "Os processos de codificação e retenção de memória tornam-se altamente eficientes, reduzindo significativamente a curva de aprendizado.",
+      "satisfaction": "Realização Intrínseca",
+      "satisfaction_content": "A conclusão de trabalhos cognitivamente exigentes promove elevado grau de satisfação e senso de autoeficácia.",
+      "competitive": "Vantagem Profissional",
+      "competitive_content": "A capacidade de manter atenção focada tornou-se uma habilidade rara, conferindo vantagem competitiva expressiva no cenário acadêmico e corporativo.",
+      "conclusion": "O controle intencional sobre o ambiente digital possibilita não apenas a excelência acadêmica, mas o desenvolvimento de uma rotina estruturada e focada em objetivos de longo prazo."
     }
   },
   "solutions": {
-    "title": "A Boa Notícia: Soluções Que Funcionam",
-    "intro": "Agora que pintamos um quadro preocupante, vamos para a parte positiva: existem estratégias comprovadas pela ciência que realmente funcionam para reduzir o impacto das redes sociais nos seus estudos. E não, não estamos falando de \"apague tudo e viva como um monge\". São soluções práticas e realistas.",
+    "title": "Intervenções Estratégicas Comprovadas",
+    "intro": "As evidências científicas suportam a aplicação de metodologias específicas para a mitigação do impacto negativo das tecnologias digitais no estudo.",
     "phone_zones": {
-      "title": "Crie Zonas de Estudo Sem Telefone",
-      "content": "Esta é simples e poderosa: crie \"zonas de estudo sem telefone\" com separação física. Deixe o celular em outro cômodo, numa gaveta, longe do seu alcance durante o estudo. Estudos mostram que isso resulta em uma melhora de 40% no foco já na primeira semana. A distância física ajuda a criar distância mental.",
-      "tip": "Use um despertador tradicional em vez do celular. Deixe o celular carregando em outro quarto durante o sono."
+      "title": "Estabelecimento de Zonas Livres de Dispositivos",
+      "content": "A separação física do dispositivo móvel — alocando-o em ambiente distinto do local de estudo — resulta em um ganho imediato de concentração, estimado em 40%. A barreira espacial facilita a modulação do impulso de verificação.",
+      "tip": "Recomenda-se a substituição do alarme do smartphone por relógios tradicionais, mantendo o dispositivo fora do dormitório durante o repouso."
     },
     "social": {
-      "title": "Use Responsabilidade Social a Seu Favor",
-      "content": "Estudar com ferramentas de responsabilidade social, como salas de estudo Pomodoro compartilhadas, torna os estudantes 300% mais propensos a cumprir suas metas de foco. Quando você sabe que outros estão contando com você ou que você está sendo \"monitorado\" de alguma forma, a tendência é se manter mais disciplinado.",
-      "tip": "Use aplicativos de estudo em grupo, vá para a biblioteca, ou combine com amigos para estudarem juntos sem celulares."
+      "title": "Ferramentas de Responsabilização Social",
+      "content": "A inserção em ambientes de estudo colaborativos (virtuais ou físicos) aumenta significativamente o cumprimento de metas de concentração, aproveitando o viés humano de conformidade social.",
+      "tip": "A utilização de bibliotecas, grupos de estudo ou plataformas síncronas de produtividade reforça a disciplina individual."
     },
     "habits": {
-      "title": "Construa Novos Hábitos (Paciência é Chave)",
-      "content": "Quebrar o vício automático em redes sociais requer a construção de novos hábitos. Pesquisas mostram que isso geralmente leva de 21 a 66 dias de prática consistente. Não espere mudanças overnight. Seja paciente consigo mesmo.",
-      "tip": "Comece pequeno. Tente ficar 30 minutos sem checar o celular. Depois 1 hora. Depois 2. Aumente gradualmente."
+      "title": "Estruturação de Novos Padrões Comportamentais",
+      "content": "A neuroplasticidade necessária para a descontinuação de hábitos automáticos requer prática deliberada e consistente por períodos que variam de 21 a 66 dias.",
+      "tip": "Aconselha-se a implementação gradual da restrição, iniciando com intervalos curtos de desconexão e expandindo progressivamente."
     },
     "deep_work": {
-      "title": "Pratique o \"Trabalho Profundo\" (Deep Work)",
-      "content": "Este conceito, popularizado por Cal Newport, é transformador. Praticar o \"Trabalho Profundo\" - períodos de foco total sem distrações - fortalece a mielina ao redor dos neurônios, tornando seu cérebro fisicamente mais rápido e eficiente para tarefas complexas. É como treinar um músculo.",
-      "tip": "Dedique blocos de 2-4 horas sem interrupções para tarefas complexas. Sem celular, sem email, sem notificações. Apenas você e a tarefa."
+      "title": "Institucionalização do Foco Ininterrupto",
+      "content": "A alocação de blocos ininterruptos de 2 a 4 horas para processamento cognitivo intenso promove a adaptação neural necessária para a excelência intelectual.",
+      "tip": "Tais sessões devem ser caracterizadas pela absoluta inacessibilidade a e-mails, redes sociais ou notificações externas."
     },
     "digital": {
-      "title": "Adote Hábitos de Distanciamento Digital",
-      "content": "Estudantes que adotam de forma consistente hábitos de distanciamento digital relatam aumento de 50% na capacidade de atenção no prazo de um mês, acompanhado de melhora nas notas e redução drástica da ansiedade. Os benefícios são cumulativos e significativos.",
-      "tip": "Estabeleça horários específicos para verificar redes sociais. Por exemplo: só checa às 9h, 12h e 18h. Fora isso, celular longe."
+      "title": "Protocolos de Distanciamento Digital",
+      "content": "Estudantes submetidos a regimes de distanciamento digital planejado relatam ganhos expressivos na capacidade atencional e na redução dos marcadores de ansiedade.",
+      "tip": "Defina janelas temporais estritas e predeterminadas para a checagem de comunicações, isolando o aparelho no restante do dia."
     }
   },
   "tips": {
-    "title": "Ações Que Você Pode Implementar Hoje",
-    "intro": "Aqui está uma lista rápida de coisas que você pode fazer imediatamente para começar a mudar seus hábitos:",
+    "title": "Diretrizes de Implementação Imediata",
+    "intro": "Para a modificação imediata do ambiente de estudos, recomendam-se as seguintes ações:",
     "dnd": {
-      "title": "Ative o modo não perturbe",
-      "content": "durante sessões de estudo. Configure exceções apenas para emergências reais."
+      "title": "Modo Não Perturbe",
+      "content": "Mantenha ativado durante os blocos de estudo, restringindo exceções apenas a chamadas de emergência."
     },
     "notifications": {
-      "title": "Desative notificações",
-      "content": "de redes sociais ou deixe apenas as essenciais em silencioso."
+      "title": "Supressão de Notificações",
+      "content": "Desabilite sistematicamente alertas push de plataformas de mídias sociais."
     },
     "pomodoro": {
-      "title": "Use a técnica Pomodoro",
-      "content": "25 minutos de foco total, 5 minutos de pausa. Cheque o celular só nas pausas."
+      "title": "Sistematização Pomodoro",
+      "content": "Alterne ciclos de 25 minutos de imersão total com 5 minutos de repouso estratégico."
     },
     "screens": {
-      "title": "Evite telas 1 hora antes de dormir",
-      "content": "Isso melhora a qualidade do sono e, consequentemente, o desempenho no dia seguinte."
+      "title": "Higiene do Sono",
+      "content": "Cesse a exposição a telas luminosas pelo menos 60 minutos antes do recolhimento."
     },
     "apps": {
-      "title": "Use apps de bloqueio",
-      "content": "como Forest, Freedom ou o próprio Screen Time do seu celular para limitar o uso."
+      "title": "Bloqueadores Sistêmicos",
+      "content": "Utilize softwares de restrição de acesso (e.g., Freedom, Cold Turkey) para reforçar o controle inibitório."
     },
     "replace": {
-      "title": "Substitua o hábito",
-      "content": "quando sentir vontade de checar redes sociais, substitua por algo mais saudável - ler um livro, fazer exercícios rápidos, meditar, ou simplesmente ficar em silêncio por alguns minutos."
+      "title": "Substituição Comportamental",
+      "content": "Condicione o impulso de verificação digital a uma resposta adaptativa, como breves exercícios de respiração ou mobilidade."
     }
   },
   "cta": {
-    "title": "Ajude-Nos a Entender Melhor",
-    "intro": "Nossa pesquisa continua evoluindo. Queremos entender melhor como as redes sociais afetam especificamente os estudantes da UFPR. Seus insights são valiosos para desenvolvermos estratégias mais eficazes.",
-    "time": "Leva apenas 5 minutos para preencher e suas respostas são anônimas.",
-    "button": "Preencher Formulário de Pesquisa Inicial",
-    "after_title": "Após Aplicar as Práticas",
-    "after_intro": "Se você já aplicou as técnicas deste artigo, compartilhe seus resultados conosco!",
-    "after_button": "Preencher Formulário de Resultados"
+    "title": "Contribuição para a Pesquisa em Curso",
+    "intro": "O levantamento de dados empíricos prossegue. A participação dos discentes da UFPR é essencial para a calibragem das estratégias pedagógicas institucionais.",
+    "time": "O preenchimento requer aproximadamente 5 minutos; os dados serão tratados sob sigilo.",
+    "button": "Acessar o Formulário de Coleta de Dados",
+    "after_title": "Acompanhamento Longitudinal",
+    "after_intro": "Para aqueles que já adotaram os protocolos sugeridos, encorajamos o relato das métricas de progresso.",
+    "after_button": "Acessar o Formulário de Acompanhamento"
   },
   "conclusion": {
-    "title": "Conclusão: Você Tem o Controle",
-    "p1": "As redes sociais não são inerentemente ruins - são ferramentas poderosas que, quando usadas de forma consciente, podem enriquecer nossa vida. O problema é o uso desenfreado e inconsciente que se tornou padrão.",
-    "p2": "A ciência é clara: o uso excessivo afeta seu sono, sua atenção, seu desempenho acadêmico e até sua saúde mental. Mas a boa notícia é que você tem o poder de mudar isso. Pequenas mudanças de hábito, aplicadas consistentemente, podem ter um impacto enorme.",
-    "p3": "Não se culpe pelo passado. Foque no que você pode fazer a partir de agora. Comece pequeno, seja paciente consigo mesmo, e lembre-se: cada momento de foco que você recupera é um investimento no seu futuro.",
-    "good_luck": "Boa sorte nos estudos!"
+    "title": "Considerações Finais",
+    "p1": "As plataformas de redes sociais constituem infraestruturas tecnológicas neutras; seu impacto decorre essencialmente dos padrões de uso. O desafio contemporâneo reside na transição de um consumo reativo para uma utilização intencional e delimitada.",
+    "p2": "A literatura científica atesta inequivocamente os danos do uso excessivo sobre as funções cognitivas, arquitetura do sono e estabilidade psíquica. Não obstante, os dados clínicos confirmam a notável neuroplasticidade humana e a eficácia das medidas de distanciamento.",
+    "p3": "A reestruturação dos hábitos digitais demanda perseverança e ajustes incrementais. A cada bloco de atenção recuperado, consolida-se um diferencial competitivo determinante para o sucesso acadêmico e profissional.",
+    "good_luck": "Votos de excelência em seus estudos."
   },
   "footer": {
-    "text": "© 2026 Equipe de Pesquisa UFPR | Leonardo Mendes, Marcelo Marques, Sofia Scherer, Victor Hugo W.C.M",
-    "subtitle": "Projeto de extensão universitária focado em conscientizar estudantes sobre o impacto das redes sociais nos estudos",
-    "back": "Voltar ao site principal"
+    "text": "© 2026 Equipe de Pesquisa UFPR",
+    "subtitle": "Projeto de Extensão Universitária: Conscientização e Mitigação do Impacto Digital no Ambiente Acadêmico",
+    "back": "Retornar à página principal"
   },
   "references": {
     "title": "Referências Bibliográficas",
-    "intro": "Este artigo foi baseado em pesquisas científicas revisadas por pares. Aqui estão as fontes:"
+    "intro": "A fundamentação teórica deste artigo baseia-se na seguinte literatura científica revisada por pares:"
   }
 }

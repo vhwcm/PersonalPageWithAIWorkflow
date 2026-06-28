@@ -83,7 +83,8 @@
         "reading": "Leitura",
         "gym": "Academia",
         "business": "Negócios",
-        "cybersecurity": "Cibersegurança"
+        "cybersecurity": "Cibersegurança",
+        "forensics": "Computação Forense"
     },
     "tech_tags": {
         "leadership": "Liderança",
@@ -97,6 +98,6 @@
         "mentorship": "Mentoria"
     },
     "footer": {
-        "rights": "&copy; 2025 Victor Hugo Weigmann Chequer Maia. Todos os direitos reservados."
+        "rights": "&copy; 2026 Victor Hugo Weigmann Chequer Maia. Todos os direitos reservados."
     }
 }
