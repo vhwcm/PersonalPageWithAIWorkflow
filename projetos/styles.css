@@ -40,9 +40,10 @@ button, input, select, textarea {
 }
 
 .container {
-  width: 92%;
+  width: 100%;
   max-width: 1380px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .navbar {
@@ -140,17 +141,21 @@ button, input, select, textarea {
 .badge-tag {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1rem;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
   border-radius: 9999px;
   background: var(--accent-subtle);
   border: 1px solid var(--accent-border);
   color: var(--accent-light);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   margin-bottom: 1.5rem;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.3;
 }
 
 .badge-dot {
@@ -192,6 +197,9 @@ button, input, select, textarea {
   align-items: start;
   position: relative;
   margin-bottom: 5rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .catalog-sidebar {
@@ -438,6 +446,9 @@ button, input, select, textarea {
   flex-direction: column;
   gap: 3rem;
   min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .project-showcase {
@@ -455,6 +466,9 @@ button, input, select, textarea {
   position: relative;
   overflow: hidden;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .card-main:hover {
@@ -479,6 +493,9 @@ button, input, select, textarea {
   user-select: none;
   border-radius: var(--radius-lg);
   transition: all 0.25s ease;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .preview-thumb-box {
@@ -491,6 +508,7 @@ button, input, select, textarea {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: var(--bg-tertiary);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
 }
 
 .preview-thumb-img {
@@ -525,9 +543,11 @@ button, input, select, textarea {
 .preview-info-box {
   flex: 1;
   min-width: 0;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  overflow: hidden;
 }
 
 .preview-info-box h2 {
@@ -629,9 +649,11 @@ button, input, select, textarea {
 .project-meta {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.25rem;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
 }
 
 .status-pill {
@@ -1151,36 +1173,36 @@ footer {
 @media (max-width: 1080px) {
   .projects-layout {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
   .catalog-sidebar {
-    position: sticky;
-    top: 75px;
-    margin-bottom: 1rem;
-    z-index: 45;
+    position: relative;
+    top: auto;
+    margin-bottom: 1.5rem;
+    z-index: 10;
   }
 
   .catalog-card {
     padding: 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .catalog-header {
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.6rem;
   }
   
   .catalog-nav {
-    flex-direction: row;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
-    padding-bottom: 0.35rem;
-    scrollbar-width: none;
-  }
-
-  .catalog-nav::-webkit-scrollbar {
-    display: none;
   }
   
   .catalog-item {
-    flex-shrink: 0;
-    min-width: 180px;
-    padding: 0.5rem 0.75rem;
+    min-width: 0;
+    width: 100%;
+    padding: 0.5rem 0.65rem;
   }
 
   .catalog-item-arrow,
@@ -1190,19 +1212,174 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 0.85rem;
+  }
+
+  .navbar {
+    padding: 0.6rem 0.85rem;
+  }
+
+  .nav-title {
+    display: none;
+  }
+
+  .back-link {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    gap: 0.4rem;
+  }
+
+  .lang-switch {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    word-break: break-word;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .badge-tag {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.65rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .catalog-sidebar {
+    position: relative;
+    top: auto;
+    margin-bottom: 1.25rem;
+    width: 100%;
+  }
+
+  .catalog-card {
+    padding: 0.75rem;
+  }
+
+  .catalog-heading {
+    font-size: 0.9rem;
+  }
+
+  .catalog-counter {
+    display: none;
+  }
+
+  .catalog-actions {
+    gap: 0.35rem;
+  }
+
+  .catalog-action-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
+
+  .catalog-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.45rem;
+    width: 100%;
+  }
+
+  .catalog-item {
+    min-width: 0;
+    width: 100%;
+    padding: 0.5rem 0.55rem;
+    gap: 0.45rem;
+  }
+
+  .catalog-item-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .catalog-item-title {
+    font-size: 0.78rem;
+  }
+
+  .catalog-item-tag {
+    font-size: 0.65rem;
+  }
+
   .card-main {
-    padding: 1.25rem;
+    padding: 1.15rem 0.85rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.25rem;
+    width: 100%;
   }
 
   .card-preview-header {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: stretch;
+    gap: 0.85rem;
+    width: 100%;
   }
 
   .preview-thumb-box {
     width: 100%;
-    height: 160px;
+    height: 180px;
+    border-radius: var(--radius-md);
+  }
+
+  .preview-thumb-img {
+    object-position: center top;
+  }
+
+  .preview-info-box {
+    width: 100%;
+    gap: 0.35rem;
+  }
+
+  .preview-info-box h2 {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    word-break: break-word;
+  }
+
+  .preview-info-box .project-subtitle {
+    font-size: 0.88rem;
+    line-height: 1.45;
+    word-break: break-word;
+  }
+
+  .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .project-meta .badge-tag {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .project-meta .status-pill {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .project-meta .github-link {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.55rem;
+    margin-left: 0;
   }
 
   .preview-action-box {
@@ -1212,25 +1389,195 @@ footer {
   .collapse-toggle-btn {
     width: 100%;
     justify-content: center;
+    padding: 0.65rem 1rem;
+    font-size: 0.82rem;
   }
-  
-  .navbar {
-    padding: 0.8rem 1rem;
+
+  .card-main.is-expanded .card-collapsible-body {
+    margin-top: 1.15rem;
+    padding-top: 1.15rem;
   }
-  
-  .hero {
-    padding: 3rem 0 2rem;
+
+  .screenshot-container {
+    margin: 0.6rem 0 1.25rem;
   }
-  
+
+  .screenshot-frame {
+    border-radius: var(--radius-md);
+  }
+
   .screenshot-bar {
-    padding: 0.5rem 0.8rem;
+    padding: 0.45rem 0.65rem;
   }
-  
+
   .browser-address {
     display: none;
   }
-  
+
+  .browser-action {
+    font-size: 0.72rem;
+  }
+
+  .screenshot-overlay {
+    display: none;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .stat-box {
+    padding: 0.75rem 0.45rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .stat-icon {
+    font-size: 1.15rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .stat-title {
+    font-size: 0.75rem;
+  }
+
+  .section-block {
+    margin-top: 1.4rem;
+  }
+
+  .section-block h3 {
+    font-size: 1.05rem;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .overview-text {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
   .pillars-grid {
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .pillar-card {
+    padding: 1rem 0.85rem;
+    border-radius: var(--radius-md);
+    gap: 0.5rem;
+  }
+
+  .pillar-icon-box {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .pillar-card h4 {
+    font-size: 0.98rem;
+  }
+
+  .pillar-card p {
+    font-size: 0.84rem;
+    line-height: 1.45;
+  }
+
+  .memory-layers-list li {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.55rem;
+  }
+
+  .tech-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .tech-cat-card {
+    padding: 0.85rem;
+    border-radius: var(--radius-md);
+  }
+
+  .tech-cat-header {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tags-wrap {
+    gap: 0.35rem;
+  }
+
+  .tech-tag {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .highlight-item {
+    padding: 0.85rem;
+    gap: 0.65rem;
+    border-radius: var(--radius-md);
+  }
+
+  .highlight-item i {
+    font-size: 1rem;
+  }
+
+  .highlight-item h5 {
+    font-size: 0.9rem;
+  }
+
+  .highlight-item p {
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .card-footer-action {
+    margin-top: 1.4rem;
+    padding-top: 1rem;
+  }
+
+  .collapse-footer-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.65rem 1rem;
+    font-size: 0.82rem;
+  }
+
+  .modal-backdrop {
+    padding: 0.5rem;
+  }
+
+  .modal-close {
+    top: -38px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .catalog-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-thumb-box {
+    height: 140px;
   }
 }

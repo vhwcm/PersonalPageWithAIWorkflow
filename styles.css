@@ -154,18 +154,22 @@ a {
 .sidebar-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: 1050;
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
+    display: none;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .sidebar-overlay.active {
+    display: block;
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 .sidebar-nav {
@@ -1235,19 +1239,42 @@ footer {
     footer {
         margin-left: 0;
     }
+
+    #hero {
+        min-height: auto;
+        padding: 3rem 0 4rem;
+    }
+
+    .about-card-integrated {
+        padding: 1.75rem 1.25rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .section {
+        padding: 4.5rem 0;
+    }
+
     h1 {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 7vw, 2.5rem);
     }
     
     .hero-cta {
         flex-direction: column;
         width: 100%;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 0.75rem;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        padding: 0.85rem 1.25rem;
     }
     
     .search-box {
