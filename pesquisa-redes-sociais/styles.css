@@ -1,6 +1,6 @@
-/* Reset & Variables */
+@import "../theme.css";
+
 :root {
-    /* Color Palette - White Background with Green/Red Accents */
     --bg-primary: #ffffff;
     --bg-secondary: #f8f9fa;
     --bg-tertiary: #e9ecef;
@@ -8,7 +8,6 @@
     --text-secondary: #495057;
     --text-muted: #6c757d;
     
-    /* Accents - Green and Red */
     --accent-green: #28a745;
     --accent-green-light: #d4edda;
     --accent-green-dark: #155724;
@@ -16,18 +15,15 @@
     --accent-red-light: #f8d7da;
     --accent-red-dark: #721c24;
     
-    /* Typography */
-    --font-serif: 'Merriweather', Georgia, serif;
-    --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: var(--font-mono);
+    --font-sans: var(--font-mono);
     
-    /* Spacing & Layout */
     --container-width: 800px;
     --header-height: 60px;
     --radius-sm: 4px;
     --radius-md: 8px;
 }
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -42,15 +38,18 @@ html {
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    font-family: var(--font-serif);
+    font-family: var(--font-mono);
     line-height: 1.8;
     overflow-x: hidden;
     min-height: 100vh;
 }
 
-/* Typography */
+button, input, select, textarea {
+    font-family: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-sans);
+    font-family: var(--font-mono);
     font-weight: 700;
     letter-spacing: -0.01em;
     line-height: 1.3;
