@@ -14,7 +14,7 @@
   },
   "hero": {
     "subtitle": "Hello, I am",
-    "description": "Full-Stack Developer | Computer Science Student at UFPR",
+    "description": "Systems Developer | Computer Science Student at UFPR",
     "cta": {
       "about": "About Me",
       "projects": "Projects",
@@ -23,7 +23,7 @@
   },
   "about": {
     "title": "About Me",
-    "p1": "Computer Science student at UFPR and Software Developer (or, as I like to say, Systems Craftsman). Currently an intern at Bradesco and former Director at Ecomp, the university's junior enterprise.",
+    "p1": "Computer Science student at UFPR and Software Developer (or, as I like to say, Systems Craftsman). Systems Developer and former Director at Ecomp, the university's junior enterprise.",
     "p2": "I work with performance engineering, system architecture, and design. The tools I master most are Node.js and Java with Spring Boot. I have experience with agile methodologies, containers, Linux servers, CI/CD, RAG, Distributed Architecture, and Agentic Programming.",
     "p3": "I am a fan of the books <b>Extreme Programming Explained</b> and <b>The Pragmatic Programmer</b>."
   },

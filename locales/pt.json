@@ -15,7 +15,7 @@
     },
     "hero": {
         "subtitle": "Olá, eu sou",
-        "description": "Artesão de Sistemas | Graduando em Ciência da Computação na UFPR",
+        "description": "Desenvolvedor de Sistemas | Graduando em Ciência da Computação na UFPR",
         "cta": {
             "about": "Sobre Mim",
             "projects": "Projetos",
@@ -24,8 +24,8 @@
     },
     "about": {
         "title": "Sobre Mim",
-        "p1": "Estudante de Ciência da Computação na UFPR e Desenvolvedor de Software (ou, como gosto de chamar, Artesão de Sistemas). Atualmente estagiário no Bradesco e ex-diretor da Ecomp, empresa júnior de computação da universidade.",
-        "p2": "Trabalho com engenharia de performance, arquitetura e design de sistemas. Tenho experiência com metodologias ágeis, containers, servidores Linux, CI/CD, RAG, Arquitetura Distribuida e Programação Agentica.",
+        "p1": "Estudante de Ciência da Computação na UFPR e Desenvolvedor de Software (ou, como gosto de chamar, Artesão de Sistemas). Desenvolvedor de Sistemas e ex-diretor da Ecomp, empresa júnior de computação da universidade.",
+        "p2": "Trabalho com engenharia de performance, arquitetura e design de sistemas. Tenho experiência com metodologias ágeis, containers, servidores Linux, CI/CD, RAG, Arquitetura Distribuida e Programação Agêntica.",
         "p3": "Fã dos livros <b>Extreme Programming Explained</b> e <b>The Pragmatic Programmer</b>."
     },
     "experience": {

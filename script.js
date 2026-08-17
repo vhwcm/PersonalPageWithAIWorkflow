@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             hero: {
                 subtitle: "Olá, eu sou",
-                description: "Artesão de Sistemas | Graduando em Ciência da Computação na UFPR",
+                description: "Desenvolvedor de Sistemas | Graduando em Ciência da Computação na UFPR",
                 cta: {
                     about: "Sobre Mim",
                     projects: "Projetos",
@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             about: {
                 title: "Sobre Mim",
-                p1: "Estudante de Ciência da Computação na UFPR e Desenvolvedor de Software (ou, como gosto de chamar, Artesão de Sistemas). Atualmente estagiário no Bradesco e ex-diretor da Ecomp, empresa júnior de computação da universidade.",
-                p2: "Trabalho com engenharia de performance, arquitetura e design de sistemas. Tenho experiência com metodologias ágeis, containers, servidores Linux, CI/CD, RAG, Arquitetura Distribuida e Programação Agentica.",
+                p1: "Estudante de Ciência da Computação na UFPR e Desenvolvedor de Software (ou, como gosto de chamar, Artesão de Sistemas). Desenvolvedor de Sistemas e ex-diretor da Ecomp, empresa júnior de computação da universidade.",
+                p2: "Trabalho com engenharia de performance, arquitetura e design de sistemas. Tenho experiência com metodologias ágeis, containers, servidores Linux, CI/CD, RAG, Arquitetura Distribuida e Programação Agêntica.",
                 p3: "Fã dos livros <b>Extreme Programming Explained</b> e <b>The Pragmatic Programmer</b>."
             },
             experience: {
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             hero: {
                 subtitle: "Hello, I am",
-                description: "Full-Stack Developer | Computer Science Student at UFPR",
+                description: "Systems Developer | Computer Science Student at UFPR",
                 cta: {
                     about: "About Me",
                     projects: "Projects",
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             about: {
                 title: "About Me",
-                p1: "Computer Science student at UFPR and Software Developer (or, as I like to say, Systems Craftsman). Currently an intern at Bradesco and former Director at Ecomp, the university's junior enterprise.",
+                p1: "Computer Science student at UFPR and Software Developer (or, as I like to say, Systems Craftsman). Systems Developer and former Director at Ecomp, the university's junior enterprise.",
                 p2: "I work with performance engineering, system architecture, and design. The tools I master most are Node.js and Java with Spring Boot. I have experience with agile methodologies, containers, Linux servers, CI/CD, RAG, Distributed Architecture, and Agentic Programming.",
                 p3: "I am a fan of the books <b>Extreme Programming Explained</b> and <b>The Pragmatic Programmer</b>."
             },
