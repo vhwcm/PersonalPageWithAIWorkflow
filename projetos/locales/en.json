@@ -17,6 +17,8 @@
     "hide_details": "Collapse Details",
     "quick_nav": "Quick Navigation",
     "back_to_top": "Back to Top",
+    "send_email": "Send Email",
+    "send_email_title": "Send Email",
     "rpg_tag": "RAG / Python",
     "rungun_tag": "C99 / Allegro",
     "lunar_tag": "WebSockets / Node",
