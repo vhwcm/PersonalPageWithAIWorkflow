@@ -9,11 +9,13 @@
         "interests": "Interesses",
         "projects": "Projetos",
         "research": "Pesquisa",
+        "send_email": "Enviar E-mail",
+        "send_email_title": "Enviar E-mail",
         "test": "teste para checkar se irá ser traduzido automaticamente"
     },
     "hero": {
         "subtitle": "Olá, eu sou",
-        "description": "Desenvolvedor Full-Stack | Graduando em Ciência da Computação na UFPR",
+        "description": "Artesão de Sistemas | Graduando em Ciência da Computação na UFPR",
         "cta": {
             "about": "Sobre Mim",
             "projects": "Projetos",
@@ -22,9 +24,9 @@
     },
     "about": {
         "title": "Sobre Mim",
-        "p1": "Olá! Sou Victor Hugo, um desenvolvedor apaixonado por tecnologia e inovação. Atualmente cursando Ciência da Computação na UFPR, combino rigor acadêmico com experiência prática no desenvolvimento de software.",
-        "p2": "Minha jornada na programação começou com a curiosidade de entender como as coisas funcionam. Hoje, dedico-me a criar sistemas que não apenas funcionam, mas que proporcionam uma experiência excepcional aos usuários.",
-        "p3": "Além do código, interesso-me profundamente por Inteligência Artificial e como ela pode ser aplicada para resolver problemas do mundo real. Estou sempre em busca de novos desafios e aprendizados."
+        "p1": "Estudante de Ciência da Computação na UFPR e Desenvolvedor de Software (ou, como gosto de chamar, Artesão de Sistemas). Atualmente estagiário no Bradesco e ex-diretor da Ecomp, empresa júnior de computação da universidade.",
+        "p2": "Trabalho com engenharia de performance, arquitetura e design de sistemas. Tenho experiência com metodologias ágeis, containers, servidores Linux, CI/CD, RAG, Arquitetura Distribuida e Programação Agentica.",
+        "p3": "Fã dos livros <b>Extreme Programming Explained</b> e <b>The Pragmatic Programmer</b>."
     },
     "experience": {
         "title": "Experiência Profissional",
@@ -75,9 +77,17 @@
         "algorithms": "Algoritmos",
         "web_dev": "Desenvolvimento Web",
         "cloud_computing": "Computação em Nuvem",
-        "kubernetes": "Kubernetes",
         "cryptography": "Criptografia",
-        "forensics": "Computação Forense"
+        "system_architecture": "Arquitetura de Sistemas",
+        "system_design": "System Design",
+        "spec_driven_dev": "Spec Driven Development",
+        "performance_engineering": "Engenharia de Performance",
+        "ci_cd": "CI/CD",
+        "xp_programming": "XP programming",
+        "aws_services": "Serviços AWS",
+        "db_architecture": "Arquitetura de Banco de Dados",
+        "typescript": "TypeScript",
+        "sql": "SQL"
     },
     "interests": {
         "title": "Interesses Pessoais",
@@ -86,8 +96,8 @@
         "reading": "Leitura",
         "gym": "Academia",
         "business": "Negócios",
-        "cybersecurity": "Cibersegurança",
-        "forensics": "Computação Forense"
+        "system_architecture": "Arquitetura de Sistemas",
+        "agile_vibe_coding": "Agile Vibe Coding"
     },
     "tech_tags": {
         "leadership": "Liderança",
