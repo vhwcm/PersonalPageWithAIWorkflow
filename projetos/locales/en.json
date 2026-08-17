@@ -1,0 +1,262 @@
+{
+  "nav": {
+    "back": "Home",
+    "title": "Featured Projects",
+    "home": "Home",
+    "rpg": "AI RPG Engine",
+    "architecture": "Architecture",
+    "memory": "Memory & RAG",
+    "tech": "Technologies"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "subtitle": "Project Index",
+    "expand_all": "Expand All",
+    "collapse_all": "Collapse All",
+    "view_details": "View Details",
+    "hide_details": "Collapse Details",
+    "quick_nav": "Quick Navigation",
+    "back_to_top": "Back to Top",
+    "rpg_tag": "RAG / Python",
+    "rungun_tag": "C99 / Allegro",
+    "lunar_tag": "WebSockets / Node",
+    "nutri_tag": "Laravel / Fullstack"
+  },
+  "hero": {
+    "badge": "Software Engineering & Generative AI",
+    "title": "Projects & Technical Innovations",
+    "subtitle": "Hands-on exploration of intelligent systems, high-performance software architecture, cognitive RAG, and immersive interfaces."
+  },
+  "project": {
+    "badge": "Flagship Project",
+    "title": "AI RPG Engine: Aetheria",
+    "subtitle": "Fantasy RPG and Realm Simulation Engine featuring 4-Level RAG Architecture, Multi-LLM Providers, and Relational Persistence.",
+    "screenshot_alt": "AI RPG Game user interface screenshot",
+    "screenshot_badge": "Glassmorphism Web HUD Interface",
+    "view_screenshot": "Click to expand screenshot",
+    "stats": {
+      "tests": "+250 Pytest Tests",
+      "providers": "4 LLM Providers",
+      "memory_layers": "4 Memory Layers",
+      "architecture": "Clean Architecture"
+    },
+    "overview": {
+      "title": "Project Overview",
+      "p1": "The <strong>AI RPG Engine</strong> is a comprehensive roleplaying and procedural realm simulation system. Its primary goal is solving one of the major bottlenecks in LLM-driven gaming: context decay, mathematical hallucinations, and long-term narrative inconsistency.",
+      "p2": "Combining <strong>FastAPI</strong> on the backend with a decoupled <strong>Python</strong> engine, the system features transactional persistence in <strong>SQLite3 (WAL)</strong>, a custom vector engine for <strong>Episodic RAG</strong>, and a rich SPA frontend crafted with <strong>Vanilla JavaScript and Glassmorphism CSS</strong>."
+    },
+    "pillars": {
+      "title": "Architectural Pillars & Engineering",
+      "p1_title": "4-Level Cognitive Memory Pipeline",
+      "p1_desc": "To support long-running campaigns with hundreds of turns without degrading the context window, memory is structured into four complementary layers:",
+      "m1": "<strong>1. Immediate Window:</strong> Short-term conversational context of recent player actions and dialogue.",
+      "m2": "<strong>2. Structured World State (SQLite WAL):</strong> Strict relational persistence of resources, population, treasury, military units, taxes, and periodic events with ACID integrity.",
+      "m3": "<strong>3. Episodic Vector Memory (RAG):</strong> Semantic embeddings with importance scoring (0.0 to 1.0) and cosine similarity retrieval for critical historical events.",
+      "m4": "<strong>4. Hierarchical Chronicle Compression:</strong> Periodic chapter synthesis that condenses past turns into concise summaries, drastically reducing token consumption.",
+      "p2_title": "Multi-Provider LLM & Automatic Fallback",
+      "p2_desc": "Architecture powered by <strong>LLMFactory</strong> and abstraction layers enabling automatic fallback upon rate-limits or outages across <strong>Google Gemini (2.5 Flash)</strong>, <strong>xAI Grok-2</strong>, <strong>OpenAI GPT-4o-mini</strong>, and <strong>Local Ollama</strong>, guaranteeing structured JSON output with Pydantic validation.",
+      "p3_title": "Pure Domain, TDD & Observability",
+      "p3_desc": "Built strictly under <strong>Clean Architecture</strong> and <strong>SOLID</strong> principles. Pure domain logic decoupled from web frameworks, backed by a comprehensive <strong>Pytest</strong> suite, and enriched with structured execution logs for AI reasoning tracking.",
+      "p4_title": "Glassmorphism SPA Interface",
+      "p4_desc": "Modern real-time HUD with kingdom resource meters, public morale tracking, territorial graph maps, narrative chronicle logs, and dynamic leader portraits for multiple factions."
+    },
+    "tech_stack": {
+      "title": "Tech Stack & Design Patterns",
+      "backend": "Backend & Core",
+      "ai_rag": "Artificial Intelligence & RAG",
+      "database": "Persistence & Data",
+      "frontend": "Frontend & Design",
+      "quality": "Quality & Architecture"
+    },
+    "highlights": {
+      "title": "Implementation Highlights",
+      "h1_title": "Deterministic Tax & Economy Math",
+      "h1_desc": "Rigorous mathematical formulas for revenue, public happiness, and military upkeep calculated per turn in the StateManager.",
+      "h2_title": "D2 Declarative Diagrams & Kiro Flow",
+      "h2_desc": "Living documentation with D2 diagrams and a rigorous specification lifecycle (Requirements -> Design -> Tasks -> Tests).",
+      "h3_title": "Zero Secrets & Security by Design",
+      "h3_desc": "Centralized configuration management and clean structured logs ensuring zero exposure of API keys or credentials."
+    }
+  },
+  "project_rungun": {
+    "badge": "UFPR Academic Project & C Systems Engineering",
+    "title": "Run & Gun: 2D Retro Arcade Platformer",
+    "subtitle": "2D Action Platformer and Shooter built in C (C99) and Allegro 5, featuring a Finite State Machine (FSM), Custom Physics, Ballistics Engine, and Binary Persistence.",
+    "screenshot_alt": "Run and Gun arcade game gameplay screenshot",
+    "screenshot_badge": "Retro 16-Bit 2D Action with Allegro 5",
+    "view_screenshot": "Click to expand screenshot",
+    "stats": {
+      "classes": "6 Playable Classes",
+      "bosses": "5 Enemies & Bosses",
+      "physics": "Custom Physics & Ballistics",
+      "engine": "C99 & Allegro 5"
+    },
+    "overview": {
+      "title": "Project Overview",
+      "p1": "Developed as a major hands-on project for the <strong>Programming 2 course at UFPR</strong> (B.Sc. in Computer Science), <strong>Run & Gun</strong> is an arcade side-scrolling shooter inspired by 90s retro action classics.",
+      "p2": "Engineered from scratch without third-party game engines to master low-level software architecture, memory lifecycle, and hardware abstractions. Written in <strong>pure C (C99)</strong> using the <strong>Allegro 5</strong> multimedia library, the system implements an AABB collision physics engine, a finite state machine for screen and menu transitions, a dynamic projectile pooling system, and structured on-disk data persistence."
+    },
+    "pillars": {
+      "title": "Technical Pillars & Software Architecture",
+      "p1_title": "Finite State Machine (FSM)",
+      "p1_desc": "Clean decoupled state machine governing all game execution modes:",
+      "m1": "<strong>1. Menu & Shop:</strong> Dynamic character roster selection and permanent upgrade purchasing using collected coins.",
+      "m2": "<strong>2. Main Gameplay Loop:</strong> Smooth 60 FPS execution with precise event synchronization and timer management.",
+      "m3": "<strong>3. Pause & Free Mode:</strong> Instant state switching while retaining complete entity memory and coordinates.",
+      "m4": "<strong>4. Game Over & Level Complete:</strong> Robust transitions with scoring computation and progression persistence.",
+      "p2_title": "AABB Physics & Ballistics System",
+      "p2_desc": "Proprietary physics engine computing gravity, platform Axis-Aligned Bounding Box (AABB) collision, inertial jumping, and dynamic camera scrolling. Ballistics system with projectile structs, fire rates, class-specific damage scaling, and effective ranges.",
+      "p3_title": "Strict Manual Memory Management in C",
+      "p3_desc": "Manual heap allocation and deallocation in C. Deterministic lifecycle for spritesheets, bitmaps, audio samples, and entity pools, ensuring zero memory leaks verified via profiling tools.",
+      "p4_title": "Disk Persistence & In-Game Economy",
+      "p4_desc": "Structured binary and text serialization module (Save/Load with save.dat) saving collected gold, highscores, and character unlocks across sessions."
+    },
+    "tech_stack": {
+      "title": "Tech Stack & Design Patterns",
+      "core": "Language & Engine",
+      "architecture": "Architecture & Patterns",
+      "multimedia": "Multimedia & I/O",
+      "tooling": "Tooling & Quality"
+    },
+    "highlights": {
+      "title": "Engineering Highlights & Gameplay",
+      "h1_title": "6 Distinct Playable Classes",
+      "h1_desc": "Samurai (sword slash & agility), Gangster, Pedro, Raider, Sniper (long-range high damage), and Soldier, each with custom spritesheets, hitboxes, and weapon metrics.",
+      "h2_title": "Enemy AI & Challenging Boss Encounters",
+      "h2_desc": "Patrolling and ranged enemies like Skeleton Archer and Minotaur, plus 3 Bosses (Carnivora, Bruto, Page) with multi-phase attack patterns and hit reactions.",
+      "h3_title": "Multichannel Audio & USB Joystick Support",
+      "h3_desc": "Real-time sound effects and soundtrack mixer using Allegro Audio, paired with gamepad and mapped keyboard support."
+    }
+  },
+  "project_nutri": {
+    "badge": "Early Academic Project (1st Semester) & CS50 Final Project",
+    "title": "Nutri Assistente: Nutritional Calculations & Patient Tracking Platform",
+    "subtitle": "First fullstack web project developed during the 1st semester of university (CS50 Final Project) with Laravel, Blade, metabolic formulas, and API integrations.",
+    "screenshot_alt": "Nutri Assistente platform screenshot",
+    "screenshot_badge": "Fullstack Web Dashboard Laravel & Blade",
+    "view_screenshot": "Click to expand screenshot",
+    "stats": {
+      "semester": "1st Semester / CS50",
+      "calculations": "BMR & TEE (Harris/DRI)",
+      "auth": "Nutri-Patient Link Code",
+      "stack": "Laravel 10 & Blade"
+    },
+    "overview": {
+      "title": "Project Overview & Learning Context",
+      "p1": "<strong>Nutri Assistente</strong> was the very first complete fullstack web project developed during the <strong>1st semester of Computer Science</strong>, also serving as the final project for <strong>Harvard's CS50</strong>. The system was designed to address a real need presented by a nutritionist who needed an accessible tool to calculate metabolic rates, energy expenditure, BMI, and track patient physical evolution.",
+      "p2": "As an <strong>early beginner project</strong>, the codebase reflects the starting stages of learning: it features architectural simplifications, beginner technical debt, and centralized routing, serving as an authentic historical milestone in engineering growth. It provided crucial hands-on foundation in <strong>PHP/Laravel</strong>, relational modeling with <strong>Eloquent ORM</strong>, server-side templating with <strong>Blade</strong>, and third-party integrations with <strong>ZeroBounce</strong> and <strong>Google Gemini</strong>."
+    },
+    "pillars": {
+      "title": "Functional Pillars & Engineering Milestone",
+      "p1_title": "Metabolic Calculations & Anthropometrics",
+      "p1_desc": "Direct mathematical implementation of standard clinical nutrition formulas and reference tables:",
+      "m1": "<strong>1. BMR (Basal Metabolic Rate):</strong> Harris-Benedict equations tailored by gender, age group, weight, and height.",
+      "m2": "<strong>2. TEE (Total Energy Expenditure):</strong> Physical activity factors (AF) and DRI/IOM methodology across life stages.",
+      "m3": "<strong>3. BMI Classification:</strong> Clinical thresholds for children, adults, and elderly populations.",
+      "m4": "<strong>4. Anthropometric Timeline:</strong> Historical logging of weigh-ins and body measurements to track patient progress.",
+      "p2_title": "Nutritionist-Patient Code Pairing",
+      "p2_desc": "Custom authentication workflow using unique alphanumeric codes generated per nutritionist, allowing practitioners to manage dedicated patients or share their code for client self-registration.",
+      "p3_title": "Experimental API Integrations & PDF Parsing",
+      "p3_desc": "Early hands-on exploration of external services: real-time email deliverability checks via ZeroBounce API and anamnesis PDF parsing (Smalot PDF Parser) sending extracted text to Google Gemini API for preliminary suggestions.",
+      "p4_title": "Foundation Milestone & Continuous Growth",
+      "p4_desc": "Represents the starting point of the software engineering journey: shipping a working product that solves user problems, whose technical trade-offs motivated deep mastery of Clean Architecture, TDD, and SOLID principles."
+    },
+    "tech_stack": {
+      "title": "Tech Stack & Tooling",
+      "core": "Language & Framework",
+      "backend": "Backend & Database",
+      "integrations": "APIs & Integrations",
+      "frontend": "Frontend & UI"
+    },
+    "highlights": {
+      "title": "Highlights & Learned Lessons",
+      "h1_title": "First Fullstack Web App Shipped",
+      "h1_desc": "Built and deployed during the very first months of college studies, integrating relational databases, input validation, and business logic.",
+      "h2_title": "Solving a Real User Problem",
+      "h2_desc": "Crafted from practical requirements gathered directly with a working nutritionist to streamline consultation calculations.",
+      "h3_title": "Technical Transparency & Growth Arc",
+      "h3_desc": "A simple legacy project with acknowledged beginner imperfections, transparently documented to showcase engineering progression and maturity over time."
+    }
+  },
+  "project_lunar_chat": {
+    "badge": "WebSockets & Real-Time Distributed Systems",
+    "title": "Lunar Chat: Real-Time Multi-Room Web Messaging",
+    "subtitle": "Real-Time Chat & Messaging System powered by Node.js, Express, Socket.IO, Public/Private Room Isolation, and Event-Driven Architecture.",
+    "screenshot_alt": "Lunar Chat web interface screenshot",
+    "screenshot_badge": "Real-Time SPA Interface & Socket.IO",
+    "view_screenshot": "Click to expand screenshot",
+    "stats": {
+      "duplex": "Full-Duplex WebSockets",
+      "architecture": "Event-Driven / Pub-Sub",
+      "rooms": "Multi-Room & Isolation",
+      "stack": "Node.js & Socket.IO"
+    },
+    "overview": {
+      "title": "Project Overview",
+      "p1": "<strong>Lunar Chat 🌙</strong> is a bidirectional real-time messaging and chat platform designed to thoroughly explore the <strong>WebSockets</strong> protocol, concurrency, and multi-client connection management using <strong>Socket.IO</strong> and <strong>Express</strong>.",
+      "p2": "Built upon an event-driven architecture in <strong>Node.js</strong>, the system features dynamic creation of public and private rooms with unique 10-digit codes, in-memory presence synchronization with atomic user counters, and a reactive SPA interface built with <strong>Vanilla JavaScript and Dark Mode CSS</strong>."
+    },
+    "pillars": {
+      "title": "Architectural Pillars & Real-Time Engineering",
+      "p1_title": "Bidirectional Full-Duplex Communication",
+      "p1_desc": "Low-latency persistent transport engineering with protocol negotiation:",
+      "m1": "<strong>1. Handshake & Upgrade:</strong> Seamless connection startup via HTTP Long-Polling with transparent upgrade to native WebSockets.",
+      "m2": "<strong>2. Event-Driven Pub/Sub:</strong> Decoupled message broadcasting (roomMessage, publicRoomsUpdate, system) eliminating HTTP polling overhead.",
+      "m3": "<strong>3. Selective Broadcasting:</strong> Pinpoint message distribution using socket.to(room).emit to strictly isolate communication within active room participants.",
+      "m4": "<strong>4. Delta Room Synchronization:</strong> Efficient broadcasting of updated public room lists triggered only upon actual state mutations.",
+      "p2_title": "Room Isolation & In-Memory State Management",
+      "p2_desc": "Strict channel partitioning using Socket.IO Room Adapters and in-memory Maps, preventing data leakage between conversations and generating secure random codes for private rooms.",
+      "p3_title": "Reactive Session Garbage Collection",
+      "p3_desc": "Autonomous backend cleanup detecting abrupt socket disconnections, dynamically adjusting live member counts, and purging empty rooms from memory without polling overhead.",
+      "p4_title": "Dependency-Free Reactive SPA Frontend",
+      "p4_desc": "Client structured as a lightweight DOM finite-state machine (Setup, Lobby, Creation, and Chat screens), providing sub-second load times, dynamic auto-scrolling, and responsive user feedback."
+    },
+    "tech_stack": {
+      "title": "Tech Stack & Design Patterns",
+      "core": "Backend & Runtime",
+      "realtime": "Real-Time & Protocols",
+      "frontend": "Frontend & UI",
+      "tooling": "Architecture & Tooling"
+    },
+    "highlights": {
+      "title": "Engineering Highlights & Features",
+      "h1_title": "Thematic Name Generator & 10-Digit Codes",
+      "h1_desc": "Procedural cosmic room name generation (e.g. Cosmic Nebula, Starry Citadel) paired with unique numeric room codes for instant invite sharing.",
+      "h2_title": "System Events & Contextual Messaging",
+      "h2_desc": "Dedicated channel for room lifecycle events (user join, leave, connection drops) cleanly rendered into the message stream.",
+      "h3_title": "Zero Heavy Client-Side Dependencies",
+      "h3_desc": "Constructed purely with Vanilla JavaScript, manipulating DOM nodes with direct high-performance operations without frontend framework bloat."
+    }
+  },
+  "arara": {
+    "items": [
+      "Did you know? Victor built the AI RPG Engine with a 4-tier cognitive memory RAG!",
+      "He engineers Java and Vue.js solutions in full-stack development at Exati!",
+      "He developed a complete retro Run 'N Gun arcade game in C99 and Allegro 5!",
+      "Victor served as Director at Ecomp, leading agile teams with OKRs and Scrum!",
+      "He engineered Lunar Chat, a real-time room chat system with WebSockets!",
+      "Victor's RPG engine is backed by over 250 automated Pytest test cases!",
+      "He built Nutri Assistente, a full-stack diet and nutrition platform with Laravel!",
+      "As a researcher at PET-UFPR, he taught digital literacy to immigrants!",
+      "He is pursuing Computer Science at the Federal University of Paraná (UFPR)!",
+      "Victor designed multi-provider AI fallback with Gemini, Grok, GPT, and Ollama!",
+      "He applies Clean Architecture and SOLID principles to mission-critical systems!",
+      "He published academic research analyzing social media impact on student focus!",
+      "Victor masters Docker, containerization, and Linux server environments!",
+      "In his C99 game, he built custom audio and spatial-hash collision physics!",
+      "He served as a Digital Circuits Teaching Assistant helping dozens of students!",
+      "Victor loves chess, strategy games, and tackling complex logic problems!",
+      "He implemented transactional SQLite WAL persistence with vector indexing!",
+      "At Ecomp, he built full-stack web solutions using Nuxt.js and Node.js!",
+      "He organized university academic events and competitive programming contests!",
+      "Victor is passionate about Software Engineering, Generative AI, and innovation!"
+    ],
+    "close_label": "Close message"
+  },
+  "modal": {
+    "close": "Close preview"
+  },
+  "footer": {
+    "rights": "© 2026 Victor Hugo Weigmann Chequer Maia. All rights reserved."
+  }
+}

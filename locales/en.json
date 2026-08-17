@@ -1,10 +1,13 @@
 {
   "nav": {
+    "menu_label": "Navigation",
+    "menu_portfolio": "Portfolio & Research",
     "home": "Home",
     "about": "About",
     "experience": "Experience",
     "skills": "Skills",
     "interests": "Interests",
+    "projects": "Projects",
     "research": "Research"
   },
   "hero": {
@@ -12,7 +15,7 @@
     "description": "Full-Stack Developer | Computer Science Student at UFPR",
     "cta": {
       "about": "About Me",
-      "blog": "Blog",
+      "projects": "Projects",
       "research": "Research"
     }
   },
@@ -95,6 +98,31 @@
     "digital_circuits": "Digital Circuits",
     "didactics": "Didactics",
     "mentorship": "Mentorship"
+  },
+  "arara": {
+    "items": [
+      "Did you know? Victor built the AI RPG Engine with a 4-tier cognitive memory RAG!",
+      "He engineers Java and Vue.js solutions in full-stack development at Exati!",
+      "He developed a complete retro Run 'N Gun arcade game in C99 and Allegro 5!",
+      "Victor served as Director at Ecomp, leading agile teams with OKRs and Scrum!",
+      "He engineered Lunar Chat, a real-time room chat system with WebSockets!",
+      "Victor's RPG engine is backed by over 250 automated Pytest test cases!",
+      "He built Nutri Assistente, a full-stack diet and nutrition platform with Laravel!",
+      "As a researcher at PET-UFPR, he taught digital literacy to immigrants!",
+      "He is pursuing Computer Science at the Federal University of Paraná (UFPR)!",
+      "Victor designed multi-provider AI fallback with Gemini, Grok, GPT, and Ollama!",
+      "He applies Clean Architecture and SOLID principles to mission-critical systems!",
+      "He published academic research analyzing social media impact on student focus!",
+      "Victor masters Docker, containerization, and Linux server environments!",
+      "In his C99 game, he built custom audio and spatial-hash collision physics!",
+      "He served as a Digital Circuits Teaching Assistant helping dozens of students!",
+      "Victor loves chess, strategy games, and tackling complex logic problems!",
+      "He implemented transactional SQLite WAL persistence with vector indexing!",
+      "At Ecomp, he built full-stack web solutions using Nuxt.js and Node.js!",
+      "He organized university academic events and competitive programming contests!",
+      "Victor is passionate about Software Engineering, Generative AI, and innovation!"
+    ],
+    "close_label": "Close message"
   },
   "footer": {
     "rights": "&copy; 2026 Victor Hugo Weigmann Chequer Maia. All rights reserved."

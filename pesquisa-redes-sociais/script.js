@@ -59,6 +59,9 @@ const updateLanguage = async (lang) => {
             }
         }
     });
+    if (typeof window.renderAraraFactPesquisa === 'function') {
+        window.renderAraraFactPesquisa();
+    }
 };
 
 // Global function to switch language
@@ -171,9 +174,146 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Update active link on scroll
     window.addEventListener('scroll', updateActiveLink);
-
-    // Initial call to set active link
     updateActiveLink();
+
+    const araraFacts = {
+        pt: [
+            "Você sabia? O Victor desenvolveu o AI RPG Engine com RAG em 4 níveis de memória!",
+            "Ele programa em Java e Vue.js no desenvolvimento de sistemas na Exati!",
+            "Ele criou um jogo retrô estilo Run 'N Gun inteiramente em C99 e Allegro 5!",
+            "O Victor foi Diretor na Ecomp, liderando equipes ágeis com OKRs e Scrum!",
+            "Ele construiu o Lunar Chat, um sistema de salas em tempo real com WebSockets!",
+            "O motor de RPG do Victor conta com mais de 250 testes automatizados em Pytest!",
+            "Ele desenvolveu o Nutri Assistente, uma plataforma completa em Laravel!",
+            "Como pesquisador no PET-UFPR, ele ensinou informática para imigrantes!",
+            "Ele estuda Ciência da Computação na Universidade Federal do Paraná (UFPR)!",
+            "O Victor arquitetou integração multi-provedor com Gemini, Grok, GPT e Ollama!",
+            "Ele aplicou Clean Architecture e princípios SOLID em projetos de missão crítica!",
+            "Ele publicou uma pesquisa acadêmica sobre o impacto das redes sociais nos estudos!",
+            "O Victor domina Docker, conteinerização e ambientes Linux para deploy!",
+            "No jogo em C99, ele implementou um motor de áudio e física com grade espacial!",
+            "Ele foi monitor de Circuitos Digitais e auxiliou dezenas de alunos na UFPR!",
+            "O Victor adora xadrez, estratégia e resolver desafios lógicos complexos!",
+            "Ele implementou persistência transacional com SQLite WAL e indexação vetorial!",
+            "Na Ecomp, ele desenvolveu aplicações completas com Nuxt.js e Node.js!",
+            "Ele organizou eventos acadêmicos e maratonas de programação competitiva!",
+            "O Victor é apaixonado por Engenharia de Software, IA Generativa e inovação!"
+        ],
+        en: [
+            "Did you know? Victor built the AI RPG Engine with a 4-tier cognitive memory RAG!",
+            "He engineers Java and Vue.js solutions in full-stack development at Exati!",
+            "He developed a complete retro Run 'N Gun arcade game in C99 and Allegro 5!",
+            "Victor served as Director at Ecomp, leading agile teams with OKRs and Scrum!",
+            "He engineered Lunar Chat, a real-time room chat system with WebSockets!",
+            "Victor's RPG engine is backed by over 250 automated Pytest test cases!",
+            "He built Nutri Assistente, a full-stack diet and nutrition platform with Laravel!",
+            "As a researcher at PET-UFPR, he taught digital literacy to immigrants!",
+            "He is pursuing Computer Science at the Federal University of Paraná (UFPR)!",
+            "Victor designed multi-provider AI fallback with Gemini, Grok, GPT, and Ollama!",
+            "He applies Clean Architecture and SOLID principles to mission-critical systems!",
+            "He published academic research analyzing social media impact on student focus!",
+            "Victor masters Docker, containerization, and Linux server environments!",
+            "In his C99 game, he built custom audio and spatial-hash collision physics!",
+            "He served as a Digital Circuits Teaching Assistant helping dozens of students!",
+            "Victor loves chess, strategy games, and tackling complex logic problems!",
+            "He implemented transactional SQLite WAL persistence with vector indexing!",
+            "At Ecomp, he built full-stack web solutions using Nuxt.js and Node.js!",
+            "He organized university academic events and competitive programming contests!",
+            "Victor is passionate about Software Engineering, Generative AI, and innovation!"
+        ]
+    };
+
+    const araraCompanion = document.getElementById('arara-companion');
+    const araraBubble = document.getElementById('arara-bubble');
+    const araraText = document.getElementById('arara-text');
+    const araraClose = document.getElementById('arara-bubble-close');
+
+    if (araraCompanion && araraBubble && araraText) {
+        let messageIndex = 0;
+        let isPaused = false;
+        let isManuallyClosed = false;
+        let intervalId = null;
+
+        const getAraraItems = () => {
+            const currentLang = localStorage.getItem('preferredLanguage') || 'pt';
+            const cache = translationsCache[currentLang];
+            if (cache && cache.arara && Array.isArray(cache.arara.items) && cache.arara.items.length > 0) {
+                return cache.arara.items;
+            }
+            return araraFacts[currentLang] || araraFacts.pt;
+        };
+
+        const renderAraraFact = () => {
+            const items = getAraraItems();
+            const msg = items[messageIndex % items.length];
+            araraText.style.opacity = '0';
+            araraText.style.transition = 'opacity 0.2s ease';
+            setTimeout(() => {
+                araraText.textContent = msg;
+                araraText.style.opacity = '1';
+            }, 200);
+            if (!isManuallyClosed) {
+                araraBubble.classList.add('is-visible');
+            }
+        };
+
+        window.renderAraraFactPesquisa = renderAraraFact;
+
+        const showBubble = () => {
+            araraBubble.classList.add('is-visible');
+        };
+
+        const hideBubble = () => {
+            araraBubble.classList.remove('is-visible');
+        };
+
+        const nextMessage = () => {
+            const items = getAraraItems();
+            messageIndex = (messageIndex + 1) % items.length;
+            renderAraraFact();
+        };
+
+        const startInterval = () => {
+            if (intervalId) clearInterval(intervalId);
+            intervalId = setInterval(() => {
+                if (!isPaused && !isManuallyClosed) {
+                    nextMessage();
+                }
+            }, 10000);
+        };
+
+        setTimeout(() => {
+            renderAraraFact();
+            showBubble();
+            startInterval();
+        }, 400);
+
+        araraBubble.addEventListener('mouseenter', () => {
+            isPaused = true;
+        });
+
+        araraBubble.addEventListener('mouseleave', () => {
+            isPaused = false;
+        });
+
+        if (araraClose) {
+            araraClose.addEventListener('click', (e) => {
+                e.stopPropagation();
+                isManuallyClosed = true;
+                hideBubble();
+            });
+        }
+
+        araraCompanion.addEventListener('click', (e) => {
+            if (e.target.closest('#arara-bubble-close')) return;
+            isManuallyClosed = false;
+            araraCompanion.classList.remove('bounce');
+            void araraCompanion.offsetWidth;
+            araraCompanion.classList.add('bounce');
+            nextMessage();
+            showBubble();
+            startInterval();
+        });
+    }
 });

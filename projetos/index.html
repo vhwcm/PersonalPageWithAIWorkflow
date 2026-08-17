@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos & Engenharia de Software | Victor Hugo W.C.M</title>
+  <link rel="icon" href="https://i.postimg.cc/90FygxqM/foto-pessoal.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+  <nav class="navbar">
+    <a href="../index.html" class="back-link" data-i18n="nav.back">
+      <i class="fas fa-arrow-left"></i> Início
+    </a>
+    <div class="nav-title" data-i18n="nav.title">
+      Projetos em Destaque
+    </div>
+    <div class="nav-controls">
+      <button id="lang-switch" class="lang-switch" aria-label="Switch Language">
+        <span class="lang-option active" data-lang="pt">PT</span>
+        <span class="separator">|</span>
+        <span class="lang-option" data-lang="en">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="badge-tag">
+        <span class="badge-dot"></span>
+        <span data-i18n="hero.badge">Engenharia de Software</span>
+      </div>
+      <h1 data-i18n="hero.title">Projetos & Inovações Técnicas</h1>
+      <p data-i18n="hero.subtitle">
+        Exploração prática de sistemas inteligentes, arquitetura de software de alta performance, RAG cognitivo e interfaces imersivas.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="projects-layout">
+      <aside class="catalog-sidebar" id="catalog-sidebar">
+        <div class="catalog-card">
+          <div class="catalog-header">
+            <div class="catalog-title-group">
+              <div class="catalog-badge-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <div>
+                <h3 class="catalog-heading" data-i18n="catalog.title">Catálogo</h3>
+                <span class="catalog-counter" data-i18n="catalog.subtitle">Índice de Projetos</span>
+              </div>
+            </div>
+            <div class="catalog-actions">
+              <button type="button" id="btn-expand-all" class="catalog-action-btn" title="Expandir Todos" data-i18n-attr="title:catalog.expand_all" aria-label="Expandir todos os projetos">
+                <i class="fas fa-expand-alt"></i>
+              </button>
+              <button type="button" id="btn-collapse-all" class="catalog-action-btn" title="Recolher Todos" data-i18n-attr="title:catalog.collapse_all" aria-label="Recolher todos os projetos">
+                <i class="fas fa-compress-alt"></i>
+              </button>
+            </div>
+          </div>
+
+          <nav class="catalog-nav" aria-label="Navegação rápida de projetos">
+            <a href="#rpg-engine" class="catalog-item active" data-target="rpg-engine">
+              <div class="catalog-item-icon icon-purple">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="catalog-item-info">
+                <div class="catalog-item-title">AI RPG Engine</div>
+                <span class="catalog-item-tag" data-i18n="catalog.rpg_tag">RAG / Python</span>
+              </div>
+              <i class="fas fa-chevron-right catalog-item-arrow"></i>
+            </a>
+
+            <a href="#run-n-gun" class="catalog-item" data-target="run-n-gun">
+              <div class="catalog-item-icon icon-amber">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="catalog-item-info">
+                <div class="catalog-item-title">Run & Gun</div>
+                <span class="catalog-item-tag" data-i18n="catalog.rungun_tag">C99 / Allegro</span>
+              </div>
+              <i class="fas fa-chevron-right catalog-item-arrow"></i>
+            </a>
+
+            <a href="#lunar-chat" class="catalog-item" data-target="lunar-chat">
+              <div class="catalog-item-icon icon-cyan">
+                <i class="fas fa-satellite-dish"></i>
+              </div>
+              <div class="catalog-item-info">
+                <div class="catalog-item-title">Lunar Chat</div>
+                <span class="catalog-item-tag" data-i18n="catalog.lunar_tag">WebSockets / Node</span>
+              </div>
+              <i class="fas fa-chevron-right catalog-item-arrow"></i>
+            </a>
+
+            <a href="#nutri-assistente" class="catalog-item" data-target="nutri-assistente">
+              <div class="catalog-item-icon icon-emerald">
+                <i class="fas fa-heart-pulse"></i>
+              </div>
+              <div class="catalog-item-info">
+                <div class="catalog-item-title">Nutri Assistente</div>
+                <span class="catalog-item-tag" data-i18n="catalog.nutri_tag">Laravel / Fullstack</span>
+              </div>
+              <i class="fas fa-chevron-right catalog-item-arrow"></i>
+            </a>
+          </nav>
+
+          <div class="catalog-footer">
+            <a href="#top" class="catalog-top-link">
+              <i class="fas fa-arrow-up"></i>
+              <span data-i18n="catalog.back_to_top">Voltar ao Topo</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="projects-feed">
+        <section class="project-showcase" id="rpg-engine">
+          <article class="card-main is-collapsed" data-project="rpg-engine">
+            <div class="card-preview-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-rpg-engine">
+              <div class="preview-thumb-box">
+                <img src="assets/captura_de_tela_do_jogo.png" alt="Miniatura AI RPG Engine" class="preview-thumb-img" />
+                <span class="preview-thumb-badge"><i class="fas fa-brain"></i></span>
+              </div>
+              <div class="preview-info-box">
+                <div class="project-meta">
+                  <span class="badge-tag" style="margin-bottom: 0;">
+                    <i class="fas fa-star"></i> <span data-i18n="project.badge">Projeto Principal</span>
+                  </span>
+                  <span class="status-pill">Production Ready</span>
+                  <a href="https://github.com/vhwcm/AI_RPG_GAME" target="_blank" rel="noopener noreferrer" class="github-link" onclick="event.stopPropagation()">
+                    <i class="fab fa-github"></i> <span>GitHub</span>
+                  </a>
+                </div>
+                <h2 data-i18n="project.title">AI RPG Engine: Aetheria</h2>
+                <p class="project-subtitle" data-i18n="project.subtitle">
+                  Motor de RPG de Fantasia e Simulação de Reinos com Arquitetura RAG em 4 Níveis, Multi-Provedores de IA e Persistência Relacional.
+                </p>
+              </div>
+              <div class="preview-action-box">
+                <button type="button" class="collapse-toggle-btn" aria-label="Alternar detalhes">
+                  <span class="toggle-text toggle-text-expand" data-i18n="catalog.view_details">Ver Detalhes</span>
+                  <span class="toggle-text toggle-text-collapse" data-i18n="catalog.hide_details">Recolher Detalhes</span>
+                  <i class="fas fa-chevron-down toggle-chevron"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card-collapsible-body" id="body-rpg-engine">
+              <div class="screenshot-container">
+                <div class="screenshot-frame" id="screenshot-trigger">
+                  <div class="screenshot-bar">
+                    <div class="browser-dots">
+                      <span class="dot-red"></span>
+                      <span class="dot-yellow"></span>
+                      <span class="dot-green"></span>
+                    </div>
+                    <div class="browser-address">http://localhost:8000 &bull; Aetheria Realm Engine</div>
+                    <div class="browser-action">
+                      <i class="fas fa-expand-arrows-alt"></i> <span data-i18n="project.view_screenshot">Clique para ampliar</span>
+                    </div>
+                  </div>
+                  <div class="screenshot-img-wrapper">
+                    <img src="assets/captura_de_tela_do_jogo.png" alt="Captura de tela da interface do AI RPG Game" data-i18n-attr="alt:project.screenshot_alt" />
+                    <div class="screenshot-overlay">
+                      <div class="overlay-caption">
+                        <i class="fas fa-desktop"></i> <span data-i18n="project.screenshot_badge">Interface Web Glassmorphism HUD</span>
+                      </div>
+                      <div class="overlay-hint">
+                        <i class="fas fa-search-plus"></i> Zoom HD
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-vial-circle-check"></i></div>
+                  <div class="stat-title" data-i18n="project.stats.tests">+250 Testes Pytest</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-microchip"></i></div>
+                  <div class="stat-title" data-i18n="project.stats.providers">4 Provedores LLM</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-brain"></i></div>
+                  <div class="stat-title" data-i18n="project.stats.memory_layers">4 Camadas de Memória</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-cubes"></i></div>
+                  <div class="stat-title" data-i18n="project.stats.architecture">Clean Architecture</div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-compass"></i> <span data-i18n="project.overview.title">Visão Geral do Projeto</span></h3>
+                <div class="overview-text">
+                  <p data-i18n="project.overview.p1">
+                    O <strong>AI RPG Engine</strong> é um sistema completo de interpretação de papéis e simulação procedural de reinos. O objetivo central é solucionar um dos maiores gargalos dos modelos de linguagem em jogos de longa duração: a perda de contexto, alucinações de regras matemáticas e inconsistência narrativa.
+                  </p>
+                  <p data-i18n="project.overview.p2">
+                    Combinando <strong>FastAPI</strong> no backend com um motor desacoplado em <strong>Python</strong>, o sistema implementa persistência transacional em <strong>SQLite3 (WAL)</strong>, um motor vetorial próprio para <strong>RAG Episódico</strong> e uma interface SPA rica em <strong>Vanilla JavaScript e CSS Glassmorphism</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-layer-group"></i> <span data-i18n="project.pillars.title">Pilares Arquiteturais & Engenharia</span></h3>
+                <div class="pillars-grid">
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-purple">
+                      <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4 data-i18n="project.pillars.p1_title">Pipeline de Memória Cognitiva em 4 Níveis</h4>
+                    <p data-i18n="project.pillars.p1_desc">
+                      Para suportar campanhas com centenas de turnos sem degradar a janela de contexto, o motor divide a memória em quatro estágios complementares:
+                    </p>
+                    <ul class="memory-layers-list">
+                      <li data-i18n="project.pillars.m1"><strong>1. Janela Imediata:</strong> Contexto conversacional das interações mais recentes do jogador.</li>
+                      <li data-i18n="project.pillars.m2"><strong>2. Estado Estruturado (SQLite WAL):</strong> Persistência relacional estrita de recursos, população, tesouro, exército, impostos e eventos periódicos com integridade transacional.</li>
+                      <li data-i18n="project.pillars.m3"><strong>3. Memória Episódica Vetorial (RAG):</strong> Embeddings semânticos com pontuação de importância (0.0 a 1.0) e similaridade de cosseno para resgatar antecedentes cruciais.</li>
+                      <li data-i18n="project.pillars.m4"><strong>4. Compressão Hierárquica de Crônicas:</strong> Sumarização periódica automática em capítulos, reduzindo drasticamente o consumo de tokens sem perder o histórico do mundo.</li>
+                    </ul>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-cyan">
+                      <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4 data-i18n="project.pillars.p2_title">Multi-Provedores & Fallback Automático</h4>
+                    <p data-i18n="project.pillars.p2_desc">
+                      Arquitetura com <strong>LLMFactory</strong> e camada de abstração que permite alternar e realizar fallback automático em caso de rate-limit ou indisponibilidade entre <strong>Google Gemini (2.5 Flash)</strong>, <strong>xAI Grok-2</strong>, <strong>OpenAI GPT-4o-mini</strong> e <strong>Ollama Local</strong>, com garantia de saída estruturada em JSON e validação via Pydantic.
+                    </p>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-emerald">
+                      <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h4 data-i18n="project.pillars.p3_title">Domínio Puro, TDD e Observabilidade</h4>
+                    <p data-i18n="project.pillars.p3_desc">
+                      Desenvolvido estritamente sob os princípios de <strong>Clean Architecture</strong> e <strong>SOLID</strong>. A camada de domínio é 100% desacoplada da web, com suíte de testes unitários e de integração em <strong>Pytest</strong>, além de logs estruturados e contextuais para rastreamento preciso de decisões da IA.
+                    </p>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-amber">
+                      <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4 data-i18n="project.pillars.p4_title">Interface SPA Glassmorphism</h4>
+                    <p data-i18n="project.pillars.p4_desc">
+                      HUD moderno em tempo real com acompanhamento de finanças do reino, felicidade pública, mapa vetorial de territórios, diário narrativo de crônicas e retratos dinâmicos de líderes de diferentes facções.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-code"></i> <span data-i18n="project.tech_stack.title">Stack Tecnológica & Padrões</span></h3>
+                <div class="tech-categories">
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project.tech_stack.backend">Backend & Core</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Python 3.11</span>
+                      <span class="tech-tag">FastAPI</span>
+                      <span class="tech-tag">Pydantic v2</span>
+                      <span class="tech-tag">Uvicorn</span>
+                      <span class="tech-tag">Clean Architecture</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project.tech_stack.ai_rag">Inteligência Artificial & RAG</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Google Gemini 2.5</span>
+                      <span class="tech-tag">xAI Grok-2</span>
+                      <span class="tech-tag">OpenAI GPT-4o</span>
+                      <span class="tech-tag">Ollama Local</span>
+                      <span class="tech-tag">VectorStore</span>
+                      <span class="tech-tag">Cosine Similarity</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project.tech_stack.database">Persistência & Dados</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">SQLite3 (WAL)</span>
+                      <span class="tech-tag">Foreign Keys</span>
+                      <span class="tech-tag">Repository Pattern</span>
+                      <span class="tech-tag">JSON Blobs</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project.tech_stack.frontend">Frontend & Design</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Vanilla JavaScript</span>
+                      <span class="tech-tag">CSS3 Glassmorphism</span>
+                      <span class="tech-tag">HTML5 SPA</span>
+                      <span class="tech-tag">Dynamic i18n</span>
+                      <span class="tech-tag">Responsive UI</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project.tech_stack.quality">Qualidade & Arquitetura</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Pytest</span>
+                      <span class="tech-tag">TDD</span>
+                      <span class="tech-tag">D2 Declarative Diagrams</span>
+                      <span class="tech-tag">Structured Logging</span>
+                      <span class="tech-tag">Kiro Flow</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-lightbulb"></i> <span data-i18n="project.highlights.title">Destaques de Implementação</span></h3>
+                <div class="highlights-grid">
+                  <div class="highlight-item">
+                    <i class="fas fa-calculator"></i>
+                    <div>
+                      <h5 data-i18n="project.highlights.h1_title">Cálculo Matemático de Impostos & Economia</h5>
+                      <p data-i18n="project.highlights.h1_desc">
+                        Modelagem matemática determinística para arrecadação, moral pública e manutenção militar executada no StateManager a cada turno.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="highlight-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <div>
+                      <h5 data-i18n="project.highlights.h2_title">Diagramação Declarativa D2 & Kiro Flow</h5>
+                      <p data-i18n="project.highlights.h2_desc">
+                        Documentação viva com diagramas D2 e ciclo rigoroso de especificações (Requirements -> Design -> Tasks -> Tests).
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="highlight-item">
+                    <i class="fas fa-lock"></i>
+                    <div>
+                      <h5 data-i18n="project.highlights.h3_title">Zero Secrets & Alta Segurança</h5>
+                      <p data-i18n="project.highlights.h3_desc">
+                        Gerenciamento centralizado de configurações e logs estruturados estéreis, garantindo que credenciais nunca sejam expostas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer-action">
+                <button type="button" class="collapse-footer-btn" data-target="rpg-engine">
+                  <i class="fas fa-chevron-up"></i> <span data-i18n="catalog.hide_details">Recolher Detalhes</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="project-showcase" id="run-n-gun">
+          <article class="card-main is-collapsed" data-project="run-n-gun">
+            <div class="card-preview-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-run-n-gun">
+              <div class="preview-thumb-box">
+                <img src="assets/run_n_gun_readme_2.png" alt="Miniatura Run and Gun" class="preview-thumb-img" />
+                <span class="preview-thumb-badge"><i class="fas fa-gamepad"></i></span>
+              </div>
+              <div class="preview-info-box">
+                <div class="project-meta">
+                  <span class="badge-tag" style="margin-bottom: 0;">
+                    <i class="fas fa-gamepad"></i> <span data-i18n="project_rungun.badge">Projeto Acadêmico UFPR & Engenharia em C</span>
+                  </span>
+                  <span class="status-pill">Completed</span>
+                  <a href="https://github.com/vhwcm/Run_n_Gun-Trab_prog2" target="_blank" rel="noopener noreferrer" class="github-link" onclick="event.stopPropagation()">
+                    <i class="fab fa-github"></i> <span>GitHub</span>
+                  </a>
+                </div>
+                <h2 data-i18n="project_rungun.title">Run & Gun: 2D Retro Arcade Platformer</h2>
+                <p class="project-subtitle" data-i18n="project_rungun.subtitle">
+                  Jogo de Ação e Tiro 2D em C (C99) e Allegro 5, com Máquina de Estados Finitos (FSM), Física Própria, Sistema Balístico e Persistência Binária.
+                </p>
+              </div>
+              <div class="preview-action-box">
+                <button type="button" class="collapse-toggle-btn" aria-label="Alternar detalhes">
+                  <span class="toggle-text toggle-text-expand" data-i18n="catalog.view_details">Ver Detalhes</span>
+                  <span class="toggle-text toggle-text-collapse" data-i18n="catalog.hide_details">Recolher Detalhes</span>
+                  <i class="fas fa-chevron-down toggle-chevron"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card-collapsible-body" id="body-run-n-gun">
+              <div class="screenshot-container">
+                <div class="screenshot-frame">
+                  <div class="screenshot-bar">
+                    <div class="browser-dots">
+                      <span class="dot-red"></span>
+                      <span class="dot-yellow"></span>
+                      <span class="dot-green"></span>
+                    </div>
+                    <div class="browser-address">./game &bull; Allegro 5 Arcade Engine (60 FPS)</div>
+                    <div class="browser-action">
+                      <i class="fas fa-expand-arrows-alt"></i> <span data-i18n="project_rungun.view_screenshot">Clique para ampliar</span>
+                    </div>
+                  </div>
+                  <div class="screenshot-img-wrapper">
+                    <img src="assets/run_n_gun_readme_2.png" alt="Captura de tela do jogo Run and Gun" data-i18n-attr="alt:project_rungun.screenshot_alt" />
+                    <div class="screenshot-overlay">
+                      <div class="overlay-caption">
+                        <i class="fas fa-gamepad"></i> <span data-i18n="project_rungun.screenshot_badge">Ação 2D Retrô 16-bit com Allegro 5</span>
+                      </div>
+                      <div class="overlay-hint">
+                        <i class="fas fa-search-plus"></i> Zoom HD
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-users-gear"></i></div>
+                  <div class="stat-title" data-i18n="project_rungun.stats.classes">6 Classes Jogáveis</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-skull-crossbones"></i></div>
+                  <div class="stat-title" data-i18n="project_rungun.stats.bosses">5 Inimigos & Chefes</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-person-running"></i></div>
+                  <div class="stat-title" data-i18n="project_rungun.stats.physics">Física & Balística Própria</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-microchip"></i></div>
+                  <div class="stat-title" data-i18n="project_rungun.stats.engine">C99 & Allegro 5</div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-compass"></i> <span data-i18n="project_rungun.overview.title">Visão Geral do Projeto</span></h3>
+                <div class="overview-text">
+                  <p data-i18n="project_rungun.overview.p1">
+                    Desenvolvido como trabalho prático da disciplina de <strong>Programação 2 (UFPR)</strong> no curso de Bacharelado em Ciência da Computação, o <strong>Run & Gun</strong> é um jogo arcade de ação e tiro em rolagem lateral inspirado nos clássicos retrô dos anos 90.
+                  </p>
+                  <p data-i18n="project_rungun.overview.p2">
+                    O projeto foi concebido com foco em engenharia de software de baixo nível, controle rigoroso de ciclo de vida e sem uso de game engines prontas. Utilizando <strong>C puro (C99)</strong> e a biblioteca multimídia <strong>Allegro 5</strong>, o sistema implementa do zero motor de física com detecção de colisão AABB, máquina de estados finitos para fluxo de telas, balística com pooling de projéteis e persistência estruturada em disco.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-layer-group"></i> <span data-i18n="project_rungun.pillars.title">Pilares Técnicos & Arquitetura de Software</span></h3>
+                <div class="pillars-grid">
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-purple">
+                      <i class="fas fa-diagram-project"></i>
+                    </div>
+                    <h4 data-i18n="project_rungun.pillars.p1_title">Máquina de Estados Finitos (FSM)</h4>
+                    <p data-i18n="project_rungun.pillars.p1_desc">
+                      Arquitetura orientada a estados desacoplados que gerencia de forma limpa o ciclo de execução do jogo:
+                    </p>
+                    <ul class="memory-layers-list">
+                      <li data-i18n="project_rungun.pillars.m1"><strong>1. Menu & Loja:</strong> Telas dinâmicas de seleção de personagens e aquisição de upgrades utilizando moedas acumuladas nas fases.</li>
+                      <li data-i18n="project_rungun.pillars.m2"><strong>2. Loop de Gameplay Principal:</strong> Execução fluida a 60 FPS com sincronização de eventos, delta time e temporizadores de precisão.</li>
+                      <li data-i18n="project_rungun.pillars.m3"><strong>3. Pausa & Modo Livre:</strong> Alternância instantânea de contexto com retenção completa do estado de memória e entidades.</li>
+                      <li data-i18n="project_rungun.pillars.m4"><strong>4. Game Over & Vitória:</strong> Transições de estado com cálculo de recompensas, pontuação e persistência de estatísticas.</li>
+                    </ul>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-cyan">
+                      <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h4 data-i18n="project_rungun.pillars.p2_title">Física AABB & Sistema Balístico</h4>
+                    <p data-i18n="project_rungun.pillars.p2_desc">
+                      Motor próprio de física calculando gravidade contínua, colisão por Bounding Box (AABB) com plataformas, salto com inércia e scrolling lateral de câmera. Balística com estruturas de projéteis dinâmicos, controle de cadência, dano customizado por classe e alcance efetivo.
+                    </p>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-emerald">
+                      <i class="fas fa-memory"></i>
+                    </div>
+                    <h4 data-i18n="project_rungun.pillars.p3_title">Gestão Rigorosa de Memória em C</h4>
+                    <p data-i18n="project_rungun.pillars.p3_desc">
+                      Gerenciamento manual de memória dinâmica (heap). Carregamento, pooling e desalocação segura de spritesheets, mapas de bits, amostras de áudio e estruturas de entidades, garantindo ausência de memory leaks.
+                    </p>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-amber">
+                      <i class="fas fa-floppy-disk"></i>
+                    </div>
+                    <h4 data-i18n="project_rungun.pillars.p4_title">Persistência em Disco & Economia</h4>
+                    <p data-i18n="project_rungun.pillars.p4_desc">
+                      Módulo de serialização binária e textual (Save/Load em save.dat) que preserva moedas ganhas, recordes e personagens desbloqueados permanentemente entre sessões.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-code"></i> <span data-i18n="project_rungun.tech_stack.title">Stack Tecnológica & Padrões</span></h3>
+                <div class="tech-categories">
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_rungun.tech_stack.core">Linguagem & Engine</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">C (C99 Standard)</span>
+                      <span class="tech-tag">Allegro 5.2</span>
+                      <span class="tech-tag">GCC / Clang</span>
+                      <span class="tech-tag">Low-Level Arch</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_rungun.tech_stack.architecture">Arquitetura & Padrões</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Finite State Machine</span>
+                      <span class="tech-tag">AABB Collision</span>
+                      <span class="tech-tag">Entity Pooling</span>
+                      <span class="tech-tag">Delta Time Loop</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_rungun.tech_stack.multimedia">Multimídia & I/O</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Allegro Audio / Primitives</span>
+                      <span class="tech-tag">Allegro Image / Font</span>
+                      <span class="tech-tag">Joystick API</span>
+                      <span class="tech-tag">Binary Serialization</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_rungun.tech_stack.tooling">Ferramental & Qualidade</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Makefile</span>
+                      <span class="tech-tag">Valgrind (Memcheck)</span>
+                      <span class="tech-tag">GDB Debugger</span>
+                      <span class="tech-tag">Git</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-lightbulb"></i> <span data-i18n="project_rungun.highlights.title">Destaques de Engenharia & Mecânicas</span></h3>
+                <div class="highlights-grid">
+                  <div class="highlight-item">
+                    <i class="fas fa-user-ninja"></i>
+                    <div>
+                      <h5 data-i18n="project_rungun.highlights.h1_title">6 Classes Únicas com Mecânicas Distintas</h5>
+                      <p data-i18n="project_rungun.highlights.h1_desc">
+                        Samurai (espada e alta velocidade), Gangster, Pedro, Raider, Sniper (alto dano e alcance longo) e Soldier, cada um com spritesheets, hitboxes e parâmetros específicos.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="highlight-item">
+                    <i class="fas fa-dragon"></i>
+                    <div>
+                      <h5 data-i18n="project_rungun.highlights.h2_title">IA de Inimigos e Chefões Desafiadores</h5>
+                      <p data-i18n="project_rungun.highlights.h2_desc">
+                        Inimigos como Skeleton Archer e Minotauro, além de 3 Chefões (Carnívora, Bruto, Page) com inteligência de patrulha, rajadas de ataque e comportamentos dinâmicos.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="highlight-item">
+                    <i class="fas fa-volume-high"></i>
+                    <div>
+                      <h5 data-i18n="project_rungun.highlights.h3_title">Áudio Multicanal & Suporte a Joystick</h5>
+                      <p data-i18n="project_rungun.highlights.h3_desc">
+                        Mixer de áudio com Allegro Audio para trilha sonora e múltiplos efeitos sonoros simultâneos, aliado a suporte total para Joysticks USB e teclado.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer-action">
+                <button type="button" class="collapse-footer-btn" data-target="run-n-gun">
+                  <i class="fas fa-chevron-up"></i> <span data-i18n="catalog.hide_details">Recolher Detalhes</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="project-showcase" id="lunar-chat">
+          <article class="card-main is-collapsed" data-project="lunar-chat">
+            <div class="card-preview-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-lunar-chat">
+              <div class="preview-thumb-box">
+                <img src="assets/lunar_chat_showcase.png" alt="Miniatura Lunar Chat" class="preview-thumb-img" />
+                <span class="preview-thumb-badge"><i class="fas fa-satellite-dish"></i></span>
+              </div>
+              <div class="preview-info-box">
+                <div class="project-meta">
+                  <span class="badge-tag" style="margin-bottom: 0;">
+                    <i class="fas fa-comments"></i> <span data-i18n="project_lunar_chat.badge">WebSockets</span>
+                  </span>
+                  <span class="status-pill">Completed</span>
+                  <a href="https://github.com/vhwcm/Lunar_Chat" target="_blank" rel="noopener noreferrer" class="github-link" onclick="event.stopPropagation()">
+                    <i class="fab fa-github"></i> <span>GitHub</span>
+                  </a>
+                </div>
+                <h2 data-i18n="project_lunar_chat.title">Lunar Chat: Real-Time Multi-Room Web Messaging</h2>
+                <p class="project-subtitle" data-i18n="project_lunar_chat.subtitle">
+                  Sistema de Mensageria e Chat em Tempo Real com Node.js, Express, Socket.IO, Isolamento de Salas Públicas/Privadas e Arquitetura Orientada a Eventos.
+                </p>
+              </div>
+              <div class="preview-action-box">
+                <button type="button" class="collapse-toggle-btn" aria-label="Alternar detalhes">
+                  <span class="toggle-text toggle-text-expand" data-i18n="catalog.view_details">Ver Detalhes</span>
+                  <span class="toggle-text toggle-text-collapse" data-i18n="catalog.hide_details">Recolher Detalhes</span>
+                  <i class="fas fa-chevron-down toggle-chevron"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card-collapsible-body" id="body-lunar-chat">
+              <div class="screenshot-container">
+                <div class="screenshot-frame">
+                  <div class="screenshot-bar">
+                    <div class="browser-dots">
+                      <span class="dot-red"></span>
+                      <span class="dot-yellow"></span>
+                      <span class="dot-green"></span>
+                    </div>
+                    <div class="browser-address">http://localhost:3000 &bull; Lunar Chat (WebSocket Duplex)</div>
+                    <div class="browser-action">
+                      <i class="fas fa-expand-arrows-alt"></i> <span data-i18n="project_lunar_chat.view_screenshot">Clique para ampliar</span>
+                    </div>
+                  </div>
+                  <div class="screenshot-img-wrapper">
+                    <img src="assets/lunar_chat_showcase.png" alt="Captura de tela da interface do Lunar Chat" data-i18n-attr="alt:project_lunar_chat.screenshot_alt" />
+                    <div class="screenshot-overlay">
+                      <div class="overlay-caption">
+                        <i class="fas fa-satellite-dish"></i> <span data-i18n="project_lunar_chat.screenshot_badge">Interface SPA em Tempo Real & Socket.IO</span>
+                      </div>
+                      <div class="overlay-hint">
+                        <i class="fas fa-search-plus"></i> Zoom HD
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                  <div class="stat-title" data-i18n="project_lunar_chat.stats.duplex">Full-Duplex WebSockets</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-network-wired"></i></div>
+                  <div class="stat-title" data-i18n="project_lunar_chat.stats.architecture">Event-Driven / Pub-Sub</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-door-open"></i></div>
+                  <div class="stat-title" data-i18n="project_lunar_chat.stats.rooms">Multi-Room & Isolamento</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fab fa-node-js"></i></div>
+                  <div class="stat-title" data-i18n="project_lunar_chat.stats.stack">Node.js & Socket.IO</div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-compass"></i> <span data-i18n="project_lunar_chat.overview.title">Visão Geral do Projeto</span></h3>
+                <div class="overview-text">
+                  <p data-i18n="project_lunar_chat.overview.p1">
+                    O <strong>Lunar Chat 🌙</strong> é uma plataforma de chat e comunicação instantânea bidirecional projetada para explorar a fundo o protocolo <strong>WebSockets</strong>, concorrência e gerenciamento de múltiplas conexões simultâneas com <strong>Socket.IO</strong> e <strong>Express</strong>.
+                  </p>
+                  <p data-i18n="project_lunar_chat.overview.p2">
+                    Construído sobre uma arquitetura orientada a eventos no <strong>Node.js</strong>, o sistema possibilita a criação dinâmica de salas públicas e privadas com identificadores criptograficamente únicos de 10 dígitos, sincronização de presença em memória com contagem atômica de participantes, e uma interface SPA reativa em <strong>Vanilla JavaScript e CSS Dark Mode</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-layer-group"></i> <span data-i18n="project_lunar_chat.pillars.title">Pilares Arquiteturais & Engenharia em Tempo Real</span></h3>
+                <div class="pillars-grid">
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-blue">
+                      <i class="fas fa-wifi"></i>
+                    </div>
+                    <h4 data-i18n="project_lunar_chat.pillars.p1_title">Comunicação Bidirecional Full-Duplex</h4>
+                    <p data-i18n="project_lunar_chat.pillars.p1_desc">
+                      Engenharia de transporte persistente com negociação de protocolo e baixa latência:
+                    </p>
+                    <ul class="memory-layers-list">
+                      <li data-i18n="project_lunar_chat.pillars.m1"><strong>1. Handshake & Upgrade:</strong> Conexão inicial via HTTP Long-Polling com elevação automática e transparente para WebSockets puros.</li>
+                      <li data-i18n="project_lunar_chat.pillars.m2"><strong>2. Pub/Sub Baseado em Eventos:</strong> Fluxo desacoplado de mensagens (roomMessage, publicRoomsUpdate, system) sem sobrecarga de requisições HTTP REST contínuas.</li>
+                      <li data-i18n="project_lunar_chat.pillars.m3"><strong>3. Broadcast Seletivo:</strong> Distribuição precisa de dados utilizando socket.to(room).emit para isolar o tráfego exclusivamente entre os membros da sala ativa.</li>
+                      <li data-i18n="project_lunar_chat.pillars.m4"><strong>4. Sincronização Delta de Salas:</strong> Disparo automático da listagem atualizada de salas públicas apenas quando ocorrem mutações reais de estado.</li>
+                    </ul>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-purple">
+                      <i class="fas fa-cubes"></i>
+                    </div>
+                    <h4 data-i18n="project_lunar_chat.pillars.p2_title">Isolamento de Salas & Gestão em Memória</h4>
+                    <p data-i18n="project_lunar_chat.pillars.p2_desc">
+                      Separação lógica estrita de canais utilizando Socket.IO Room Adapters e Maps em memória, prevenindo vazamento de dados entre conversas e gerando códigos alfanuméricos randômicos para salas seguras.
+                    </p>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-green">
+                      <i class="fas fa-broom"></i>
+                    </div>
+                    <h4 data-i18n="project_lunar_chat.pillars.p3_title">Garbage Collection Reativo de Sessões</h4>
+                    <p data-i18n="project_lunar_chat.pillars.p3_desc">
+                      Mecanismo autônomo de limpeza no backend que detecta desconexões inesperadas do cliente, atualiza dinamicamente contadores de presença e elimina salas vazias da memória sem necessidade de cron jobs externos.
+                    </p>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-amber">
+                      <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4 data-i18n="project_lunar_chat.pillars.p4_title">Frontend SPA Reativo sem Dependências</h4>
+                    <p data-i18n="project_lunar_chat.pillars.p4_desc">
+                      Cliente estruturado como uma máquina de estados finita no DOM (telas de Setup, Lobby, Criação e Chat), garantindo carregamento instantâneo, auto-scroll dinâmico e feedback visual fluido.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-code"></i> <span data-i18n="project_lunar_chat.tech_stack.title">Stack Tecnológica & Padrões</span></h3>
+                <div class="tech-categories">
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_lunar_chat.tech_stack.core">Backend & Runtime</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Node.js (ES Modules)</span>
+                      <span class="tech-tag">Express.js 4</span>
+                      <span class="tech-tag">HTTP Server</span>
+                      <span class="tech-tag">Event-Driven Pattern</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_lunar_chat.tech_stack.realtime">Tempo Real & Protocolos</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Socket.IO 4</span>
+                      <span class="tech-tag">WebSocket Protocol</span>
+                      <span class="tech-tag">Socket Adapters</span>
+                      <span class="tech-tag">Pub/Sub Broadcast</span>
+                      <span class="tech-tag">Long-Polling Fallback</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_lunar_chat.tech_stack.frontend">Frontend & UI</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Vanilla JavaScript (ES6+)</span>
+                      <span class="tech-tag">HTML5 SPA</span>
+                      <span class="tech-tag">CSS3 Cyberpunk Dark Theme</span>
+                      <span class="tech-tag">DOM State Machine</span>
+                      <span class="tech-tag">Auto-Scroll Stream</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_lunar_chat.tech_stack.tooling">Arquitetura & Ferramentas</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">In-Memory State Maps</span>
+                      <span class="tech-tag">Session Lifecycle GC</span>
+                      <span class="tech-tag">Socket.io-client</span>
+                      <span class="tech-tag">Git & NPM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-lightbulb"></i> <span data-i18n="project_lunar_chat.highlights.title">Destaques de Engenharia & Mecânicas</span></h3>
+                <div class="highlights-grid">
+                  <div class="highlight-item">
+                    <i class="fas fa-dice"></i>
+                    <div>
+                      <h5 data-i18n="project_lunar_chat.highlights.h1_title">Gerador Temático de Nomes & Códigos de 10 Dígitos</h5>
+                      <p data-i18n="project_lunar_chat.highlights.h1_desc">
+                        Algoritmo procedural de geração de nomes cósmicos (ex: Cosmic Nebula, Starry Citadel) e códigos numéricos exclusivos para compartilhamento rápido.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="highlight-item">
+                    <i class="fas fa-bell"></i>
+                    <div>
+                      <h5 data-i18n="project_lunar_chat.highlights.h2_title">Notificações do Sistema e Mensageria Contextual</h5>
+                      <p data-i18n="project_lunar_chat.highlights.h2_desc">
+                        Canal dedicado a eventos do ciclo de vida da sala (entrada, saída, desconexão abrupta) renderizado de forma não intrusiva no feed do chat.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="highlight-item">
+                    <i class="fas fa-feather-alt"></i>
+                    <div>
+                      <h5 data-i18n="project_lunar_chat.highlights.h3_title">Zero Dependências Pesadas no Client-Side</h5>
+                      <p data-i18n="project_lunar_chat.highlights.h3_desc">
+                        Interface construída inteiramente com Vanilla JavaScript, manipulando o DOM de maneira direta e altamente otimizada sem a sobrecarga de frameworks complexos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer-action">
+                <button type="button" class="collapse-footer-btn" data-target="lunar-chat">
+                  <i class="fas fa-chevron-up"></i> <span data-i18n="catalog.hide_details">Recolher Detalhes</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="project-showcase" id="nutri-assistente">
+          <article class="card-main is-collapsed" data-project="nutri-assistente">
+            <div class="card-preview-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-nutri-assistente">
+              <div class="preview-thumb-box">
+                <img src="assets/nutri_assistente.png" alt="Miniatura Nutri Assistente" class="preview-thumb-img" />
+                <span class="preview-thumb-badge"><i class="fas fa-heart-pulse"></i></span>
+              </div>
+              <div class="preview-info-box">
+                <div class="project-meta">
+                  <span class="badge-tag" style="margin-bottom: 0;">
+                    <i class="fas fa-graduation-cap"></i> <span data-i18n="project_nutri.badge">Projeto Acadêmico Inicial (1º Semestre) & CS50 Final Project</span>
+                  </span>
+                  <span class="status-pill">1st Semester Project</span>
+                  <a href="https://github.com/vhwcm/nutri_assistente" target="_blank" rel="noopener noreferrer" class="github-link" onclick="event.stopPropagation()">
+                    <i class="fab fa-github"></i> <span>GitHub</span>
+                  </a>
+                </div>
+                <h2 data-i18n="project_nutri.title">Nutri Assistente: Plataforma de Cálculos Nutricionais & Acompanhamento</h2>
+                <p class="project-subtitle" data-i18n="project_nutri.subtitle">
+                  Primeiro projeto web fullstack desenvolvido durante o 1º semestre da faculdade (CS50 Final Project) com Laravel, Blade, fórmulas metabólicas e integração com APIs.
+                </p>
+              </div>
+              <div class="preview-action-box">
+                <button type="button" class="collapse-toggle-btn" aria-label="Alternar detalhes">
+                  <span class="toggle-text toggle-text-expand" data-i18n="catalog.view_details">Ver Detalhes</span>
+                  <span class="toggle-text toggle-text-collapse" data-i18n="catalog.hide_details">Recolher Detalhes</span>
+                  <i class="fas fa-chevron-down toggle-chevron"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card-collapsible-body" id="body-nutri-assistente">
+              <div class="screenshot-container">
+                <div class="screenshot-frame">
+                  <div class="screenshot-bar">
+                    <div class="browser-dots">
+                      <span class="dot-red"></span>
+                      <span class="dot-yellow"></span>
+                      <span class="dot-green"></span>
+                    </div>
+                    <div class="browser-address">http://nutriassistente.kesug.com &bull; Laravel MVC App</div>
+                    <div class="browser-action">
+                      <i class="fas fa-expand-arrows-alt"></i> <span data-i18n="project_nutri.view_screenshot">Clique para ampliar</span>
+                    </div>
+                  </div>
+                  <div class="screenshot-img-wrapper">
+                    <img src="assets/nutri_assistente.png" alt="Captura de tela da plataforma Nutri Assistente" data-i18n-attr="alt:project_nutri.screenshot_alt" />
+                    <div class="screenshot-overlay">
+                      <div class="overlay-caption">
+                        <i class="fas fa-heart-pulse"></i> <span data-i18n="project_nutri.screenshot_badge">Dashboard Web Fullstack Laravel & Blade</span>
+                      </div>
+                      <div class="overlay-hint">
+                        <i class="fas fa-search-plus"></i> Zoom HD
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                  <div class="stat-title" data-i18n="project_nutri.stats.semester">1º Semestre / CS50</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-calculator"></i></div>
+                  <div class="stat-title" data-i18n="project_nutri.stats.calculations">TMB & GET (Harris/DRI)</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fas fa-user-doctor"></i></div>
+                  <div class="stat-title" data-i18n="project_nutri.stats.auth">Vínculo Nutri-Paciente</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-icon"><i class="fab fa-laravel"></i></div>
+                  <div class="stat-title" data-i18n="project_nutri.stats.stack">Laravel 10 & Blade</div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-compass"></i> <span data-i18n="project_nutri.overview.title">Visão Geral do Projeto & Contexto de Aprendizado</span></h3>
+                <div class="overview-text">
+                  <p data-i18n="project_nutri.overview.p1">
+                    O <strong>Nutri Assistente</strong> foi o primeiro projeto web completo desenvolvido durante o <strong>1º semestre da faculdade de Ciência da Computação</strong>, servindo também como projeto final de conclusão do <strong>CS50 (Harvard)</strong>. A proposta nasceu de uma demanda real apresentada por uma nutricionista parceira que necessitava de uma plataforma gratuita para realizar cálculos metabólicos complexos e acompanhar a evolução física de seus pacientes.
+                  </p>
+                  <p data-i18n="project_nutri.overview.p2">
+                    Por se tratar de um <strong>projeto inaugural de aprendizado</strong>, o código reflete a fase inicial de formação: possui simplicidade arquitetural, dívidas técnicas de iniciante e rotas centralizadas, funcionando como um importante registro histórico da jornada de evolução. O sistema consolidou os fundamentos práticos de desenvolvimento web fullstack com <strong>PHP/Laravel</strong>, modelagem relacional com <strong>Eloquent ORM</strong>, renderização server-side com <strong>Blade</strong> e integração com serviços externos como <strong>ZeroBounce</strong> e <strong>Google Gemini</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-layer-group"></i> <span data-i18n="project_nutri.pillars.title">Pilares Funcionais & Marco de Desenvolvimento</span></h3>
+                <div class="pillars-grid">
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-purple">
+                      <i class="fas fa-calculator"></i>
+                    </div>
+                    <h4 data-i18n="project_nutri.pillars.p1_title">Cálculos Metabólicos & Antropometria</h4>
+                    <p data-i18n="project_nutri.pillars.p1_desc">
+                      Implementação matemática direta das principais fórmulas e parâmetros clínicos nutricionais:
+                    </p>
+                    <ul class="memory-layers-list">
+                      <li data-i18n="project_nutri.pillars.m1"><strong>1. TMB (Taxa Metabólica Basal):</strong> Equações de Harris-Benedict segmentadas por sexo, faixa etária, peso e estatura.</li>
+                      <li data-i18n="project_nutri.pillars.m2"><strong>2. GET (Gasto Energético Total):</strong> Fatores de atividade física (FA) e métodos DRI/IOM conforme perfis e fases da vida.</li>
+                      <li data-i18n="project_nutri.pillars.m3"><strong>3. Classificação IMC:</strong> Faixas de corte clínico para crianças, adultos e idosos (eutrofia, sobrepeso e graus de obesidade).</li>
+                      <li data-i18n="project_nutri.pillars.m4"><strong>4. Linha do Tempo Antropométrica:</strong> Registro histórico de pesagens e medidas para acompanhamento da evolução do paciente.</li>
+                    </ul>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-cyan">
+                      <i class="fas fa-id-card-clip"></i>
+                    </div>
+                    <h4 data-i18n="project_nutri.pillars.p2_title">Vínculo Nutricionista-Paciente</h4>
+                    <p data-i18n="project_nutri.pillars.p2_desc">
+                      Sistema de autenticação com geração de códigos alfanuméricos exclusivos para nutricionistas, permitindo que profissionais cadastrem pacientes exclusivos ou compartilhem seu código para auto-cadastro e acompanhamento mútuo.
+                    </p>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-emerald">
+                      <i class="fas fa-plug-circle-bolt"></i>
+                    </div>
+                    <h4 data-i18n="project_nutri.pillars.p3_title">Integração Experimental com APIs & Leitura de PDFs</h4>
+                    <p data-i18n="project_nutri.pillars.p3_desc">
+                      Exploração prática pioneira de APIs externas: validação de entregabilidade de e-mail via ZeroBounce API e parser de documentos PDF de anamneses com envio ao Google Gemini para sugestões assistidas.
+                    </p>
+                  </div>
+
+                  <div class="pillar-card">
+                    <div class="pillar-icon-box icon-amber">
+                      <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4 data-i18n="project_nutri.pillars.p4_title">Gênese da Jornada & Aprendizado Contínuo</h4>
+                    <p data-i18n="project_nutri.pillars.p4_desc">
+                      Representa o ponto de partida na engenharia de software: a experiência de entregar um produto funcional com resolução de dores reais, cujos desafios impulsionaram a busca contínua por padrões avançados de Clean Architecture, TDD e SOLID.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-code"></i> <span data-i18n="project_nutri.tech_stack.title">Stack Tecnológica & Ferramentas</span></h3>
+                <div class="tech-categories">
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_nutri.tech_stack.core">Linguagem & Framework</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">PHP 8.x</span>
+                      <span class="tech-tag">Laravel 10</span>
+                      <span class="tech-tag">Blade Templates</span>
+                      <span class="tech-tag">Composer</span>
+                      <span class="tech-tag">Vite</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_nutri.tech_stack.backend">Backend & Banco de Dados</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">Eloquent ORM</span>
+                      <span class="tech-tag">MySQL / SQLite</span>
+                      <span class="tech-tag">Custom Middleware</span>
+                      <span class="tech-tag">Session Auth</span>
+                      <span class="tech-tag">Form Validation</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_nutri.tech_stack.integrations">APIs & Integrações</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">ZeroBounce API</span>
+                      <span class="tech-tag">Google Gemini API</span>
+                      <span class="tech-tag">Smalot PDF Parser</span>
+                      <span class="tech-tag">Guzzle HTTP</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-cat-card">
+                    <div class="tech-cat-header" data-i18n="project_nutri.tech_stack.frontend">Frontend & UI</div>
+                    <div class="tags-wrap">
+                      <span class="tech-tag">HTML5 / CSS3</span>
+                      <span class="tech-tag">Bootstrap 5</span>
+                      <span class="tech-tag">Responsive Grid</span>
+                      <span class="tech-tag">Chart / Metrics View</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h3><i class="fas fa-lightbulb"></i> <span data-i18n="project_nutri.highlights.title">Destaques & Lições Aprendidas</span></h3>
+                <div class="highlights-grid">
+                  <div class="highlight-item">
+                    <i class="fas fa-rocket"></i>
+                    <div>
+                      <h5 data-i18n="project_nutri.highlights.h1_title">Primeiro Sistema Web Fullstack Entregue</h5>
+                      <p data-i18n="project_nutri.highlights.h1_desc">
+                        Construído e colocado em produção gratuita nos primeiros meses de graduação acadêmica, integrando banco de dados relacional, formulários e lógica de negócio completa.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="highlight-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <div>
+                      <h5 data-i18n="project_nutri.highlights.h2_title">Resolução de um Problema Real de Usuário</h5>
+                      <p data-i18n="project_nutri.highlights.h2_desc">
+                        Desenvolvido a partir de requisitos práticos coletados diretamente com uma profissional da área de nutrição para agilizar consultas e cálculos diários.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="highlight-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                      <h5 data-i18n="project_nutri.highlights.h3_title">Transparência Técnica & Reconhecimento de Limitações</h5>
+                      <p data-i18n="project_nutri.highlights.h3_desc">
+                        Projeto com código simples e limitações de iniciante, assumido como parte transparente do portfólio para demonstrar curva de crescimento e evolução profissional.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer-action">
+                <button type="button" class="collapse-footer-btn" data-target="nutri-assistente">
+                  <i class="fas fa-chevron-up"></i> <span data-i18n="catalog.hide_details">Recolher Detalhes</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal-backdrop" id="image-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fechar visualização" data-i18n-attr="aria-label:modal.close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="assets/captura_de_tela_do_jogo.png" alt="Captura de tela em alta resolução" data-i18n-attr="alt:project.screenshot_alt" />
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p data-i18n="footer.rights">© 2026 Victor Hugo Weigmann Chequer Maia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div class="arara-companion" id="arara-companion" aria-label="Arara Azul">
+    <div class="arara-bubble" id="arara-bubble" role="status" aria-live="polite">
+      <span class="arara-text" id="arara-text">Você sabia? O Victor desenvolveu o AI RPG Engine com RAG em 4 níveis de memória!</span>
+      <button type="button" class="arara-bubble-close" id="arara-bubble-close" aria-label="Fechar mensagem" data-i18n-attr="aria-label:arara.close_label">×</button>
+    </div>
+    <div class="arara-sprite"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

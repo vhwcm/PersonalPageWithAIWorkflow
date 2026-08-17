@@ -1,0 +1,210 @@
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #000000;
+  --bg-tertiary: #050505;
+  --bg-card: rgba(10, 10, 15, 0.85);
+  --bg-card-hover: rgba(18, 20, 30, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.02);
+
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dark: #64748b;
+
+  --accent-primary: #143FB9;
+  --accent-light: #2563eb;
+  --accent-dark: #0d2875;
+  --accent-hover: #1d4ed8;
+  --accent-glow: rgba(20, 63, 185, 0.4);
+  --accent-subtle: rgba(20, 63, 185, 0.12);
+  --accent-border: rgba(20, 63, 185, 0.35);
+
+  --status-ready: #10b981;
+  --status-ready-bg: rgba(16, 185, 129, 0.12);
+  --status-ready-border: rgba(16, 185, 129, 0.3);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(20, 63, 185, 0.4);
+  --border-glow: rgba(37, 99, 235, 0.35);
+
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+  --backdrop-blur: blur(16px);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --container-width: 1240px;
+  --header-height: 80px;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 40px -15px rgba(0, 0, 0, 0.9);
+  --shadow-glow: 0 0 30px rgba(20, 63, 185, 0.3);
+}
+
+.arara-companion {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 96px;
+  height: 96px;
+  z-index: 995;
+  cursor: pointer;
+  user-select: none;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.55));
+  animation: arara-float 3.5s ease-in-out infinite alternate;
+  transform-origin: center bottom;
+  will-change: transform;
+}
+
+.arara-companion:hover .arara-sprite {
+  transform: scale(1.08);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.arara-companion.bounce {
+  animation: arara-bounce 0.5s ease;
+}
+
+@keyframes arara-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-16px) scale(1.12); }
+  60% { transform: translateY(-8px) scale(1.06); }
+}
+
+.arara-bubble {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: 0;
+  min-width: 200px;
+  max-width: 270px;
+  background: rgba(10, 15, 30, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(37, 99, 235, 0.45);
+  border-radius: 14px;
+  padding: 10px 30px 10px 14px;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(20, 63, 185, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px) scale(0.92);
+  transform-origin: bottom right;
+  transition: opacity 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), visibility 0.35s;
+  pointer-events: none;
+}
+
+.arara-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 36px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(10, 15, 30, 0.94);
+}
+
+.arara-bubble.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.arara-text {
+  display: block;
+  color: #f1f5f9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.arara-bubble-close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.arara-bubble-close:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.arara-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url('Quadros_arara_azul.png');
+  background-size: 500% 300%;
+  background-repeat: no-repeat;
+  animation: arara-flap 1.12s steps(1) infinite;
+  will-change: background-position;
+}
+
+@keyframes arara-flap {
+  0%, 7.142% { background-position: 0% 0%; }
+  7.143%, 14.285% { background-position: 25% 0%; }
+  14.286%, 21.428% { background-position: 50% 0%; }
+  21.429%, 28.571% { background-position: 75% 0%; }
+  28.572%, 35.714% { background-position: 100% 0%; }
+  35.715%, 42.857% { background-position: 0% 50%; }
+  42.858%, 50.000% { background-position: 25% 50%; }
+  50.001%, 57.142% { background-position: 50% 50%; }
+  57.143%, 64.285% { background-position: 75% 50%; }
+  64.286%, 71.428% { background-position: 100% 50%; }
+  71.429%, 78.571% { background-position: 0% 100%; }
+  78.572%, 85.714% { background-position: 25% 100%; }
+  85.715%, 92.857% { background-position: 50% 100%; }
+  92.858%, 100% { background-position: 75% 100%; }
+}
+
+@keyframes arara-float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+  100% {
+    transform: translateY(2px) rotate(-1deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .arara-companion {
+    bottom: 16px;
+    right: 16px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .arara-bubble {
+    right: -10px;
+    min-width: 170px;
+    max-width: 220px;
+    font-size: 0.78rem;
+    padding: 8px 24px 8px 10px;
+  }
+
+  .arara-bubble::after {
+    right: 28px;
+  }
+}

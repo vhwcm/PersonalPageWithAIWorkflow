@@ -1,10 +1,13 @@
 {
     "nav": {
+        "menu_label": "Navegação",
+        "menu_portfolio": "Portfólio & Pesquisa",
         "home": "Início",
         "about": "Sobre",
         "experience": "Experiência",
         "skills": "Habilidades",
         "interests": "Interesses",
+        "projects": "Projetos",
         "research": "Pesquisa",
         "test": "teste para checkar se irá ser traduzido automaticamente"
     },
@@ -13,7 +16,7 @@
         "description": "Desenvolvedor Full-Stack | Graduando em Ciência da Computação na UFPR",
         "cta": {
             "about": "Sobre Mim",
-            "blog": "Blog",
+            "projects": "Projetos",
             "research": "Pesquisa"
         }
     },
@@ -96,6 +99,31 @@
         "digital_circuits": "Circuitos Digitais",
         "didactics": "Didática",
         "mentorship": "Mentoria"
+    },
+    "arara": {
+        "items": [
+            "Você sabia? O Victor desenvolveu o AI RPG Engine com RAG em 4 níveis de memória!",
+            "Ele programa em Java e Vue.js no desenvolvimento de sistemas na Exati!",
+            "Ele criou um jogo retrô estilo Run 'N Gun inteiramente em C99 e Allegro 5!",
+            "O Victor foi Diretor na Ecomp, liderando equipes ágeis com OKRs e Scrum!",
+            "Ele construiu o Lunar Chat, um sistema de salas em tempo real com WebSockets!",
+            "O motor de RPG do Victor conta com mais de 250 testes automatizados em Pytest!",
+            "Ele desenvolveu o Nutri Assistente, uma plataforma completa em Laravel!",
+            "Como pesquisador no PET-UFPR, ele ensinou informática para imigrantes!",
+            "Ele estuda Ciência da Computação na Universidade Federal do Paraná (UFPR)!",
+            "O Victor arquitetou integração multi-provedor com Gemini, Grok, GPT e Ollama!",
+            "Ele aplicou Clean Architecture e princípios SOLID em projetos de missão crítica!",
+            "Ele publicou uma pesquisa acadêmica sobre o impacto das redes sociais nos estudos!",
+            "O Victor domina Docker, conteinerização e ambientes Linux para deploy!",
+            "No jogo em C99, ele implementou um motor de áudio e física com grade espacial!",
+            "Ele foi monitor de Circuitos Digitais e auxiliou dezenas de alunos na UFPR!",
+            "O Victor adora xadrez, estratégia e resolver desafios lógicos complexos!",
+            "Ele implementou persistência transacional com SQLite WAL e indexação vetorial!",
+            "Na Ecomp, ele desenvolveu aplicações completas com Nuxt.js e Node.js!",
+            "Ele organizou eventos acadêmicos e maratonas de programação competitiva!",
+            "O Victor é apaixonado por Engenharia de Software, IA Generativa e inovação!"
+        ],
+        "close_label": "Fechar mensagem"
     },
     "footer": {
         "rights": "&copy; 2026 Victor Hugo Weigmann Chequer Maia. Todos os direitos reservados."

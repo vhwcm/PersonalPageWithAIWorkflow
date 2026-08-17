@@ -20,7 +20,6 @@ jobs:
           password: ${{ secrets.DINF_PASSWORD }}
           port: ${{ secrets.DINF_PORT }}
           script: |
-            # Cria ou limpa a pasta temporária
             mkdir -p ~/temp_deploy
             rm -rf ~/temp_deploy/*
 
@@ -31,7 +30,7 @@ jobs:
           username: ${{ secrets.DINF_USERNAME }}
           password: ${{ secrets.DINF_PASSWORD }}
           port: ${{ secrets.DINF_PORT }}
-          source: "index.html,styles.css,script.js,locales/*"
+          source: "index.html,styles.css,script.js,locales/**,pesquisa-redes-sociais/**,projetos/**"
           target: "~/temp_deploy"
           strip_components: 0
 
@@ -43,9 +42,6 @@ jobs:
           password: ${{ secrets.DINF_PASSWORD }}
           port: ${{ secrets.DINF_PORT }}
           script: |
-            # Move arquivos para a pasta pública
             mv ~/temp_deploy/* /home/html/inf/$USER/
-            # Ajusta permissões para acesso web
             chmod -R g=rX,o=rX /home/html/inf/$USER
-            # Limpa temporários
             rm -rf ~/temp_deploy
